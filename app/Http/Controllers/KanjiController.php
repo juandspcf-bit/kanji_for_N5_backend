@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kanji;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class KanjiController extends Controller
 {
@@ -28,7 +29,13 @@ class KanjiController extends Controller
      */
     public function show(string $kanjiCharacter)
     {
+        
+        $response = Http::get("kanjialive-api.p.rapidapi.com/api/public/kanji/$kanjiCharacter");
+        $json = $response->json();
+
         return $kanjiCharacter;
+
+    
     }
 
     /**
