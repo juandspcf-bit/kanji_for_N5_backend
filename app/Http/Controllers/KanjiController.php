@@ -29,13 +29,24 @@ class KanjiController extends Controller
      */
     public function show(string $kanjiCharacter)
     {
-        
-        $response = Http::get("kanjialive-api.p.rapidapi.com/api/public/kanji/$kanjiCharacter");
-        $json = $response->json();
 
-        return $kanjiCharacter;
 
-    
+        try {
+            $response = Http::withHeaders([
+                'X-RapidAPI-Key' => "6e8768aba0mshd012d160ea864d6p18a6ccjsn40b2889eeaf9",
+                'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
+            ])->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/$kanjiCharacter");
+
+            return $response->json();
+        } catch (\Throwable $th) {
+            //throw $th;
+            return 'error';
+        }
+
+
+        //$json = $response->json();
+
+
     }
 
     /**
