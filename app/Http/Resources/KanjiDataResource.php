@@ -14,6 +14,24 @@ class KanjiDataResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'kanjiCharacter'=>$this->kanjiCharacter,
+            'englishMeaning'=>$this->englishMeaning,
+            'kanjiImageLink'=>$this->kanjiImageLink,
+            'onyomi'=>$this->onyomi,
+            'kunyomi'=>$this->kunyomi,
+            'videoLink'=>$this->videoLink,
+            'strokes'=>$this->strokes,
+            'examples'=>$this->examples,
+        ];
+    }
+
+    public function with(Request $request): array
+    {
+        return [
+            'meta' => [
+                'message' => 'success',
+            ],
+        ];
     }
 }

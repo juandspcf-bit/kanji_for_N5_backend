@@ -9,9 +9,16 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::group(['prefix'=>'v1', 'namespace'=>'App\Http\Controllers'], function(){
+Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers'], function () {
 
-    Route::get('kanji/{kanjiCharacter}', [KanjiController::class, 'show']);
+    Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'show']);
+});
 
- 
+Route::fallback(function () {
+    return [
+        'meta' => [
+            'message' => 'no resurce found',
+        ],
+        "data" => [],
+    ];
 });
