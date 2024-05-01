@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Kreait\Firebase\Factory;
+
 use App\Models\Kanji;
 use App\Models\KanjiApi;
 use App\Models\ExampleApi;
@@ -33,10 +35,23 @@ class KanjiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Kanji $kanji)
+    public function show(Request $request, Kanji $kanji)
+
     {
-        
-        if($kanji===null){
+
+        $uuid='';
+        if ($request->hasHeader('uuid')) {
+            $uuid = $request->header('uuid');
+        }else{
+            return [
+                'meta' => [
+                    'message' => 'invalid credentials',
+                ],
+                "data" => [],
+            ];
+        }
+
+        if ($kanji === null) {
             return [
                 'meta' => [
                     'message' => 'no resurce found',
@@ -44,9 +59,24 @@ class KanjiController extends Controller
                 "data" => [],
             ];
         }
-        
+
+        $firestore = app('firebase.firestore');
+        $database = $firestore->database();
+        $snapshot = $database
+            ->collection('user_data')->document($uuid)->snapshot();
+        if(!$snapshot->exists()){
+            return [
+                'meta' => [
+                    'message' => 'invalid credentials',
+                ],
+                "data" => [],
+            ];
+        }
+
+        var_dump('valid user');
+
         $kanjiCharacter = $kanji->kanji;
-        
+
         try {
             $response = Http::withHeaders([
                 'X-RapidAPI-Key' => env("API_KEY"),
@@ -104,7 +134,6 @@ class KanjiController extends Controller
                 "data" => [],
             ];
         }
-
     }
 
     /**
