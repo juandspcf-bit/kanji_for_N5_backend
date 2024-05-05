@@ -14,6 +14,9 @@ use App\Http\Resources\KanjiDataResource;
 use App\Models\KunyomiApi;
 use App\Models\OnyomiApi;
 
+use function App\Utils\errorMessage;
+use function Laravel\Prompts\error;
+
 class KanjiController extends Controller
 {
     /**
@@ -39,38 +42,26 @@ class KanjiController extends Controller
 
     {
 
-        $uuid='';
+        $uuid = '';
         if ($request->hasHeader('uuid')) {
             $uuid = $request->header('uuid');
-        }else{
-            return [
-                'meta' => [
-                    'message' => 'invalid credentials',
-                ],
-                "data" => [],
-            ];
+        } else {
+
+            return errorMessage($request, 'Invalid credentials', 400);
         }
 
         if ($kanji === null) {
-            return [
-                'meta' => [
-                    'message' => 'no resurce found',
-                ],
-                "data" => [],
-            ];
+
+            return errorMessage($request, 'Not resource found', 400);
         }
 
         $firestore = app('firebase.firestore');
         $database = $firestore->database();
         $snapshot = $database
             ->collection('user_data')->document($uuid)->snapshot();
-        if(!$snapshot->exists()){
-            return [
-                'meta' => [
-                    'message' => 'invalid credentials',
-                ],
-                "data" => [],
-            ];
+        if (!$snapshot->exists()) {
+
+            return errorMessage($request, 'Invalid credentials', 400);
         }
 
         var_dump('valid user');
@@ -127,12 +118,8 @@ class KanjiController extends Controller
             //return $response->collect();
             return new KanjiDataResource($kanjiAPI);;
         } catch (\Throwable $th) {
-            return [
-                'meta' => [
-                    'message' => 'error in the server',
-                ],
-                "data" => [],
-            ];
+
+            return errorMessage($request, 'Error in the server', 500);
         }
     }
 

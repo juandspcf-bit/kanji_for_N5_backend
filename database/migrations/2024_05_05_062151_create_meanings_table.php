@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('examples', function (Blueprint $table) {
+        Schema::create('meanings', function (Blueprint $table) {
             $table->id();
-            $table->string('japanese');
-            $table->unsignedBigInteger('kanji_id');
-            $table->foreign('kanji_id')->references('id')->on('kanji_data');
+            $table->string('english');
+            $table->string('spanish');
+            $table->unsignedBigInteger('example_id');
+            $table->foreign('example_id')->references('id')->on('example');
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('examples');
+        Schema::dropIfExists('meanings');
     }
 };
