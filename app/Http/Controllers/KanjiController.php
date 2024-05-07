@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Kreait\Firebase\Factory;
-
 use App\Models\Kanji;
+use App\Utils\Messages;
 use App\Models\KanjiApi;
+use App\Models\OnyomiApi;
 use App\Models\ExampleApi;
+use App\Models\KunyomiApi;
 use Illuminate\Http\Request;
 use App\Models\AudioExampleApi;
+use App\Models\MeaningExamplesApi;
 use Illuminate\Support\Facades\Http;
 use App\Http\Resources\KanjiDataResource;
-use App\Models\KunyomiApi;
-use App\Models\OnyomiApi;
 
-use function App\Utils\errorMessage;
-use function Laravel\Prompts\error;
+
 
 class KanjiController extends Controller
 {
@@ -47,13 +46,15 @@ class KanjiController extends Controller
             $uuid = $request->header('uuid');
         } else {
 
-            return errorMessage($request, 'Invalid credentials', 400);
+            return Messages::errorMessage('Invalid credentials', 400);
         }
 
         if ($kanji === null) {
 
-            return errorMessage($request, 'Not resource found', 400);
+            return Messages::errorMessage('Not resource found', 400);
         }
+
+
 
         $firestore = app('firebase.firestore');
         $database = $firestore->database();
@@ -61,10 +62,10 @@ class KanjiController extends Controller
             ->collection('user_data')->document($uuid)->snapshot();
         if (!$snapshot->exists()) {
 
-            return errorMessage($request, 'Invalid credentials', 400);
+
+            return Messages::errorMessage($request, 'Invalid credentials', 400);
         }
 
-        var_dump('valid user');
 
         $kanjiCharacter = $kanji->kanji;
 
@@ -86,9 +87,11 @@ class KanjiController extends Controller
                     $exampleData["audio"]["mp3"]
                 );
 
+                
+
                 $exampleApi = new ExampleApi(
                     $exampleData["japanese"],
-                    $exampleData["meaning"]["english"],
+                    new MeaningExamplesApi($exampleData["meaning"]["english"], "",),
                     $audioExampleApi
                 );
 
@@ -107,6 +110,7 @@ class KanjiController extends Controller
             $kanjiAPI = new KanjiApi(
                 $kanjiData["character"],
                 $kanjiData["meaning"]["english"],
+                "",
                 end($strokes),
                 new OnyomiApi($kanjiData["onyomi"]["romaji"], $kanjiData["onyomi"]["katakana"]),
                 new KunyomiApi($kanjiData["kunyomi"]["romaji"], $kanjiData["kunyomi"]["hiragana"]),
@@ -119,7 +123,8 @@ class KanjiController extends Controller
             return new KanjiDataResource($kanjiAPI);;
         } catch (\Throwable $th) {
 
-            return errorMessage($request, 'Error in the server', 500);
+
+            return Messages::errorMessage('Error in the server', 500);
         }
     }
 

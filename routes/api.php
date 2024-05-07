@@ -13,7 +13,7 @@ Route::get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers'], function () {
 
     Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'show']);
-    Route::get('iniStorage', [IniStorage::class, 'startFilling']);
+    //Route::get('iniStorage', [IniStorage::class, 'startFilling']);
 });
 
 Route::fallback(function () {

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('english');
             $table->string('spanish');
             $table->unsignedBigInteger('example_id');
-            $table->foreign('example_id')->references('id')->on('example');
+            $table->foreign('example_id')->references('id')->on('examples');
             $table->timestamps();
         });
     }

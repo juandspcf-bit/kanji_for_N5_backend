@@ -9,6 +9,7 @@ class KanjiApi
     // Properties
     public $kanjiCharacter;
     public $englishMeaning;
+    public $spanishMeaning;
     public $kanjiImageLink;
     public $onyomi;
     public $kunyomi;
@@ -20,6 +21,7 @@ class KanjiApi
     public function __construct(
         string $kanjiCharacter,
         string $englishMeaning,
+        string $spanishMeaning,
         string $kanjiImageLink,
         OnyomiApi $onyomi,
         KunyomiApi $kunyomi,
@@ -31,6 +33,7 @@ class KanjiApi
     ) {
         $this->kanjiCharacter = $kanjiCharacter;
         $this->englishMeaning = $englishMeaning;
+        $this->spanishMeaning = $spanishMeaning;
         $this->kanjiImageLink = $kanjiImageLink;
         $this->onyomi = $onyomi;
         $this->kunyomi = $kunyomi;

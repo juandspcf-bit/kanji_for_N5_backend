@@ -12,7 +12,7 @@ class ExampleApi
 
 
 
-  public function __construct(string $japanese, string $meaning, AudioExampleApi $audio)
+  public function __construct(string $japanese, MeaningExamplesApi $meaning, AudioExampleApi $audio)
   {
     $this->japanese = $japanese;
     $this->meaning = $meaning;

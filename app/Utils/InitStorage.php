@@ -2,7 +2,7 @@
 
 namespace App\Utils;
 
-class IniStorage{
+class InitStorage{
 
     public function startFilling(){
         

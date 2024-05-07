@@ -15,14 +15,22 @@ class KanjiDataResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'kanjiCharacter'=>$this->kanjiCharacter,
-            'englishMeaning'=>$this->englishMeaning,
-            'kanjiImageLink'=>$this->kanjiImageLink,
-            'onyomi'=>$this->onyomi,
-            'kunyomi'=>$this->kunyomi,
-            'videoLink'=>$this->videoLink,
-            'strokes'=>$this->strokes,
-            'examples'=>$this->examples,
+            'kanji' => [
+                "character" => $this->kanjiCharacter,
+                "meaning" => [
+                    'english' => $this->englishMeaning,
+                    'spanish' => $this->spanishMeaning,
+                ],
+                "strokes" => [
+                    "images" => $this->strokes,
+                ],
+                'onyomi' => $this->onyomi,
+                'kunyomi' => $this->kunyomi,
+                'video' => $this->videoLink
+            ],
+
+            'kanjiImageLink' => $this->kanjiImageLink,
+            'examples' => $this->examples,
         ];
     }
 
