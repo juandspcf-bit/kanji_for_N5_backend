@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('english');
             $table->string('spanish');
             $table->unsignedBigInteger('kanji_id');
-            $table->foreign('kanji_id')->references('id')->on('kanji_data');
+            $table->foreign('kanji_id')->references('id')->on('kanjis');
             $table->timestamps();
         });
     }
