@@ -14,218 +14,377 @@ class MeaningSeeder extends Seeder
      */
     public function run(): void
     {
-        $kanji = Kanji::firstWhere('kanji', '山');
-        Meaning::create(
+
+        $meanings = [
+            //1
+            //
+            '山' =>
             [
                 'english' => "mountain",
                 'spanish' => "montaña",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '川');
-        Meaning::create(
+            ],
+            '川' =>
             [
                 'english' => "river",
                 'spanish' => "río",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '天');
-        Meaning::create(
+            ],
+            '天' =>
             [
                 'english' => "heaven",
                 'spanish' => "el paraíso",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '気');
-        Meaning::create(
+            ],
+            '気' =>
             [
                 'english' => "gas, spirit",
                 'spanish' => "gas, espíritu",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '田');
-        Meaning::create(
+            ],
+            '田' =>
             [
                 'english' => "rice field",
                 'spanish' => "campo de arroz",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '雨');
-        Meaning::create(
+            ],
+            '雨' =>
+
             [
                 'english' => "rain",
-                'spanish' => "lluvia",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-
-
-        $kanji = Kanji::firstWhere('kanji', '一');
-        Meaning::create(
+                'spanish' => "lluvia"
+            ],
+            //2
+            //
+            '一' =>
             [
                 'english' => "one",
                 'spanish' => "uno",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '二');
-        Meaning::create(
+            ],
+            '二' =>
+
             [
                 'english' => "two",
                 'spanish' => "dos",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '三');
-        Meaning::create(
+
+            ],
+            '三' =>
             [
                 'english' => "three",
                 'spanish' => "tres",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '四');
-        Meaning::create(
+            ],
+            '四' =>
             [
                 'english' => "four",
                 'spanish' => "cuatro",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '五');
-        Meaning::create(
+            ],
+            '五' =>
             [
                 'english' => "five",
                 'spanish' => "cinco",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '六');
-        Meaning::create(
+            ],
+            '六' =>
+
             [
                 'english' => "six",
                 'spanish' => "seis",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '七');
-        Meaning::create(
+            ],
+
+            '七' =>
+
             [
                 'english' => "seven",
                 'spanish' => "siete",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '八');
-        Meaning::create(
+
+            ],
+            '八' =>
             [
                 'english' => "eight",
                 'spanish' => "ocho",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '九');
-        Meaning::create(
+
+            ],
+            '九' =>
             [
                 'english' => "nine",
                 'spanish' => "nueve",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '十');
-        Meaning::create(
+
+            ],
+            '十' =>
             [
                 'english' => "ten",
                 'spanish' => "diez",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-
-
-        $kanji = Kanji::firstWhere('kanji', '百');
-        Meaning::create(
+            ],
+            //3
+            //
+            '百' =>
             [
                 'english' => "hundred",
                 'spanish' => "cien",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '千');
-        Meaning::create(
+            ],
+            '千' =>
             [
                 'english' => "thousand",
                 'spanish' => "mil",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '万');
-        Meaning::create(
+            ],
+            '万' =>
             [
                 'english' => "ten thousand",
                 'spanish' => "diez mil",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '円');
-        Meaning::create(
+
+            ],
+            '円' =>
             [
                 'english' => "circle, yen",
                 'spanish' => "círculo, yen",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '前');
-        Meaning::create(
+            ],
+            '前' =>
             [
                 'english' => "before, front",
                 'spanish' => "antes, frente",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '後');
-        Meaning::create(
+
+            ],
+            '後' =>
             [
                 'english' => "after, back",
                 'spanish' => "después, atrás",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '左');
-        Meaning::create(
+            ],
+            '左' =>
             [
                 'english' => "left",
                 'spanish' => "izquierda",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '右');
-        Meaning::create(
+            ],
+            '右' =>
             [
                 'english' => "right",
                 'spanish' => "derecha",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '上');
-        Meaning::create(
+            ],
+            '上' =>
             [
                 'english' => "up",
                 'spanish' => "arriba",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
-        $kanji = Kanji::firstWhere('kanji', '下');
-        Meaning::create(
+            ],
+            '下' =>
             [
                 'english' => "down",
                 'spanish' => "abajo",
-                'kanji_id'=> $kanji->id,
-            ]
-        );
 
+            ],
+            //4
+            //
+            '目' =>
+            [
+                'english' => "eye, item",
+                'spanish' => "ojo, artículo",
+
+            ],
+            '口' =>
+            [
+                'english' => "mouth",
+                'spanish' => "boca",
+
+            ],
+            '耳' =>
+            [
+                'english' => "ear",
+                'spanish' => "oreja",
+
+            ],
+            '手' =>
+            [
+                'english' => "hand",
+                'spanish' => "mano",
+
+            ],
+            '足' =>
+            [
+                'english' => "foot, suffice, add",
+                'spanish' => "pie, suficiente, agregar",
+
+            ],
+            '力' =>
+            [
+                'english' => "power, force",
+                'spanish' => "poder, fuerza",
+            ],
+            '父' =>
+            [
+                'english' => "father",
+                'spanish' => "padre",
+            ],
+            '母' =>
+            [
+                'english' => "mother",
+                'spanish' => "madre",
+            ],
+            '男' =>
+            [
+                'english' => "man",
+                'spanish' => "hombre",
+            ],
+            '女' =>
+            [
+                'english' => "woman",
+                'spanish' => "mujer",
+            ],
+            '子' =>
+            [
+                'english' => "child, noun suffix",
+                'spanish' => "niño o niña, sufijo sustantivo",
+            ],
+            '人' =>
+            [
+                'english' => "human being, person",
+                'spanish' => "ser humano, persona",
+            ],
+            '名' =>
+            [
+                'english' => "name",
+                'spanish' => "nombre",
+            ],
+            //5
+            //
+            '月' =>
+            [
+                'english' => "moon, month",
+                'spanish' => "luna, mes",
+            ],
+            '火' =>
+            [
+                'english' => "fire",
+                'spanish' => "fuego",
+            ],
+            '水' =>
+            [
+                'english' => "water",
+                'spanish' => "agua",
+            ],
+            '木' =>
+            [
+                'english' => "tree, wood",
+                'spanish' => "árbol, madera",
+            ],
+            '金' =>
+            [
+                'english' => "metal, gold, money",
+                'spanish' => "metal, oro, dinero",
+            ],
+            '土' =>
+            [
+                'english' => "soil, earth, ground",
+                'spanish' => "suelo, tierra, suelo",
+            ],
+            '日' =>
+            [
+                'english' => "day, sun, Japan",
+                'spanish' => "día, sol, Japón",
+            ],
+            '先' =>
+            [
+                'english' => "ahead",
+                'spanish' => "adelante",
+            ],
+            '生' =>
+            [
+                'english' => "life, be born, student",
+                'spanish' => "vida, nacer, estudiante",
+            ],
+            '学' =>
+            [
+                'english' => "study, educational, institution",
+                'spanish' => "estudio, educativo, institución",
+            ],
+            '校' =>
+            [
+                'english' => "school",
+                'spanish' => "escuela",
+            ],
+            '本' =>
+            [
+                'english' => "basis, book, this",
+                'spanish' => "base, libro, esto",
+            ],
+            '友' =>
+            [
+                'english' => "friend",
+                'spanish' => "amigo, amiga",
+            ],
+            //6
+            //
+            '年' =>
+            [
+                'english' => "year",
+                'spanish' => "año",
+            ],
+            '毎' =>
+            [
+                'english' => "every",
+                'spanish' => "cada",
+            ],
+            '時' =>
+            [
+                'english' => "time",
+                'spanish' => "tiempo",
+            ],
+            '分' =>
+            [
+                'english' => "divide, part, minute",
+                'spanish' => "dividir, parte, minuto",
+            ],
+            '午' =>
+            [
+                'english' => "noon",
+                'spanish' => "mediodía",
+            ],
+            '間' =>
+            [
+                'english' => "interval, between",
+                'spanish' => "intervalo, entre",
+            ],
+            '今' =>
+            [
+                'english' => "present, this",
+                'spanish' => "presente, este",
+            ],
+            '半' =>
+            [
+                'english' => "half",
+                'spanish' => "medio",
+            ],
+            '週' =>
+            [
+                'english' => "week",
+                'spanish' => "semana",
+            ],
+            '朝' =>
+            [
+                'english' => "morning, dynasty",
+                'spanish' => "mañana, dinastía",
+            ],
+            '昼' =>
+            [
+                'english' => "daytime",
+                'spanish' => "en el día",
+            ],
+            '夕' =>
+            [
+                'english' => "evening",
+                'spanish' => "tarde, noche",
+            ],
+            '夜' =>
+            [
+                'english' => "night",
+                'spanish' => "noche",
+            ],
+
+
+
+        ];
+
+        $records = [];
+        foreach ($meanings as $kanji => $meanings) {
+            $kanjiModel = Kanji::firstWhere('kanji', $kanji);
+            $records[] = [
+                'english' => $meanings["english"],
+                'spanish' => $meanings["spanish"],
+                'kanji_id' => $kanjiModel->id,
+            ];
+        }
+
+        Meaning::insert($records);
     }
 }
