@@ -370,8 +370,145 @@ class MeaningSeeder extends Seeder
                 'english' => "night",
                 'spanish' => "noche",
             ],
-
-
+            //7
+            //
+            '高' =>
+            [
+                'english' => "high",
+                'spanish' => "alto",
+            ],
+            '大' =>
+            [
+                'english' => "big",
+                'spanish' => "grande",
+            ],
+            '中' =>
+            [
+                'english' => "middle, in",
+                'spanish' => "medio, dentro",
+            ],
+            '小' =>
+            [
+                'english' => "small",
+                'spanish' => "pequeño",
+            ],
+            '長' =>
+            [
+                'english' => "long, chief",
+                'spanish' => "largo, jefe",
+            ],
+            '白' =>
+            [
+                'english' => "white",
+                'spanish' => "blanco",
+            ],
+            '安' =>
+            [
+                'english' => "peaceful, inexpensive",
+                'spanish' => "pacífico, barato",
+            ],
+            '新' =>
+            [
+                'english' => "new",
+                'spanish' => "nuevo",
+            ],
+            '古' =>
+            [
+                'english' => "old",
+                'spanish' => "viejo",
+            ],
+            '多' =>
+            [
+                'english' => "many",
+                'spanish' => "muchos",
+            ],
+            '少' =>
+            [
+                'english' => "little",
+                'spanish' => "poco",
+            ],
+            '早' =>
+            [
+                'english' => "early, quick",
+                'spanish' => "temprano, rápido",
+            ],
+            //7
+            //
+            '言' =>
+            [
+                'english' => "say, speech",
+                'spanish' => "decir, discurso",
+            ],
+            '話' =>
+            [
+                'english' => "speak",
+                'spanish' => "hablar",
+            ],
+            '語' =>
+            [
+                'english' => "language, word, tell",
+                'spanish' => "lenguaje, palabra, decir",
+            ],
+            '書' =>
+            [
+                'english' => "write, book",
+                'spanish' => "escribir, libro",
+            ],
+            '見' =>
+            [
+                'english' => "see",
+                'spanish' => "mirar",
+            ],
+            '聞' =>
+            [
+                'english' => "hear, listen, ask",
+                'spanish' => "escuchar, preguntar",
+            ],
+            '行' =>
+            [
+                'english' => "go, act, line",
+                'spanish' => "ir, actuar, línea",
+            ],
+            '来' =>
+            [
+                'english' => "come",
+                'spanish' => "venir",
+            ],
+            '出' =>
+            [
+                'english' => "go out, put out",
+                'spanish' => "salir, enviar",
+            ],
+            '入' =>
+            [
+                'english' => "enter, put in",
+                'spanish' => "entrar, insertar",
+            ],
+            '食' =>
+            [
+                'english' => "eat, food",
+                'spanish' => "comer, comida",
+            ],
+            '飲' =>
+            [
+                'english' => "drink",
+                'spanish' => "beber",
+            ],
+            '立' =>
+            [
+                'english' => "stand, establish",
+                'spanish' => "pararse, establecer",
+            ],
+            '休' =>
+            [
+                'english' => "rest",
+                'spanish' => "descansar",
+            ],
+            '買' =>
+            [
+                'english' => "buy",
+                'spanish' => "comprar",
+            ],
 
         ];
 
