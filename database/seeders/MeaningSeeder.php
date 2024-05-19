@@ -22,6 +22,21 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "mountain",
                 'spanish' => "montaña",
+                'examples'=>[
+                    '富士山 (ふじさん)'=>[
+                        'english' => "Mt Fuji",
+                        'spanish' => "Monte Fuji",
+                    ],
+                    '山脈 (さんみゃく)'=>[
+                        'english' => "mountain range",
+                        'spanish' => "cordillera",
+                    ],
+                    '火山(かざん)'=>[
+                        'english' => "volcano",
+                        'spanish' => "volcán",
+                    ],
+
+                ],
             ],
             '川' =>
             [
@@ -432,7 +447,7 @@ class MeaningSeeder extends Seeder
                 'english' => "early, quick",
                 'spanish' => "temprano, rápido",
             ],
-            //7
+            //8
             //
             '言' =>
             [
@@ -508,6 +523,88 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "buy",
                 'spanish' => "comprar",
+            ],
+            //9
+            //
+            '電' =>
+            [
+                'english' => "electricity",
+                'spanish' => "electricidad",
+            ],
+            '車' =>
+            [
+                'english' => "vehicle, wheel, car",
+                'spanish' => "vehículo, rueda, coche",
+            ],
+            '門' =>
+            [
+                'english' => "gate",
+                'spanish' => "puerta",
+            ],
+            '馬' =>
+            [
+                'english' => "horse",
+                'spanish' => "caballo",
+            ],
+            '魚' =>
+            [
+                'english' => "fish",
+                'spanish' => "pez",
+            ],
+            '道' =>
+            [
+                'english' => "way, street, road",
+                'spanish' => "camino, calle, camino",
+            ],
+            '会' =>
+            [
+                'english' => "meet, society",
+                'spanish' => "reunirse, sociedad",
+            ],
+            '社' =>
+            [
+                'english' => "company, society",
+                'spanish' => "empresa, sociedad",
+            ],
+            '店' =>
+            [
+                'english' => "shop, store",
+                'spanish' => "tienda",
+            ],
+            '駅' =>
+            [
+                'english' => "station",
+                'spanish' => "estación",
+            ],
+            '花' =>
+            [
+                'english' => "flower",
+                'spanish' => "flor",
+            ],
+            '家' =>
+            [
+                'english' => "house, family",
+                'spanish' => "casa, familia",
+            ],
+            '外' =>
+            [
+                'english' => "outside",
+                'spanish' => "afuera",
+            ],
+            '国' =>
+            [
+                'english' => "country",
+                'spanish' => "país",
+            ],
+            '方' =>
+            [
+                'english' => "direction, way, square",
+                'spanish' => "dirección, camino, cuadrado",
+            ],
+            '英' =>
+            [
+                'english' => "distinguished, England",
+                'spanish' => "distinguido, Inglaterra",
             ],
 
         ];
