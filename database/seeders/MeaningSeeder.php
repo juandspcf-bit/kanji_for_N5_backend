@@ -22,19 +22,35 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "mountain",
                 'spanish' => "montaña",
-                'examples'=>[
-                    '富士山 (ふじさん)'=>[
+                'examples' => [
+                    '富士山 (ふじさん)' => [
                         'english' => "Mt Fuji",
                         'spanish' => "Monte Fuji",
                     ],
-                    '山脈 (さんみゃく)'=>[
+                    '山脈 (さんみゃく)' => [
                         'english' => "mountain range",
                         'spanish' => "cordillera",
                     ],
-                    '火山(かざん)'=>[
+                    '火山 (かざん)' => [
                         'english' => "volcano",
                         'spanish' => "volcán",
                     ],
+                    '登山 (とざん)' => [
+                        'english' => "mountain-climbing",
+                        'spanish' => "Montañismo",
+                    ],
+                    '山 (やま)' => [
+                        'english' => "mountain, pile, climax",
+                        'spanish' => "montaña, pila, clímax",
+                    ],
+                    '岩山 (いわやま)' => [
+                        'english' => "rocky mountain",
+                        'spanish' => "montaña rocosa",
+                    ],
+                    '山火事 (やまかじ)' => [
+                        'english' => "bushfire",
+                        'spanish' => "incendio forestal",
+                    ]
 
                 ],
             ],
@@ -42,6 +58,32 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "river",
                 'spanish' => "río",
+                'examples' => [
+                    '河川 (かせん)' => [
+                        'english' => "rivers",
+                        'spanish' => "ríos",
+                    ],
+                    '川 (かわ)' => [
+                        'english' => "river",
+                        'spanish' => "río",
+                    ],
+                    '川上 (かわかみ)' => [
+                        'english' => "upper reaches of a river",
+                        'spanish' => "tramos superiores de un río",
+                    ],
+                    '川下 (かわしも)' => [
+                        'english' => "downstream",
+                        'spanish' => "río abajo",
+                    ],
+                    '江戸川 (えどがわ)' => [
+                        'english' => "Edo river",
+                        'spanish' => "río Edo",
+                    ],
+                    '小川 (おがわ)' => [
+                        'english' => "small stream, brook",
+                        'spanish' => "pequeño arroyo, arroyo",
+                    ],
+                ]
             ],
             '天' =>
             [
