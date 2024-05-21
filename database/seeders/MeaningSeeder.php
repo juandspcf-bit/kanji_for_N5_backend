@@ -105,7 +105,7 @@ class MeaningSeeder extends Seeder
                     '天才 (てんさい)' => [
                         'english' => "genius",
                         'spanish' => "genio",
-                    ],                 
+                    ],
                     '晴天 (せいてん)' => [
                         'english' => "fine weather",
                         'spanish' => "buen tiempo",
@@ -132,6 +132,52 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "gas, spirit",
                 'spanish' => "gas, espíritu",
+                'examples' => [
+                    '気候 (きこう)' => [
+                        'english' => "climate",
+                        'spanish' => "clima",
+                    ],
+                    '気持ち (きもち)' => [
+                        'english' => "feeling",
+                        'spanish' => "sentimiento",
+                    ],
+                    '天気 (てんき)' => [
+                        'english' => "weather",
+                        'spanish' => "clima",
+                    ],
+                    '人気 (にんき)' => [
+                        'english' => "popularity",
+                        'spanish' => "popularidad",
+                    ],
+                    '病気 (びょうき)' => [
+                        'english' => "illness",
+                        'spanish' => "enfermedad",
+                    ],
+                    '元気な (げんきな)' => [
+                        'english' => "energetic",
+                        'spanish' => "energético",
+                    ],
+                    '気を付ける (きをつける)' => [
+                        'english' => "be careful",
+                        'spanish' => "tener cuidado",
+                    ],
+                    '気に入る (きにいる)' => [
+                        'english' => "come to like, be pleased with",
+                        'spanish' => "estar contento con algo",
+                    ],
+                    '気が狂う (きがくるう)' => [
+                        'english' => "go mad, go crazy",
+                        'spanish' => "volverse loco",
+                    ],
+                    '眠気 (ねむけ)' => [
+                        'english' => "sleepiness",
+                        'spanish' => "somnolencia",
+                    ],
+                    '湿気（しっけ）' => [
+                        'english' => "humidity",
+                        'spanish' => "humedad",
+                    ],
+                ]
             ],
             '田' =>
             [
