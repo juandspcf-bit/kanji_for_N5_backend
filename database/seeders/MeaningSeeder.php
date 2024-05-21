@@ -183,12 +183,76 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "rice field",
                 'spanish' => "campo de arroz",
+                'examples' => [
+                    "水田 (すいでん)" => [
+                        'english' => "rice field",
+                        'spanish' => "campo de arroz",
+                    ],
+                    "田園 (でんえん)" => [
+                        'english' => "rural area",
+                        'spanish' => "área rural",
+                    ],
+                    "田んぼ (たんぼ)" => [
+                        'english' => "rice field",
+                        'spanish' => "campo de arroz",
+                    ],
+                    "田植え (たうえ)" => [
+                        'english' => "rice planting",
+                        'spanish' => "plantación de arroz",
+                    ],
+                    "松田 (まつだ)" => [
+                        'english' => "Matsuda (surname)",
+                        'spanish' => "Matsuda (apellido)",
+                    ],
+                ]
             ],
             '雨' =>
 
             [
                 'english' => "rain",
-                'spanish' => "lluvia"
+                'spanish' => "lluvia",
+                'examples' => [
+                    "降雨量 (こううりょう)" => [
+                        "english" => "amount of rainfall",
+                        "spanish" => "cantidad de lluvia",
+                    ],
+                    "梅雨前線 (ばいうぜんせん)" => [
+                        "english" => "seasonal rain front",
+                        "spanish" => "frente de lluvia estacional",
+                    ],
+                    "雨期 (うき)" => [
+                        "english" => "rainy season",
+                        "spanish" => "temporada de lluvias",
+                    ],
+                    "雷雨 (らいう)" => [
+                        "english" => "thunderstorm",
+                        "spanish" => "tormenta",
+                    ],
+                    "雨 (あめ)" => [
+                        "english" => "rain",
+                        "spanish" => "lluvia",
+                    ],
+                    "大雨 (おおあめ)" => [
+                        "english" => "heavy rain",
+                        "spanish" => "chubasco",
+                    ],
+                    "雨上がり（あめあがり" => [
+                        "english" => "after the rain",
+                        "spanish" => "después de la lluvia",
+                    ],
+                    "雨蛙 (あまがえる)" => [
+                        "english" => "tree frog",
+                        "spanish" => "rana de árbol",
+                    ],
+                    "雨雲 (あまぐも)" => [
+                        "english" => "rain cloud",
+                        "spanish" => "nube de lluvia",
+                    ],
+                    "*小雨 (こさめ)" => [
+                        "english" => "light rain",
+                        "spanish" => "llovizna",
+                    ],
+                ]
             ],
             //2
             //
