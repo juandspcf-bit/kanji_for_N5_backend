@@ -89,6 +89,44 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "heaven",
                 'spanish' => "el paraíso",
+                'examples' => [
+                    '天気 (てんき)' => [
+                        'english' => "weather, fine weather",
+                        'spanish' => "clima, buen tiempo",
+                    ],
+                    '天候 (てんこう)' => [
+                        'english' => "weather",
+                        'spanish' => "clima",
+                    ],
+                    '天皇 (てんのう)' => [
+                        'english' => "emperor",
+                        'spanish' => "emperador",
+                    ],
+                    '天才 (てんさい)' => [
+                        'english' => "genius",
+                        'spanish' => "genio",
+                    ],                 
+                    '晴天 (せいてん)' => [
+                        'english' => "fine weather",
+                        'spanish' => "buen tiempo",
+                    ],
+                    '雨天 (うてん)' => [
+                        'english' => "rainy weather",
+                        'spanish' => "clima lluvioso",
+                    ],
+                    '先天的な (せんてんてきな)' => [
+                        'english' => "innate",
+                        'spanish' => "innato",
+                    ],
+                    '天 (あめ)' => [
+                        'english' => "heaven, sky",
+                        'spanish' => "cielo",
+                    ],
+                    '天の川 (あまのがわ)' => [
+                        'english' => "Milky Way",
+                        'spanish' => "Vía Láctea",
+                    ],
+                ]
             ],
             '気' =>
             [
