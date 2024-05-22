@@ -408,6 +408,32 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "five",
                 'spanish' => "cinco",
+                'examples' => [
+                    "五月 (ごがつ)" => [
+                        "english" => "May",
+                        "spanish" => "Mayo",
+                    ],
+                    "五時間 (ごじかん)" => [
+                        "english" => "5 hours",
+                        "spanish" => "5 horas",
+                    ],
+                    "五階 (ごかい)" => [
+                        "english" => "5th floor",
+                        "spanish" => "5to piso",
+                    ],
+                    "五人 (ごにん)" => [
+                        "english" => "5 people",
+                        "spanish" => "5 personas",
+                    ],
+                    "五つ (いつつ)" => [
+                        "english" => "5 (objects)",
+                        "spanish" => "5 (un objeto en general)",
+                    ],
+                    "五日 (いつか)" => [
+                        "english" => "5 days, 5th of the month",
+                        "spanish" => "5 días, 5 del mes",
+                    ],
+                ]
             ],
             '六' =>
 
