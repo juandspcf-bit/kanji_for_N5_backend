@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\Kanji;
 use App\Models\Meaning;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class MeaningSeeder extends Seeder
 {
@@ -260,12 +260,74 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "one",
                 'spanish' => "uno",
+                'examples' => [
+                    "一年生 (いちねんせい)" => [
+                        "english" => "first-year student",
+                        "spanish" => "Alumno de primer año",
+                    ],
+                    "一番 (いちばん)" => [
+                        "english" => "number one",
+                        "spanish" => "numero uno",
+                    ],
+                    "一度 (いちど)" => [
+                        "english" => "once",
+                        "spanish" => "una vez",
+                    ],
+                    "一杯 (いっぱい)" => [
+                        "english" => "one cup of, a lot of",
+                        "spanish" => "una taza de, mucho de",
+                    ],
+                    "一緒 (いっしょ)" => [
+                        "english" => "together",
+                        "spanish" => "juntos",
+                    ],
+                    "一分 (いっぷん)" => [
+                        "english" => "one minute",
+                        "spanish" => "un minuto",
+                    ],
+                    "一枚 (いちまい)" => [
+                        "english" => "one (flat object)",
+                        "spanish" => "uno (para objetos planos)",
+                    ],
+                    "一つ (ひとつ)" => [
+                        "english" => "one (object)",
+                        "spanish" => "uno (un objeto en general)",
+                    ],
+                    "一人 (ひとり)" => [
+                        "english" => "one person",
+                        "spanish" => "una persona",
+                    ],
+                ]
             ],
             '二' =>
 
             [
                 'english' => "two",
                 'spanish' => "dos",
+                'examples' => [
+                    "二時間 (にじかん)" => [
+                        "english" => "two hours",
+                        "spanish" => "dos horas",
+                    ],
+                    "二月 (にがつ)" => [
+                        "english" => "February",
+                        "spanish" => "Febrero",
+                    ],
+                    "二枚目 (にまいめ)" => [
+                        "english" => "second (flat object)",
+                        "spanish" => "segundo (para objectos planos)",
+                    ],
+                    "二つ (ふたつ)" => [
+                        "english" => "two (pieces)",
+                        "spanish" => "dos (piezas)",
+                    ],
+                    "二人 (ふたり)" => [
+                        "english" => "two people",
+                        "spanish" => "dos personas",
+                    ],
+                ],
+                
+
 
             ],
             '三' =>
