@@ -326,7 +326,7 @@ class MeaningSeeder extends Seeder
                         "spanish" => "dos personas",
                     ],
                 ],
-                
+
 
 
             ],
@@ -334,11 +334,75 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "three",
                 'spanish' => "tres",
+                'examples' => [
+                    "三人 (さんにん)" => [
+                        "english" => "3 people",
+                        "spanish" => "3 personas",
+                    ],
+                    "三時 (さんじ)" => [
+                        "english" => "3 o'clock",
+                        "spanish" => "3 en punto",
+                    ],
+                    "三枚 (さんまい)" => [
+                        "english" => "3 (flat objects)",
+                        "spanish" => "3 (para objetos planos)",
+                    ],
+                    "三月 (さんがつ)" => [
+                        "english" => "March",
+                        "spanish" => "Marzo",
+                    ],
+                    "三日 (みっか)" => [
+                        "english" => "3 days, 3rd day of the month",
+                        "spanish" => "3 días, 3er día del mes",
+                    ],
+                    "三つ (みっつ)" => [
+                        "english" => "3 (pieces)",
+                        "spanish" => "3 (piezas)",
+                    ],
+                ]
             ],
             '四' =>
             [
                 'english' => "four",
                 'spanish' => "cuatro",
+                'examples' => [
+                    "四月 (しがつ)" => [
+                        "english" => "April",
+                        "spanish" => "abril",
+                    ],
+                    "四角 (しかく)" => [
+                        "english" => "square",
+                        "spanish" => "cuadrado",
+                    ],
+                    "四国 (しこく)" => [
+                        "english" => "Shikoku",
+                        "spanish" => "Shikoku",
+                    ],
+                    "四季 (しき)" => [
+                        "english" => "four seasons",
+                        "spanish" => "cuatro estaciones",
+                    ],
+                    "四時 (よじ)" => [
+                        "english" => "4 o'clock",
+                        "spanish" => "4 en punto",
+                    ],
+                    "四つ角 (よつかど)" => [
+                        "english" => "crossroads",
+                        "spanish" => "cruce",
+                    ],
+                    "四つ (よっつ)" => [
+                        "english" => "4 (objects)",
+                        "spanish" => "4 (un objeto en general)",
+                    ],
+                    "四日 (よっか)" => [
+                        "english" => "4 days, 4th of the month",
+                        "spanish" => "4 días, 4 del mes",
+                    ],
+                    "四回 (よんかい)" => [
+                        "english" => "4 times",
+                        "spanish" => "4 veces",
+                    ],
+                ]
             ],
             '五' =>
             [
