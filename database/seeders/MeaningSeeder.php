@@ -440,6 +440,40 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "six",
                 'spanish' => "seis",
+                'examples' => [
+                    "六時 (ろくじ)" => [
+                        "english" => "六時（ろくじ）",
+                        "spanish" => "6 en punto",
+                    ],
+                    "六才 (ろくさい)" => [
+                        "english" => "六才（ろくさい）",
+                        "spanish" => "6 años de edad",
+                    ],
+                    "六番目 (ろくばんめ)" => [
+                        "english" => "6th",
+                        "spanish" => "6to",
+                    ],
+                    "六月 (ろくがつ)" => [
+                        "english" => "June",
+                        "spanish" => "Junio",
+                    ],
+                    "六本 (ろっぽん)" => [
+                        "english" => "6 (long cylindrical objects)",
+                        "spanish" => "6 (para objetos cilíndricos largos)",
+                    ],
+                    "六百 (ろっぴゃく)" => [
+                        "english" => "600",
+                        "spanish" => "600",
+                    ],
+                    "六つ (むっつ)" => [
+                        "english" => "6 (pieces)",
+                        "spanish" => "6 (piezas)",
+                    ],
+                    "六日 (むいか)" => [
+                        "english" => "6 days, 6th of the month",
+                        "spanish" => "6 días, sexto dia del mes.",
+                    ]
+                ]
             ],
 
             '七' =>
