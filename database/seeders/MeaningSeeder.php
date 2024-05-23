@@ -436,7 +436,6 @@ class MeaningSeeder extends Seeder
                 ]
             ],
             '六' =>
-
             [
                 'english' => "six",
                 'spanish' => "seis",
@@ -477,22 +476,132 @@ class MeaningSeeder extends Seeder
             ],
 
             '七' =>
-
             [
                 'english' => "seven",
                 'spanish' => "siete",
+                'examples' => [
+                    "七時 (しちじ)" => [
+                        "english" => "7 o'clock",
+                        "spanish" => "7:00",
+                    ],
+                    "十七 (じゅうしち/じゅうなな)" => [
+                        "english" => "17",
+                        "spanish" => "17",
+                    ],
+                    "七五三 (しちごさん)" => [
+                        "english" => "festival for children aged 7, 5 & 3",
+                        "spanish" => "festival para niños de 7, 5 y 3 años",
+                    ],
+                    "七回 (ななかい)" => [
+                        "english" => "7 times",
+                        "spanish" => "7 veces",
+                    ],
+                    "七週間 (ななしゅうかん)" => [
+                        "english" => "7 weeks",
+                        "spanish" => "7 semanas",
+                    ],
+                    "七才 (ななさい)" => [
+                        "english" => "7 years old",
+                        "spanish" => "7 años de edad",
+                    ],
+                    "七日 (なのか)" => [
+                        "english" => "7 days, 7th of the month",
+                        "spanish" => "7 días, 7mo del mes.",
+                    ],
+                    "七つ (ななつ)" => [
+                        "english" => "7 (objects)",
+                        "spanish" => "7 (un objeto en general)",
+                    ],
+
+                ]
 
             ],
             '八' =>
             [
                 'english' => "eight",
                 'spanish' => "ocho",
-
+                'examples' => [
+                    "八月 (はちがつ)" => [
+                        "english" => "August",
+                        "spanish" => "Agosto",
+                    ],
+                    "八時間 (はちじかん)" => [
+                        "english" => "8 hours",
+                        "spanish" => "8 horas",
+                    ],
+                    "尺八 (しゃくはち)" => [
+                        "english" => "bamboo flute",
+                        "spanish" => "flauta de bambú",
+                    ],
+                    "八回 (はっかい)" => [
+                        "english" => "8 times",
+                        "spanish" => "ocho veces",
+                    ],
+                    "八分 (はっぷん)" => [
+                        "english" => "8 minutes",
+                        "spanish" => "ocho minutos",
+                    ],
+                    "八百 (はっぴゃく)" => [
+                        "english" => "800",
+                        "spanish" => "800",
+                    ],
+                    "八つ (やっつ)" => [
+                        "english" => "8 (objects)",
+                        "spanish" => "8 (un objeto en general)",
+                    ],
+                    "八百屋 (やおや)" => [
+                        "english" => "greengrocer",
+                        "spanish" => "verdulería",
+                    ],
+                    "八重桜 (やえざくら)" => [
+                        "english" => "double-flowered cherry-tree",
+                        "spanish" => "cerezo de doble flor",
+                    ],
+                    "八日 (ようか)" => [
+                        "english" => "8 days, 8th of the month",
+                        "spanish" => "8 días, 8vo del mes",
+                    ],
+                ]
             ],
             '九' =>
             [
                 'english' => "nine",
                 'spanish' => "nueve",
+                'examples' => [
+                    "九州 (きゅうしゅう)" => [
+                        "english" => "Kyuushuu",
+                        "spanish" => "Kyuushuu",
+                    ],
+                    "九回 (きゅうかい)" => [
+                        "english" => "9 times",
+                        "spanish" => "9 veces",
+                    ],
+                    "九年 (きゅうねん)" => [
+                        "english" => "9 years",
+                        "spanish" => "9 años",
+                    ],
+                    "九月 (くがつ)" => [
+                        "english" => "September",
+                        "spanish" => "Septiembre",
+                    ],
+                    "九時 (くじ)" => [
+                        "english" => "9 o'clock",
+                        "spanish" => "9 en punto",
+                    ],
+                    "十九日 (じゅうくにち)" => [
+                        "english" => "19 days, 19th of the month",
+                        "spanish" => "19 días,  19.º del mes.",
+                    ],
+                    "九日 (ここのか)" => [
+                        "english" => "9 days, 9th of the month",
+                        "spanish" => "9 días, 9.º del mes.",
+                    ],
+                    "九つ (ここのつ)" => [
+                        "english" => "9 (objects)",
+                        "spanish" => "9 (un objeto en general)",
+                    ],
+
+                ]
 
             ],
             '十' =>
