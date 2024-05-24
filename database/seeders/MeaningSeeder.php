@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database\Seeders\el_projects\kanji_for_N5_backend\database\seeders;
 
 use App\Models\Kanji;
 use App\Models\Meaning;
@@ -657,8 +657,8 @@ class MeaningSeeder extends Seeder
                         "english" => "20 days, 20th day of the month",
                         "spanish" => "20 días, día 20 del mes.",
                     ],
-                    
-                    
+
+
                 ]
             ],
             //3
@@ -667,16 +667,94 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "hundred",
                 'spanish' => "cien",
+                'examples' => [
+                    "百 (ひゃく)" => [
+                        "english" => "100",
+                        "spanish" => "100",
+                    ],
+                    "百倍 (ひゃくばい)" => [
+                        "english" => "hundredfold",
+                        "spanish" => "cien veces",
+                    ],
+                    "百姓 (ひゃくしょう)" => [
+                        "english" => "farmer",
+                        "spanish" => "granjero",
+                    ],
+                    "三百 (さんびゃく)" => [
+                        "english" => "300",
+                        "spanish" => "300",
+                    ],
+                    "六百 (ろっぴゃく)" => [
+                        "english" => "600",
+                        "spanish" => "600",
+                    ],
+                    "八百 (はっぴゃく)" => [
+                        "english" => "800",
+                        "spanish" => "800",
+                    ],
+                    "*八百屋 (やおや)" => [
+                        "english" => "greengrocer",
+                        "spanish" => "verdulería",
+                    ],
+                ]
             ],
             '千' =>
             [
                 'english' => "thousand",
                 'spanish' => "mil",
+                'examples' => [
+                    "千 (せん)" => [
+                        "english" => "1000",
+                        "spanish" => "1000",
+                    ],
+                    "三千 (さんぜん)" => [
+                        "english" => "3000",
+                        "spanish" => "3000",
+                    ],
+                    "八千 (はっせん)" => [
+                        "english" => "8000",
+                        "spanish" => "8000",
+                    ],
+                    "千切れる (ちぎれる)" => [
+                        "english" => "be torn off",
+                        "spanish" => "ser arrancado",
+                    ],
+                    "千鳥 (ちどり)" => [
+                        "english" => "plover",
+                        "spanish" => "chorlito",
+                    ],
+                ]
             ],
             '万' =>
             [
                 'english' => "ten thousand",
                 'spanish' => "diez mil",
+                'examples' => [
+                    "一万円 (いちまんえん)" => [
+                        "english" => "ten thousand yen",
+                        "spanish" => "diez mil yenes",
+                    ],
+                    "万年筆 (まんねんひつ)" => [
+                        "english" => "fountain pen",
+                        "spanish" => "pluma fuente",
+                    ],
+                    "万引きする (まんびきする)" => [
+                        "english" => "shoplift",
+                        "spanish" => "hurtar en tiendas",
+                    ],
+                    "万歳 (ばんざい)" => [
+                        "english" => "banzai! (cheer)",
+                        "spanish" => "dar vivas",
+                    ],
+                    "万能 (ばんのう)" => [
+                        "english" => "all-purpose",
+                        "spanish" => "de uso múltiple",
+                    ],
+                    "万事 (ばんじ)" => [
+                        "english" => "everything",
+                        "spanish" => "todo",
+                    ],
+                ]
 
             ],
             '円' =>
