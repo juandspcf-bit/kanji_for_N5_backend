@@ -608,6 +608,58 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "ten",
                 'spanish' => "diez",
+                'examples' => [
+                    "十 (じゅう)" => [
+                        "english" => "10",
+                        "spanish" => "10",
+                    ],
+                    "十年 (じゅうねん)" => [
+                        "english" => "10 years",
+                        "spanish" => "10 años",
+                    ],
+                    "十分な (じゅうぶんな)" => [
+                        "english" => "enough",
+                        "spanish" => "suficiente",
+                    ],
+                    "十か月( じゅっかげつ)" => [
+                        "english" => "10 months",
+                        "spanish" => "10 meses",
+                    ],
+                    "十冊 (じゅっさつ)" => [
+                        "english" => "10 (bound objects)",
+                        "spanish" => "10 (objetos encuadernados)",
+                    ],
+                    "十匹 (じゅっぴき)" => [
+                        "english" => "10 (animals)",
+                        "spanish" => "10 animales",
+                    ],
+                    "十分 (じゅっぷん)" => [
+                        "english" => "10 minutes",
+                        "spanish" => "10 minutos",
+                    ],
+                    "十本 (じゅっぽん)" => [
+                        "english" => "10 (long cylindrical objects)",
+                        "spanish" => "10 (objetos cilíndricos largos)",
+                    ],
+                    "十日 (とおか)" => [
+                        "english" => "10 days, 10th of the month",
+                        "spanish" => "10 días, 10mo del mes",
+                    ],
+                    "十人十色 (じゅうにんといろ)" => [
+                        "english" => "several men, several minds",
+                        "spanish" => "varios hombres, varias mentes",
+                    ],
+                    "*二十才 (はたち)" => [
+                        "english" => "20 years old",
+                        "spanish" => "20 años de edad",
+                    ],
+                    "*二十日 (はつか)" => [
+                        "english" => "20 days, 20th day of the month",
+                        "spanish" => "20 días, día 20 del mes.",
+                    ],
+                    
+                    
+                ]
             ],
             //3
             //
