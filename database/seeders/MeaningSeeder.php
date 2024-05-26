@@ -761,17 +761,124 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "circle, yen",
                 'spanish' => "círculo, yen",
+                'examples' => [
+                    "千円 (せんえん)" => [
+                        "english" => "a thousand yen",
+                        "spanish" => "mil yenes",
+                    ],
+                    "円高 (えんだか)" => [
+                        "english" => "strong yen",
+                        "spanish" => "el yen fuerte",
+                    ],
+                    "円安 (えんやす)" => [
+                        "english" => "cheap yen",
+                        "spanish" => "el yen barato",
+                    ],
+                    "円満な (えんまんな)" => [
+                        "english" => "peaceful",
+                        "spanish" => "pacífico",
+                    ],
+                    "円滑な (えんかつな)" => [
+                        "english" => "smooth",
+                        "spanish" => "liso",
+                    ],
+                    "円い (まるい)" => [
+                        "english" => "round",
+                        "spanish" => "redondo",
+                    ],
+                ]
             ],
             '前' =>
             [
                 'english' => "before, front",
                 'spanish' => "antes, frente",
+                'examples' => [
+                    "午前 (ごぜん)" => [
+                        "english" => "morning, a.m.",
+                        "spanish" => "mañana, a.m.",
+                    ],
+                    "前日 (ぜんじつ)" => [
+                        "english" => "previous day",
+                        "spanish" => "el día anterior",
+                    ],
+                    "前回 (ぜんかい)" => [
+                        "english" => "last time",
+                        "spanish" => "ultima vez",
+                    ],
+                    "前 (まえ)" => [
+                        "english" => "before, ago, former",
+                        "spanish" => "antes, hace, anterior",
+                    ],
+                    "この前 (このまえ)" => [
+                        "english" => "the other day",
+                        "spanish" => "el otro día",
+                    ],
+                    "名前 (なまえ)" => [
+                        "english" => "name",
+                        "spanish" => "nombre",
+                    ],
+                    "手前 (てまえ)" => [
+                        "english" => "in front of oneself, this side",
+                        "spanish" => "frente a uno mismo, este lado",
+                    ],
+                    "駅前 (えきまえ)" => [
+                        "english" => "in front of the train station",
+                        "spanish" => "frente a la estación de tren",
+                    ],
+                    "斜め前 (ななめまえ)" => [
+                        "english" => "diagonally in front of",
+                        "spanish" => "diagonalmente delante de",
+                    ],
+                    "前売り (まえうり)" => [
+                        "english" => "advance sale",
+                        "spanish" => "venta anticipada",
+                    ],
+
+                ]
 
             ],
             '後' =>
             [
                 'english' => "after, back",
                 'spanish' => "después, atrás",
+                'examples' => [
+                    "午後 (ごご)" => [
+                        "english" => "afternoon, p.m.",
+                        "spanish" => "tarde, p.m.",
+                    ],
+                    "最後 (さいご)" => [
+                        "english" => "last, ending",
+                        "spanish" => "último, final",
+                    ],
+                    "以後 (いご)" => [
+                        "english" => "from now on",
+                        "spanish" => "de aquí en adelante",
+                    ],
+                    "後半 (こうはん)" => [
+                        "english" => "second half",
+                        "spanish" => "segunda mitad",
+                    ],
+                    "後ほど (のちほど)" => [
+                        "english" => "later",
+                        "spanish" => "después",
+                    ],
+                    "後ろ (うしろ)" => [
+                        "english" => "back, behind",
+                        "spanish" => "atrás, detrás",
+                    ],
+                    "後で (あとで)" => [
+                        "english" => "later, afterwards",
+                        "spanish" => "más tarde, después",
+                    ],
+                    "手後れ (ておくれ)" => [
+                        "english" => "being (too) late",
+                        "spanish" => "llegar (demasiado) tarde",
+                    ],
+                    "*明後日 (あさって)" => [
+                        "english" => "day after tomorrow",
+                        "spanish" => "pasado mañana",
+                    ],
+                ]
             ],
             '左' =>
             [
