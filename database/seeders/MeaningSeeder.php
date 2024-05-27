@@ -884,11 +884,59 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "left",
                 'spanish' => "izquierda",
+                'examples' => [
+                    "左右する (さゆうする)" => [
+                        "english" => "influence, control, command",
+                        "spanish" => "influencia, control, mando",
+                    ],
+                    "左派 (さは)" => [
+                        "english" => "(political) left wing",
+                        "spanish" => "Izquierda (política)",
+                    ],
+                    "左 (ひだり)" => [
+                        "english" => "left",
+                        "spanish" => "izquierda",
+                    ],
+                    "左側 (ひだりがわ)" => [
+                        "english" => "left side",
+                        "spanish" => "lado izquierdo",
+                    ],
+                    "左向き (ひだりむき)" => [
+                        "english" => "left facing",
+                        "spanish" => "orientado a la izquierda",
+                    ],
+                ]
             ],
             '右' =>
             [
                 'english' => "right",
                 'spanish' => "derecha",
+                'examples' => [
+                    "右折する (うせつする)" => [
+                        "english" => "turn to the right",
+                        "spanish" => "gira a la derecha",
+                    ],
+                    "右派 (うは)" => [
+                        "english" => "(political) right wing",
+                        "spanish" => "Derecha (política)",
+                    ],
+                    "左右する (さゆうする)" => [
+                        "english" => "influence, control, command",
+                        "spanish" => "influencia, control, mando",
+                    ],
+                    "右 (みぎ)" => [
+                        "english" => "right",
+                        "spanish" => "derecha",
+                    ],
+                    "右手 (みぎて)" => [
+                        "english" => "right hand, right side",
+                        "spanish" => "mano derecha, lado derecho",
+                    ],
+                    "右側 (みぎがわ)" => [
+                        "english" => "right side",
+                        "spanish" => "lado derecho",
+                    ],
+                ]
             ],
             '上' =>
             [
