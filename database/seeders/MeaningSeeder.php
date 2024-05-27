@@ -942,19 +942,162 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "up",
                 'spanish' => "arriba",
+                'examples' => [
+                    "上下する (じょうげする)" => [
+                        "english" => "go up and down",
+                        "spanish" => "subir y bajar",
+                    ],
+                    "頂上 (ちょうじょう)" => [
+                        "english" => "summit",
+                        "spanish" => "cumbre",
+                    ],
+                    "上手 (じょうず)" => [
+                        "english" => "skillful",
+                        "spanish" => "hábil",
+                    ],
+                    "以上 (いじょう)" => [
+                        "english" => "more than, above",
+                        "spanish" => "más que, arriba",
+                    ],
+                    "上人 (しょうにん)" => [
+                        "english" => "priest",
+                        "spanish" => "sacerdote",
+                    ],
+                    "上 (うえ)" => [
+                        "english" => "above, on top, upper part of",
+                        "spanish" => "arriba, encima, parte superior de",
+                    ],
+                    "目上 (めうえ)" => [
+                        "english" => "superior(s)",
+                        "spanish" => "superiores",
+                    ],
+                    "上回る (うわまわる)" => [
+                        "english" => "exceed",
+                        "spanish" => "superar",
+                    ],
+                    "川上 (かわかみ)" => [
+                        "english" => "upper reaches of a river",
+                        "spanish" => "tramos superiores de un río",
+                    ],
+                    "上がる (あがる)" => [
+                        "english" => "rise, climb up [v.i.]",
+                        "spanish" => "levantarse, subir [v.i.]",
+                    ],
+                    "上げる (あげる)" => [
+                        "english" => "raise [v.t.]",
+                        "spanish" => "levantar [v.t.]",
+                    ],
+                    "上る (のぼる)" => [
+                        "english" => "rise, climb up [v.i.]",
+                        "spanish" => "levantarse, subir [v.i.]",
+                    ],
+                ]
             ],
+
             '下' =>
             [
                 'english' => "down",
                 'spanish' => "abajo",
+                'examples' => [
+                    "地下鉄 (ちかてつ)" => [
+                        "english" => "subway",
+                        "spanish" => "subterráneo",
+                    ],
+                    "上下する (じょうげする)" => [
+                        "english" => "go up and down",
+                        "spanish" => "subir y bajar",
+                    ],
+                    "下 (した)" => [
+                        "english" => "under, below",
+                        "spanish" => "bajo abajo",
+                    ],
+                    "靴下 (くつした)" => [
+                        "english" => "socks",
+                        "spanish" => "calcetines",
+                    ],
+                    "風下 (かざしも)" => [
+                        "english" => "leeward",
+                        "spanish" => "sotavento",
+                    ],
+                    "下がる (さがる)" => [
+                        "english" => "hang down, fall, step back [v.i.]",
+                        "spanish" => "colgar, caer, dar un paso atrás [v.i.]",
+                    ],
+                    "下げる (さげる)" => [
+                        "english" => "hang, lower [v.t.]",
+                        "spanish" => "colgar, bajar [v.t.]",
+                    ],
+                    "下る (くだる)" => [
+                        "english" => "descend",
+                        "spanish" => "descender",
+                    ],
+                    "下ろす (おろす)" => [
+                        "english" => "take down, lower [v.t.]",
+                        "spanish" => "bajar, bajar [v.t.]",
+                    ],
+                    "下りる (おりる)" => [
+                        "english" => "get off [v.i.]",
+                        "spanish" => "bajarse [v.i.]",
+                    ],
+                    "*下手（へた）" => [
+                        "english" => "unskillful",
+                        "spanish" => "inexperto",
+                    ],
+                ],
 
             ],
+
+
+
+
+
             //4
             //
             '目' =>
             [
                 'english' => "eye, item",
                 'spanish' => "ojo, artículo",
+                'examples' => [
+                    "目的地 (もくてきち)" => [
+                        "english" => "destination",
+                        "spanish" => "destino",
+                    ],
+                    "目標 (もくひょう)" => [
+                        "english" => "objective, target",
+                        "spanish" => "objetivo, meta",
+                    ],
+                    "注目する (ちゅうもくする)" => [
+                        "english" => "pay attention, take note",
+                        "spanish" => "presta atención, toma nota",
+                    ],
+                    "目 (め)" => [
+                        "english" => "eye",
+                        "spanish" => "ojo",
+                    ],
+                    "目を通す (めをとおす)" => [
+                        "english" => "scan, look over",
+                        "spanish" => "escanear, mirar",
+                    ],
+                    "駄目な (だめな)" => [
+                        "english" => "useless",
+                        "spanish" => "inútil",
+                    ],
+                    "真面目な (まじめな)" => [
+                        "english" => "serious",
+                        "spanish" => "serio",
+                    ],
+                    "３ページ目 (さんぺージめ)" => [
+                        "english" => "third page",
+                        "spanish" => "tercera pagina",
+                    ],
+                    "目蓋 (まぶた)" => [
+                        "english" => "eyelid",
+                        "spanish" => "párpado",
+                    ],
+
+
+                ]
+
 
             ],
             '口' =>
