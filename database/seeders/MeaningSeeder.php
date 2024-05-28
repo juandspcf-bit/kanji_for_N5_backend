@@ -1104,30 +1104,217 @@ class MeaningSeeder extends Seeder
             [
                 'english' => "mouth",
                 'spanish' => "boca",
+                'examples' => [
+                    "人口 (じんこう)" => [
+                        "english" => "population",
+                        "spanish" => "población",
+                    ],
+                    "利口な (りこうな)" => [
+                        "english" => "clever",
+                        "spanish" => "inteligente",
+                    ],
+                    "口調 (くちょう)" => [
+                        "english" => "tone of voice",
+                        "spanish" => "tono de voz",
+                    ],
+                    "異口同音 (いくどうおん)" => [
+                        "english" => "say something in unison",
+                        "spanish" => "decir algo al unísono",
+                    ],
+                    "口 (くち)" => [
+                        "english" => "mouth",
+                        "spanish" => "boca",
+                    ],
+                    "入り口 (いりぐち)" => [
+                        "english" => "entrance",
+                        "spanish" => "entrada",
+                    ],
+                    "出口 (でぐち)" => [
+                        "english" => "exit [n.]",
+                        "spanish" => "salida [n.]",
+                    ],
+                    "窓口 (まどぐち)" => [
+                        "english" => "service window (e.g. at bank)",
+                        "spanish" => "ventanilla de servicio (por ejemplo, en el banco)",
+                    ],
+                    "悪口 (わるぐち)" => [
+                        "english" => "slander, abuse",
+                        "spanish" => "calumnia, abuso",
+                    ],
+                    "無口な (むくちな)" => [
+                        "english" => "reticent",
+                        "spanish" => "reservado",
+                    ],
+                ]
 
             ],
             '耳' =>
             [
                 'english' => "ear",
                 'spanish' => "oreja",
+                'examples' => [
+                    "耳鼻科 (じびか)" => [
+                        "english" => "otolaryngology",
+                        "spanish" => "otorrinolaringología",
+                    ],
+                    "耳 (みみ)" => [
+                        "english" => "ear",
+                        "spanish" => "oreja",
+                    ],
+                    "初耳 (はつみみ)" => [
+                        "english" => "heard for the first time",
+                        "spanish" => "escuchado por primera vez",
+                    ],
+                ]
 
             ],
             '手' =>
             [
                 'english' => "hand",
                 'spanish' => "mano",
+                'examples' => [
+                    "握手する (あくしゅする)" => [
+                        "english" => "shake hands",
+                        "spanish" => "darse la mano",
+                    ],
+                    "選手 (せんしゅ)" => [
+                        "english" => "player (in game)",
+                        "spanish" => "Jugador (en juego)",
+                    ],
+                    "手話 (しゅわ)" => [
+                        "english" => "sign language",
+                        "spanish" => "lenguaje de señas",
+                    ],
+                    "上手な (じょうずな)" => [
+                        "english" => "skillful",
+                        "spanish" => "hábil",
+                    ],
+                    "手紙 (てがみ)" => [
+                        "english" => "letter",
+                        "spanish" => "carta",
+                    ],
+                    "手帳 (てちょう)" => [
+                        "english" => "notebook",
+                        "spanish" => "libreta",
+                    ],
+                    "手伝う (てつだう)" => [
+                        "english" => "help",
+                        "spanish" => "ayuda",
+                    ],
+                    "手前 (てまえ)" => [
+                        "english" => "in front of oneself, this side",
+                        "spanish" => "frente a uno mismo, este lado",
+                    ],
+                    "お手洗い (おてあらい)" => [
+                        "english" => "toilet",
+                        "spanish" => "baño",
+                    ],
+
+                    "手綱 (たづな)" => [
+                        "english" => "bridle",
+                        "spanish" => "rienda",
+                    ],
+                    "下手な (へたな)" => [
+                        "english" => "unskillful",
+                        "spanish" => "inexperto",
+                    ],
+                ]
 
             ],
             '足' =>
             [
                 'english' => "foot, suffice, add",
                 'spanish' => "pie, suficiente, agregar",
+                'examples' => [
+                    "足跡 (そくせき)" => [
+                        "english" => "footprints",
+                        "spanish" => "huellas",
+                    ],
+                    "遠足 (えんそく)" => [
+                        "english" => "field trip",
+                        "spanish" => "excursión",
+                    ],
+                    "自給自足 (じきゅうじそく)" => [
+                        "english" => "self-sufficiency",
+                        "spanish" => "autosuficiencia",
+                    ],
+                    "満足する (まんぞくする)" => [
+                        "english" => "be satisfied",
+                        "spanish" => "estar satisfecho",
+                    ],
+                    "発足する (ほっそくする)" => [
+                        "english" => "start (e.g. organization)",
+                        "spanish" => "inaugurar (por ejemplo, organización)",
+                    ],
+                    "足 (あし)" => [
+                        "english" => "leg",
+                        "spanish" => "pierna",
+                    ],
+                    "足りる (たりる)" => [
+                        "english" => "be enough [v.i.]",
+                        "spanish" => "ser suficiente [v.i.]",
+                    ],
+                    "足す (たす)" => [
+                        "english" => "add [v.t.]",
+                        "spanish" => "agregar",
+                    ],
+                ]
 
             ],
             '力' =>
             [
                 'english' => "power, force",
                 'spanish' => "poder, fuerza",
+                'examples' => [
+                    "体力 (たいりょく)" => [
+                        "english" => "physical strength",
+                        "spanish" => "fuerza física",
+                    ],
+                    "実力 (じつりょく)" => [
+                        "english" => "ability",
+                        "spanish" => "capacidad",
+                    ],
+                    "実力 (じつりょく)" => [
+                        "english" => "real ability",
+                        "spanish" => "habilidad real",
+                    ],
+                    "努力 (どりょく)" => [
+                        "english" => "effort",
+                        "spanish" => "esfuerzo",
+                    ],
+                    "暴力 (ぼうりょく)" => [
+                        "english" => "violence",
+                        "spanish" => "violencia",
+                    ],
+                    "権力 (けんりょく)" => [
+                        "english" => "(political) power",
+                        "spanish" => "fuerza (política)",
+                    ],
+                    "魅力 (みりょく)" => [
+                        "english" => "charm [n.]",
+                        "spanish" => "encanto [n.]",
+                    ],
+                    "協力する (きょうりょくする)" => [
+                        "english" => "cooperate",
+                        "spanish" => "cooperar",
+                    ],
+                    "人力車 (じんりきしゃ)" => [
+                        "english" => "rickshaw",
+                        "spanish" => "rickshaw (vehículo propulsado por fuerza humana)",
+                    ],
+                    "力む (りきむ)" => [
+                        "english" => "strain",
+                        "spanish" => "tension",
+                    ],
+                    "力 (ちから)" => [
+                        "english" => "force [n.]",
+                        "spanish" => "force [n.]",
+                    ],
+                    "底力 (そこぢから)" => [
+                        "english" => "latent energy, potentiality",
+                        "spanish" => "energía latente, potencialidad",
+                    ],
+                ]
             ],
             '父' =>
             [
