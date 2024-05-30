@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Example extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'word', 
+        'english',
+        'spanish',
+        'kanji_id',
+
+    ];
 }

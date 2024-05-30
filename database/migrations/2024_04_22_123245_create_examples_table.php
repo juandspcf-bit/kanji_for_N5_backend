@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('examples', function (Blueprint $table) {
             $table->id();
-            $table->string('japanese');
-            $table->unsignedBigInteger('kanji_id');
-            $table->foreign('kanji_id')->references('id')->on('kanji_data');
+            $table->string('word');
+            $table->string('english');
+            $table->string('spanish');
+             $table->unsignedBigInteger('kanji_id');
+            $table->foreign('kanji_id')->references('id')->on('kanjis');
             $table->timestamps();
         });
     }
