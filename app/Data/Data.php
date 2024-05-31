@@ -1551,6 +1551,53 @@ class Data
         [
             'english' => "name",
             'spanish' => "nombre",
+            'examples' => [
+                "氏名 (しめい)" => [
+                    "english" => "full name",
+                    "spanish" => "nombre completo",
+                ],
+                "題名 (だいめい)" => [
+                    "english" => "title",
+                    "spanish" => "título",
+                ],
+                "一名 (いちめい)" => [
+                    "english" => "one person",
+                    "spanish" => "una persona",
+                ],
+                "有名な (ゆうめいな)" => [
+                    "english" => "famous",
+                    "spanish" => "famoso",
+                ],
+                "名物 (めいぶつ)" => [
+                    "english" => "local speciality",
+                    "spanish" => "especialidad local",
+                ],
+                "名曲 (めいきょく)" => [
+                    "english" => "great music",
+                    "spanish" => "buena música",
+                ],
+                "名刺 (めいし)" => [
+                    "english" => "business card",
+                    "spanish" => "tarjeta comercial",
+                ],
+                "名誉な (めいよな)" => [
+                    "english" => "honorable",
+                    "spanish" => "honorable",
+                ],
+                "本名 (ほんみょう)" => [
+                    "english" => "real name",
+                    "spanish" => "nombre real",
+                ],
+                "名字 (みょうじ)" => [
+                    "english" => "family name",
+                    "spanish" => "apellido",
+                ],
+                "名前 (なまえ)" => [
+                    "english" => "name",
+                    "spanish" => "nombre",
+                ],
+
+            ]
         ],
         //5
         //
@@ -1558,11 +1605,105 @@ class Data
         [
             'english' => "moon, month",
             'spanish' => "luna, mes",
+            'examples' => [
+                "来月 (らいげつ)" => [
+                    "english" => "next month",
+                    "spanish" => "siguiente mes",
+                ],
+                "月曜日 (げつようび)" => [
+                    "english" => "Monday",
+                    "spanish" => "Lunes",
+                ],
+                "先月 (せんげつ)" => [
+                    "english" => "last month",
+                    "spanish" => "mes pasado",
+                ],
+                "今月 (こんげつ)" => [
+                    "english" => "this month",
+                    "spanish" => "este mes",
+                ],
+                "満月 (まんげつ)" => [
+                    "english" => "full moon",
+                    "spanish" => "luna llena",
+                ],
+                "正月 (しょうがつ)" => [
+                    "english" => "New Year",
+                    "spanish" => "año Nuevo",
+                ],
+                "生年月日 (せいねんがっぴ)" => [
+                    "english" => "birth date",
+                    "spanish" => "fecha de nacimiento",
+                ],
+                "月見 (つきみ)" => [
+                    "english" => "moon viewing",
+                    "spanish" => "viendo la luna",
+                ],
+                "毎月 (まいつき/まいげつ)" => [
+                    "english" => "every month",
+                    "spanish" => "cada mes",
+                ],
+            ]
         ],
         '火' =>
         [
             'english' => "fire",
             'spanish' => "fuego",
+            'examples' => [
+                "火事 (かじ)" => [
+                    "english" => "fire",
+                    "spanish" => "fuego",
+                ],
+                "火力 (かりょく)" => [
+                    "english" => "thermal power",
+                    "spanish" => "energía térmica",
+                ],
+                "火曜日（かようび）" => [
+                    "english" => "Tuesday",
+                    "spanish" => "Martes",
+                ],
+                "火 (ひ)" => [
+                    "english" => "flame, fire",
+                    "spanish" => "fuego",
+                ],
+                "花火 (はなび)" => [
+                    "english" => "fireworks",
+                    "spanish" => "fuegos artificiales",
+                ],
+                'examples' => [
+                    "水曜日 (すいようび)" => [
+                        "english" => "Wednesday",
+                        "spanish" => "Miércoles",
+                    ],
+                    "水道 (すいどう)" => [
+                        "english" => "water supply",
+                        "spanish" => "suministro de agua",
+                    ],
+                    "水準 (すいじゅん)" => [
+                        "english" => "level, standard",
+                        "spanish" => "nivel, estándar",
+                    ],
+                    "水中 (すいちゅう)" => [
+                        "english" => "underwater",
+                        "spanish" => "submarino",
+                    ],
+                    "海水 (かいすい)" => [
+                        "english" => "ocean water",
+                        "spanish" => "agua del océano",
+                    ],
+                    "水 (みず)" => [
+                        "english" => "water",
+                        "spanish" => "agua",
+                    ],
+                    "水着 (みずぎ)" => [
+                        "english" => "bathing suit",
+                        "spanish" => "traje de baño",
+                    ],
+                    "水色 (みずいろ)" => [
+                        "english" => "light blue",
+                        "spanish" => "azul claro",
+                    ],
+                ]
+            ]
         ],
         '水' =>
         [
