@@ -1669,61 +1669,179 @@ class Data
                     "english" => "fireworks",
                     "spanish" => "fuegos artificiales",
                 ],
-                'examples' => [
-                    "水曜日 (すいようび)" => [
-                        "english" => "Wednesday",
-                        "spanish" => "Miércoles",
-                    ],
-                    "水道 (すいどう)" => [
-                        "english" => "water supply",
-                        "spanish" => "suministro de agua",
-                    ],
-                    "水準 (すいじゅん)" => [
-                        "english" => "level, standard",
-                        "spanish" => "nivel, estándar",
-                    ],
-                    "水中 (すいちゅう)" => [
-                        "english" => "underwater",
-                        "spanish" => "submarino",
-                    ],
-                    "海水 (かいすい)" => [
-                        "english" => "ocean water",
-                        "spanish" => "agua del océano",
-                    ],
-                    "水 (みず)" => [
-                        "english" => "water",
-                        "spanish" => "agua",
-                    ],
-                    "水着 (みずぎ)" => [
-                        "english" => "bathing suit",
-                        "spanish" => "traje de baño",
-                    ],
-                    "水色 (みずいろ)" => [
-                        "english" => "light blue",
-                        "spanish" => "azul claro",
-                    ],
-                ]
+
             ]
         ],
         '水' =>
         [
             'english' => "water",
             'spanish' => "agua",
+            'examples' => [
+                "水曜日 (すいようび)" => [
+                    "english" => "Wednesday",
+                    "spanish" => "Miércoles",
+                ],
+                "水道 (すいどう)" => [
+                    "english" => "water supply",
+                    "spanish" => "suministro de agua",
+                ],
+                "水準 (すいじゅん)" => [
+                    "english" => "level, standard",
+                    "spanish" => "nivel, estándar",
+                ],
+                "水中 (すいちゅう)" => [
+                    "english" => "underwater",
+                    "spanish" => "submarino",
+                ],
+                "海水 (かいすい)" => [
+                    "english" => "ocean water",
+                    "spanish" => "agua del océano",
+                ],
+                "水 (みず)" => [
+                    "english" => "water",
+                    "spanish" => "agua",
+                ],
+                "水着 (みずぎ)" => [
+                    "english" => "bathing suit",
+                    "spanish" => "traje de baño",
+                ],
+                "水色 (みずいろ)" => [
+                    "english" => "light blue",
+                    "spanish" => "azul claro",
+                ],
+            ]
         ],
         '木' =>
         [
             'english' => "tree, wood",
             'spanish' => "árbol, madera",
+            'examples' => [
+                "大木 (たいぼく)" => [
+                    "english" => "large tree",
+                    "spanish" => "árbol grande",
+                ],
+                "木曜日 (もくようび)" => [
+                    "english" => "Thursday",
+                    "spanish" => "Jueves",
+                ],
+                "木材 (もくざい)" => [
+                    "english" => "lumber",
+                    "spanish" => "tablas de madera",
+                ],
+                "木造 (もくぞう)" => [
+                    "english" => "wooden",
+                    "spanish" => "madera",
+                ],
+                "木村 (きむら)" => [
+                    "english" => "Kimura (surname)",
+                    "spanish" => "Kimura (apellido)",
+                ],
+                "青木 (あおき)" => [
+                    "english" => "Aoki (surname)",
+                    "spanish" => "Aoki (apellido)",
+                ],
+                "植木 (うえき)" => [
+                    "english" => "garden shrubs",
+                    "spanish" => "arbustos de jardín",
+                ],
+                "木の葉 (このは)" => [
+                    "english" => "foliage, leaf",
+                    "spanish" => "follaje, hoja",
+                ],
+            ]
         ],
         '金' =>
         [
             'english' => "metal, gold, money",
             'spanish' => "metal, oro, dinero",
+            'examples' => [
+                "金曜日 (きんようび)" => [
+                    "english" => "Friday",
+                    "spanish" => "Viernes",
+                ],
+                "金属 (きんぞく)" => [
+                    "english" => "metal",
+                    "spanish" => "metal",
+                ],
+                "金髪 (きんぱつ)" => [
+                    "english" => "blond hair",
+                    "spanish" => "pelo rubio",
+                ],
+                "金魚 (きんぎょ)" => [
+                    "english" => "goldfish",
+                    "spanish" => "pez dorado",
+                ],
+                "金額 (きんがく)" => [
+                    "english" => "amount of money",
+                    "spanish" => "cantidad de dinero",
+                ],
+                "奨学金 (しょうがくきん)" => [
+                    "english" => "scholarship",
+                    "spanish" => "beca",
+                ],
+                "罰金 (ばっきん)" => [
+                    "english" => "a fine",
+                    "spanish" => "multa",
+                ],
+                "現金 (げんきん)" => [
+                    "english" => "cash",
+                    "spanish" => "efectivo",
+                ],
+                "預金する (よきんする)" => [
+                    "english" => "deposit in a bank",
+                    "spanish" => "deposito bancario",
+                ],
+                "金色 (こんじき/きんいろ)" => [
+                    "english" => "gold colored",
+                    "spanish" => "dorado",
+                ],
+                "お金 (おかね)" => [
+                    "english" => "money",
+                    "spanish" => "dinero",
+                ],
+                "金物 (かなもの)" => [
+                    "english" => "hardware",
+                    "spanish" => "hardware",
+                ],
+
+
+
+            ]
         ],
         '土' =>
         [
             'english' => "soil, earth, ground",
             'spanish' => "suelo, tierra, suelo",
+            'examples' => [
+                "土曜日 (どようび)" => [
+                    "english" => "Saturday",
+                    "spanish" => "Sábado",
+                ],
+                "土日 (どにち)" => [
+                    "english" => "Saturday and Sunday",
+                    "spanish" => "Sábado y Domingo",
+                ],
+                "郷土 (きょうど)" => [
+                    "english" => "birth place",
+                    "spanish" => "lugar de nacimiento",
+                ],
+                "土地 (とち)" => [
+                    "english" => "plot of land",
+                    "spanish" => "terreno",
+                ],
+                "土 (つち)" => [
+                    "english" => "soil",
+                    "spanish" => "tierra",
+                ],
+                "土色 (つちいろ(" => [
+                    "english" => "earth colored",
+                    "spanish" => "color de tierra",
+                ],
+                "*土産 (みやげ)" => [
+                    "english" => "local product, souvenir",
+                    "spanish" => "producto local, souvenir",
+                ],
+            ]
         ],
         '日' =>
         [
