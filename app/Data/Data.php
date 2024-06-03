@@ -1847,26 +1847,228 @@ class Data
         [
             'english' => "day, sun, Japan",
             'spanish' => "día, sol, Japón",
+            'examples' => [
+                "一日 (いちにち)" => [
+                    "english" => "1 day",
+                    "spanish" => "un dia",
+                ],
+                "日数 (にっすう)" => [
+                    "english" => "a number of days",
+                    "spanish" => "número de días",
+                ],
+                "本日 (ほんじつ)" => [
+                    "english" => "today",
+                    "spanish" => "hoy",
+                ],
+                "朝日 (あさひ)" => [
+                    "english" => "morning sun",
+                    "spanish" => "sol matutino",
+                ],
+                "二日 (ふつか)" => [
+                    "english" => "2nd of the month, 2 days",
+                    "spanish" => "2 del mes, 2 días",
+                ],
+                "*一日 (ついたち)" => [
+                    "english" => "1st of the month",
+                    "spanish" => "primer dia del mes",
+                ],
+                "*今日 (きょう)" => [
+                    "english" => "today",
+                    "spanish" => "hoy",
+                ],
+                "*明日 (あした)" => [
+                    "english" => "tomorrow",
+                    "spanish" => "mañana",
+                ],
+                "*昨日 (きのう)" => [
+                    "english" => "yesterday",
+                    "spanish" => "ayer",
+                ],
+                "*明後日 (あさって)" => [
+                    "english" => "day after tomorrow",
+                    "spanish" => "pasado mañana",
+                ],
+                "*一昨日 (おととい)" => [
+                    "english" => "day before yesterday",
+                    "spanish" => "anteayer",
+                ],
+                "*日本語 (にほんご)" => [
+                    "english" => "Japanese language",
+                    "spanish" => "lenguaje Japones",
+                ],
+            ]
         ],
         '先' =>
         [
             'english' => "ahead",
             'spanish' => "adelante",
+            'examples' => [
+                "先生 (せんせい)" => [
+                    "english" => "teacher, master, doctor",
+                    "spanish" => "maestro, doctor",
+                ],
+                "先週 (せんしゅう)" => [
+                    "english" => "last week",
+                    "spanish" => "la semana pasada",
+                ],
+                "先月 (せんげつ)" => [
+                    "english" => "last month",
+                    "spanish" => "el mes pasado",
+                ],
+                "先学期 (せんがっき)" => [
+                    "english" => "last semester",
+                    "spanish" => "último semestre",
+                ],
+                "先輩 (せんぱい)" => [
+                    "english" => "senior (at work or school)",
+                    "spanish" => "superior (en el trabajo o la escuela)",
+                ],
+                "先 (さき)" => [
+                    "english" => "point, end, front, lead, former",
+                    "spanish" => "punto, final, frente, encabezar, antiguo",
+                ],
+                "店先 (みせさき)" => [
+                    "english" => "store front",
+                    "spanish" => "frente de la tienda",
+                ],
+                "*先ず (まず)" => [
+                    "english" => "first (of all)",
+                    "spanish" => "ante todo",
+                ],
+            ]
         ],
         '生' =>
         [
             'english' => "life, be born, student",
             'spanish' => "vida, nacer, estudiante",
+            'examples' => [
+                "学生 (がくせい)" => [
+                    "english" => "student",
+                    "spanish" => "estudiante",
+                ],
+                "先生 (せんせい)" => [
+                    "english" => "teacher, master, doctor",
+                    "spanish" => "maestro, doctor",
+                ],
+                "一生 (いっしょう)" => [
+                    "english" => "one's whole life",
+                    "spanish" => "toda la vida",
+                ],
+                "誕生日 (たんじょうび)" => [
+                    "english" => "birthday",
+                    "spanish" => "cumpleaños",
+                ],
+                "生きる (いきる)" => [
+                    "english" => "live",
+                    "spanish" => "vida",
+                ],
+                "生まれる (うまれる)" => [
+                    "english" => "be born",
+                    "spanish" => "nacer",
+                ],
+                "生い立ち (おいたち)" => [
+                    "english" => "upbringing, background",
+                    "spanish" => "educación, antecedentes",
+                ],
+                "生える (はえる)" => [
+                    "english" => "grow [v.i.]",
+                    "spanish" => "crecer [v.i.]",
+                ],
+                "生やす (はやす)" => [
+                    "english" => "grow [v.t.]",
+                    "spanish" => "crecer [v.t.]",
+                ],
+                "生卵 (なまたまご)" => [
+                    "english" => "raw egg",
+                    "spanish" => "huevo crudo",
+                ],
+                "生地 (きじ)" => [
+                    "english" => "cloth",
+                    "spanish" => "ropa",
+                ],
+            ]
         ],
         '学' =>
         [
             'english' => "study, educational, institution",
             'spanish' => "estudio, educativo, institución",
+            'examples' => [
+                "学生 (がくせい)" => [
+                    "english" => "student",
+                    "spanish" => "estudiante",
+                ],
+                "学者 (がくしゃ)" => [
+                    "english" => "scholar",
+                    "spanish" => "alumno, becario",
+                ],
+                "大学 (だいがく)" => [
+                    "english" => "university",
+                    "spanish" => "universidad",
+                ],
+                "大学院 (だいがくいん)" => [
+                    "english" => "graduate school",
+                    "spanish" => "escuela licenciada",
+                ],
+                "奨学金 (しょうがくきん)" => [
+                    "english" => "scholarship",
+                    "spanish" => "beca",
+                ],
+                "人類学 (じんるいがく)" => [
+                    "english" => "anthropology",
+                    "spanish" => "antropología",
+                ],
+                "言語学 (げんごがく)" => [
+                    "english" => "linguistics",
+                    "spanish" => "lingüística",
+                ],
+                "学校 (がっこう)" => [
+                    "english" => "school",
+                    "spanish" => "escuela",
+                ],
+                "学期 (がっき)" => [
+                    "english" => "term, semester",
+                    "spanish" => "período, semestre",
+                ],
+                "学ぶ (まなぶ)" => [
+                    "english" => "study",
+                    "spanish" => "estudio",
+                ],
+            ]
         ],
         '校' =>
         [
             'english' => "school",
             'spanish' => "escuela",
+            'examples' => [
+                "学校 (がっこう)" => [
+                    "english" => "school",
+                    "spanish" => "escuela",
+                ],
+                "母校 (ぼこう)" => [
+                    "english" => "alma mater",
+                    "spanish" => "alma mater",
+                ],
+                "小学校 (しょうがっこう)" => [
+                    "english" => "elementary school",
+                    "spanish" => "escuela primaria",
+                ],
+                "中学校 (ちゅうがっこう)" => [
+                    "english" => "junior high school",
+                    "spanish" => "escuela secundaria",
+                ],
+                "高校生 (こうこうせい)" => [
+                    "english" => "senior high school student",
+                    "spanish" => "estudiante de preparatoria",
+                ],
+                "予備校 (よびこう)" => [
+                    "english" => "cram school",
+                    "spanish" => "escuela intensiva",
+                ],
+                "校正する (こうせいする)" => [
+                    "english" => "proofread",
+                    "spanish" => "corregir",
+                ],
+            ]
         ],
         '本' =>
         [
