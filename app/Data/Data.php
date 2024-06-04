@@ -2074,11 +2074,80 @@ class Data
         [
             'english' => "basis, book, this",
             'spanish' => "base, libro, esto",
+            'examples' => [
+                "本 (ほん)" => [
+                    "english" => "book",
+                    "spanish" => "libro",
+                ],
+                "本日 (ほんじつ)" => [
+                    "english" => "today",
+                    "spanish" => "hoy",
+                ],
+                "本店 (ほんてん)" => [
+                    "english" => "head office",
+                    "spanish" => "oficina central",
+                ],
+                "本当に (ほんとうに)" => [
+                    "english" => "really",
+                    "spanish" => "en realidad",
+                ],
+                "基本 (きほん)" => [
+                    "english" => "basis",
+                    "spanish" => "base",
+                ],
+                "絵本 (えほん)" => [
+                    "english" => "picture book",
+                    "spanish" => "libro de fotos",
+                ],
+                "日本 (にほん)" => [
+                    "english" => "Japan",
+                    "spanish" => "Japón",
+                ],
+                "日本語 (にほんご)" => [
+                    "english" => "Japanese language",
+                    "spanish" => "idioma japonés",
+                ],
+                "三本 (さんぼん)" => [
+                    "english" => "3 (long cylindrical objects)",
+                    "spanish" => "3 (objetos cilíndricos largos)",
+                ],
+                "六本 (ろっぽん)" => [
+                    "english" => "6 (long cylindrical objects)",
+                    "spanish" => "6 (objetos cilíndricos largos)",
+                ],
+                "十本 (じゅっぽん)" => [
+                    "english" => "10 (long cylindrical objects)",
+                    "spanish" => "10 (objetos cilíndricos largos)",
+                ],
+                "山本 (やまもと)" => [
+                    "english" => "Yamamoto (surname)",
+                    "spanish" => "Yamamoto (apellido)",
+                ],
+
+            ]
         ],
         '友' =>
         [
             'english' => "friend",
             'spanish' => "amigo, amiga",
+            'examples' => [
+                "友人 (ゆうじん)" => [
+                    "english" => "friend",
+                    "spanish" => "amigo",
+                ],
+                "友情 (ゆうじょう)" => [
+                    "english" => "friendship",
+                    "spanish" => "amistad",
+                ],
+                "親友 (しんゆう)" => [
+                    "english" => "close friend",
+                    "spanish" => "amigo cercano",
+                ],
+                "友達 (ともだち)" => [
+                    "english" => "friend",
+                    "spanish" => "amigo",
+                ],
+            ]
         ],
         //6
         //
@@ -2086,11 +2155,75 @@ class Data
         [
             'english' => "year",
             'spanish' => "año",
+            'examples' => [
+                "一年生 (いちねんせい)" => [
+                    "english" => "first-year student",
+                    "spanish" => "alumno de primer año",
+                ],
+                "去年 (きょねん)" => [
+                    "english" => "last year",
+                    "spanish" => "el año pasado",
+                ],
+                "来年 (らいねん)" => [
+                    "english" => "next year",
+                    "spanish" => "el próximo año",
+                ],
+                "中年 (ちゅうねん)" => [
+                    "english" => "middle age",
+                    "spanish" => "la mediana edad",
+                ],
+                "万年筆 (まんねんひつ)" => [
+                    "english" => "fountain pen",
+                    "spanish" => "pluma fuente",
+                ],
+                "お年寄り (おとしより)" => [
+                    "english" => "elderly person",
+                    "spanish" => "persona mayor",
+                ],
+                "今年 (ことし)" => [
+                    "english" => "this year",
+                    "spanish" => "este año",
+                ],
+                "年上 (としうえ)" => [
+                    "english" => "older",
+                    "spanish" => "mas viejo",
+                ],
+                "半年 (はんとし)" => [
+                    "english" => "half a year",
+                    "spanish" => "medio año",
+                ],
+            ]
         ],
         '毎' =>
         [
             'english' => "every",
             'spanish' => "cada",
+            'examples' => [
+                "毎朝 (まいあさ)" => [
+                    "english" => "every morning",
+                    "spanish" => "cada mañana",
+                ],
+                "毎日 (まいにち)" => [
+                    "english" => "every day",
+                    "spanish" => "cada dia",
+                ],
+                "毎回 (まいかい)" => [
+                    "english" => "every time",
+                    "spanish" => "cada vez",
+                ],
+                "毎度 (まいど)" => [
+                    "english" => "each time",
+                    "spanish" => "cada vez",
+                ],
+                "毎週 (まいしゅう)" => [
+                    "english" => "every week",
+                    "spanish" => "cada semana",
+                ],
+                "三日毎に (みっかごとに)" => [
+                    "english" => "every 3 days",
+                    "spanish" => "cada tres días",
+                ],
+            ]
         ],
         '時' =>
         [
