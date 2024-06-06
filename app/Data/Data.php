@@ -2229,21 +2229,175 @@ class Data
         [
             'english' => "time",
             'spanish' => "tiempo",
+            'examples' => [
+                "時間 (じかん)" => [
+                    "english" => "time",
+                    "spanish" => "tiempo",
+                ],
+                "時代 (じだい)" => [
+                    "english" => "era",
+                    "spanish" => "época",
+                ],
+                "一時間 (いちじかん)" => [
+                    "english" => "one hour",
+                    "spanish" => "una hora",
+                ],
+                "一時 (いちじ)" => [
+                    "english" => "one o'clock",
+                    "spanish" => "una en punto",
+                ],
+                "同時 (どうじ)" => [
+                    "english" => "simultaneous(ly)",
+                    "spanish" => "simultaneo",
+                ],
+                "当時 (とうじ)" => [
+                    "english" => "in those days, then, at that time",
+                    "spanish" => "en aquellos días, entonces, en ese momento",
+                ],
+                "日時 (にちじ)" => [
+                    "english" => "date and time",
+                    "spanish" => "fecha y hora",
+                ],
+                "時 (とき)" => [
+                    "english" => "time, occasion",
+                    "spanish" => "tiempo, ocasión",
+                ],
+                "時々 (ときどき)" => [
+                    "english" => "sometimes",
+                    "spanish" => "a veces",
+                ],
+                "昼時 (ひるどき)" => [
+                    "english" => "noon",
+                    "spanish" => "mediodía",
+                ],
+
+            ]
         ],
         '分' =>
         [
             'english' => "divide, part, minute",
             'spanish' => "dividir, parte, minuto",
+            'examples' => [
+                "随分 (ずいぶん)" => [
+                    "english" => "extremely",
+                    "spanish" => "extremadamente",
+                ],
+                "多分 (たぶん)" => [
+                    "english" => "perhaps",
+                    "spanish" => "tal vez",
+                ],
+                "十分に (じゅうぶんに)" => [
+                    "english" => "enough",
+                    "spanish" => "suficiente",
+                ],
+                "自分 (じぶん)" => [
+                    "english" => "oneself",
+                    "spanish" => "uno mismo",
+                ],
+                "何分 (なんぷん)" => [
+                    "english" => "how many minutes",
+                    "spanish" => "cuántos minutos",
+                ],
+                "毎分 (まいふん)" => [
+                    "english" => "every minute",
+                    "spanish" => "cada minuto",
+                ],
+                "大分 (だいぶ)" => [
+                    "english" => "considerably",
+                    "spanish" => "considerablemente",
+                ],
+                "三割五分 (さんわりごぶ)" => [
+                    "english" => "35 percent",
+                    "spanish" => "35 por ciento",
+                ],
+                "分かれ道 (わかれみち)" => [
+                    "english" => "crossroads",
+                    "spanish" => "encrucijada, intersección",
+                ],
+                "分ける (わける)" => [
+                    "english" => "divide [v.t.]",
+                    "spanish" => "dividir [v.t.]",
+                ],
+                "分かる (わかる)" => [
+                    "english" => "understand [v.i.]",
+                    "spanish" => "entender [v.i.]",
+                ],
+            ]
         ],
         '午' =>
         [
             'english' => "noon",
             'spanish' => "mediodía",
+            'examples' => [
+                "午前 (ごぜん)" => [
+                    "english" => "morning",
+                    "spanish" => "mañana",
+                ],
+                "午後 (ごご)" => [
+                    "english" => "afternoon",
+                    "spanish" => "tarde",
+                ],
+                "正午 (しょうご)" => [
+                    "english" => "noon",
+                    "spanish" => "mediodía",
+                ],
+            ]
         ],
         '間' =>
         [
             'english' => "interval, between",
             'spanish' => "intervalo, entre",
+            'examples' => [
+                "一週間 (いっしゅうかん)" => [
+                    "english" => "one week",
+                    "spanish" => "una semana",
+                ],
+                "二時間 (にじかん)" => [
+                    "english" => "two hours",
+                    "spanish" => "dos horas",
+                ],
+                "世間 (せけん)" => [
+                    "english" => "society, the public, people",
+                    "spanish" => "la sociedad, el público, la gente",
+                ],
+                "人間 (にんげん)" => [
+                    "english" => "human",
+                    "spanish" => "humano",
+                ],
+                "この間 (このあいだ)" => [
+                    "english" => "the other day",
+                    "spanish" => "el otro día",
+                ],
+                "間に (あいだに)" => [
+                    "english" => "in between, while",
+                    "spanish" => "en el medio, mientras",
+                ],
+                "居間 (いま)" => [
+                    "english" => "living room",
+                    "spanish" => "sala",
+                ],
+                "仲間 (なかま)" => [
+                    "english" => "circle of friends",
+                    "spanish" => "círculo de amigos",
+                ],
+                "間違い (まちがい)" => [
+                    "english" => "mistake",
+                    "spanish" => "error",
+                ],
+                "間違える (まちがえる)" => [
+                    "english" => "make a mistake",
+                    "spanish" => "cometer un error",
+                ],
+                "間に合う (まにあう)" => [
+                    "english" => "be in time, be enough",
+                    "spanish" => "llegar a tiempo, ser suficiente",
+                ],
+                "昼間 (ひるま)" => [
+                    "english" => "day time",
+                    "spanish" => "hora del día",
+                ],
+
+            ]
         ],
         '今' =>
         [
