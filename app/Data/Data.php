@@ -2403,36 +2403,269 @@ class Data
         [
             'english' => "present, this",
             'spanish' => "presente, este",
+            'examples' => [
+                "今月 (こんげつ)" => [
+                    "english" => "this month",
+                    "spanish" => "este mes",
+                ],
+                "今週 (こんしゅう)" => [
+                    "english" => "this week",
+                    "spanish" => "esta semana",
+                ],
+                "今晩 (こんばん)" => [
+                    "english" => "tonight",
+                    "spanish" => "esta noche",
+                ],
+                "今後 (こんご)" => [
+                    "english" => "from now on",
+                    "spanish" => "de aquí en adelante",
+                ],
+                "今回（こんかい）" => [
+                    "english" => "this time",
+                    "spanish" => "esta vez",
+                ],
+                "今度 (こんど)" => [
+                    "english" => "this time, next time",
+                    "spanish" => "esta vez, la próxima vez",
+                ],
+                "今上 (きんじょう)" => [
+                    "english" => "current emperor",
+                    "spanish" => "emperador actual",
+                ],
+                "今 (いま)" => [
+                    "english" => "now",
+                    "spanish" => "ahora",
+                ],
+                "今風 (いまふう)" => [
+                    "english" => "modern style",
+                    "spanish" => "estilo moderno",
+                ],
+                "*今年 (ことし)" => [
+                    "english" => "this year",
+                    "spanish" => "este año",
+                ],
+                "*今日 (きょう)" => [
+                    "english" => "today",
+                    "spanish" => "hoy",
+                ],
+
+            ]
         ],
         '半' =>
         [
             'english' => "half",
             'spanish' => "medio",
+            'examples' => [
+                "半分 (はんぶん)" => [
+                    "english" => "half",
+                    "spanish" => "mitad",
+                ],
+                "半額 (はんがく)" => [
+                    "english" => "half price",
+                    "spanish" => "mitad de precio",
+                ],
+                "半導体 (はんどうたい)" => [
+                    "english" => "semiconductor",
+                    "spanish" => "semiconductor",
+                ],
+                "半熟 (はんじゅく)" => [
+                    "english" => "soft-boiled",
+                    "spanish" => "hervido",
+                ],
+                "一時半 (いちじはん)" => [
+                    "english" => "half past one",
+                    "spanish" => "una y media",
+                ],
+                "二年半 (にねんはん)" => [
+                    "english" => "two and a half years",
+                    "spanish" => "dos años y medio",
+                ],
+                "月半ば (つきなかば)" => [
+                    "english" => "middle of the month",
+                    "spanish" => "mitad del mes",
+                ],
+            ]
         ],
         '週' =>
         [
             'english' => "week",
             'spanish' => "semana",
+            'examples' => [
+                "今週 (こんしゅう)" => [
+                    "english" => "this week",
+                    "spanish" => "esta semana",
+                ],
+                "先週 (せんしゅう)" => [
+                    "english" => "last week",
+                    "spanish" => "la semana pasada",
+                ],
+                "来週 (らいしゅう)" => [
+                    "english" => "next week",
+                    "spanish" => "la próxima semana",
+                ],
+                "週末 (しゅうまつ)" => [
+                    "english" => "weekend",
+                    "spanish" => "fin de semana",
+                ],
+                "一週間 (いっしゅうかん)" => [
+                    "english" => "one week",
+                    "spanish" => "una semana",
+                ],
+            ]
         ],
         '朝' =>
         [
             'english' => "morning, dynasty",
             'spanish' => "mañana, dinastía",
+            'examples' => [
+                "朝食 (ちょうしょく)" => [
+                    "english" => "breakfast",
+                    "spanish" => "desayuno",
+                ],
+                "朝刊 (ちょうかん)" => [
+                    "english" => "morning newspaper",
+                    "spanish" => "periódico de mañana",
+                ],
+                "平安朝 (へいあんちょう)" => [
+                    "english" => "Heian period",
+                    "spanish" => "periodo Heian",
+                ],
+                "朝 (あさ)" => [
+                    "english" => "morning",
+                    "spanish" => "mañana",
+                ],
+                "毎朝 (まいあさ)" => [
+                    "english" => "every morning",
+                    "spanish" => "cada mañana",
+                ],
+                "朝日 (あさひ)" => [
+                    "english" => "morning sun",
+                    "spanish" => "sol matutino",
+                ],
+                "朝御飯 (あさごはん)" => [
+                    "english" => "breakfast",
+                    "spanish" => "desayuno",
+                ],
+                "*今朝 (けさ)" => [
+                    "english" => "this morning",
+                    "spanish" => "esta mañana",
+                ],
+            ]
+
         ],
         '昼' =>
         [
             'english' => "daytime",
             'spanish' => "en el día",
+            'examples' => [
+                "昼食 (ちゅうしょく)" => [
+                    "english" => "lunch",
+                    "spanish" => "almuerzo",
+                ],
+                "昼 (ひる)" => [
+                    "english" => "noon",
+                    "spanish" => "mediodía",
+                ],
+                "真昼 (まひる)" => [
+                    "english" => "midday",
+                    "spanish" => "mediodía",
+                ],
+                "昼間 (ひるま)" => [
+                    "english" => "daytime",
+                    "spanish" => "horas de luz",
+                ],
+                "昼過ぎ (ひるすぎ)" => [
+                    "english" => "afternoon",
+                    "spanish" => "tarde",
+                ],
+                "昼休み (ひるやすみ)" => [
+                    "english" => "lunch break",
+                    "spanish" => "descanso para comer",
+                ],
+                "昼寝 (ひるね)" => [
+                    "english" => "nap",
+                    "spanish" => "siesta",
+                ],
+            ]
         ],
         '夕' =>
         [
             'english' => "evening",
             'spanish' => "tarde, noche",
+            'examples' => [
+                "一朝一夕 (いっちょういっせき)" => [
+                    "english" => "in a brief space of time",
+                    "spanish" => "en un breve espacio de tiempo",
+                ],
+                "夕方 (ゆうがた)" => [
+                    "english" => "evening",
+                    "spanish" => "noche",
+                ],
+                "夕食 (ゆうしょく)" => [
+                    "english" => "dinner",
+                    "spanish" => "cena",
+                ],
+                "夕日 (ゆうひ)" => [
+                    "english" => "the evening sun",
+                    "spanish" => "el sol de la tarde",
+                ],
+                "夕刊 (ゆうかん)" => [
+                    "english" => "evening paper",
+                    "spanish" => "periódico de la tarde",
+                ],
+                "夕暮れ (ゆうぐれ)" => [
+                    "english" => "twilight",
+                    "spanish" => "crepúsculo",
+                ],
+            ]
+
         ],
         '夜' =>
         [
             'english' => "night",
             'spanish' => "noche",
+            'examples' => [
+                "今夜 (こんや)" => [
+                    "english" => "tonight",
+                    "spanish" => "esta noche",
+                ],
+                "深夜 (しんや)" => [
+                    "english" => "midnight",
+                    "spanish" => "media noche",
+                ],
+                "夜間 (やかん)" => [
+                    "english" => "nighttime",
+                    "spanish" => "noche",
+                ],
+                "徹夜する (てつやする)" => [
+                    "english" => "stay up all night",
+                    "spanish" => "estar despierto toda la noche",
+                ],
+                "夜更かしする (よふかしする)" => [
+                    "english" => "stay up late",
+                    "spanish" => "quedarse despierto hasta tarde",
+                ],
+                "夜中 (よなか)" => [
+                    "english" => "late at night",
+                    "spanish" => "tarde en la noche",
+                ],
+                "夜明け (よあけ)" => [
+                    "english" => "dawn",
+                    "spanish" => "amanecer",
+                ],
+                "夜空 (よぞら)" => [
+                    "english" => "night sky",
+                    "spanish" => "cielo nocturno",
+                ],
+                "月夜 (つきよ)" => [
+                    "english" => "moonlit night",
+                    "spanish" => "noche de luz de Luna",
+                ],
+                "夜 (よる)" => [
+                    "english" => "night",
+                    "spanish" => "noche",
+                ],
+            ]
         ],
         //7
         //
