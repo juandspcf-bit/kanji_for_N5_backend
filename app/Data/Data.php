@@ -2673,11 +2673,95 @@ class Data
         [
             'english' => "high",
             'spanish' => "alto",
+            'examples' => [
+                "高校生 (こうこうせい)" => [
+                    "english" => "senior high school student",
+                    "spanish" => "estudiante de bachillerato",
+                ],
+                "高速道路 (こうそくどうろ)" => [
+                    "english" => "highway",
+                    "spanish" => "carretera",
+                ],
+                "高熱 (こうねつ)" => [
+                    "english" => "high fever",
+                    "spanish" => "fiebre elevada",
+                ],
+                "高価な (こうかな)" => [
+                    "english" => "expensive",
+                    "spanish" => "caro",
+                ],
+                "最高 (さいこう)" => [
+                    "english" => "supreme",
+                    "spanish" => "supremo",
+                ],
+                "高い (たかい)" => [
+                    "english" => "tall, high, expensive",
+                    "spanish" => "alto, elevado, costoso",
+                ],
+                "高まる (たかまる)" => [
+                    "english" => "rise [v.i.]",
+                    "spanish" => "subir [v.i.]",
+                ],
+                "高める (たかめる)" => [
+                    "english" => "raise, boost [v.t.]",
+                    "spanish" => "elevar, impulsar [v.t.]",
+                ],
+                "円高 (えんだか)" => [
+                    "english" => "strong yen",
+                    "spanish" => "fuerte yen",
+                ],
+                "売上高 (うりあげだか)" => [
+                    "english" => "sales",
+                    "spanish" => "ventas",
+                ],
+            ]
         ],
         '大' =>
         [
             'english' => "big",
             'spanish' => "grande",
+            'examples' => [
+                "大学 (だいがく)" => [
+                    "english" => "university",
+                    "spanish" => "universidad",
+                ],
+                "大学院 (だいがくいん)" => [
+                    "english" => "graduate school",
+                    "spanish" => "escuela de posgrado",
+                ],
+                "大体 (だいたい)" => [
+                    "english" => "in general, mostly",
+                    "spanish" => "en general, sobre todo",
+                ],
+                "お大事に (おだいじに)" => [
+                    "english" => "take care (to a sick person)",
+                    "spanish" => "cuidar (a un enfermo)",
+                ],
+                "大丈夫 (だいじょうぶ)" => [
+                    "english" => "safe, all right",
+                    "spanish" => "seguro, de acuerdo",
+                ],
+                "大分 (だいぶ)" => [
+                    "english" => "considerably",
+                    "spanish" => "considerablemente",
+                ],
+                "大変な (たいへんな)" => [
+                    "english" => "terrible, very",
+                    "spanish" => "terrible, muy",
+                ],
+                "大した（たいした）" => [
+                    "english" => "significant",
+                    "spanish" => "significativo",
+                ],
+                "大きい (おおきい)" => [
+                    "english" => "big",
+                    "spanish" => "big",
+                ],
+                "大阪（おおさか）" => [
+                    "english" => "Osaka",
+                    "spanish" => "Osaka",
+                ],
+            ],
         ],
         '中' =>
         [
