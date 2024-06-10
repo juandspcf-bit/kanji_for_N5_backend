@@ -2767,21 +2767,185 @@ class Data
         [
             'english' => "middle, in",
             'spanish' => "medio, dentro",
+            'examples' => [
+                "中国 (ちゅうごく)" => [
+                    "english" => "China",
+                    "spanish" => "China",
+                ],
+                "中年 (ちゅうねん)" => [
+                    "english" => "middle-age",
+                    "spanish" => "mediana edad",
+                ],
+                "中学校 (ちゅうがっこう)" => [
+                    "english" => "junior high school",
+                    "spanish" => "escuela secundaria",
+                ],
+                "中華料理 (ちゅうかりょうり)" => [
+                    "english" => "Chinese food",
+                    "spanish" => "comida china",
+                ],
+                "途中 (とちゅう)" => [
+                    "english" => "on the way",
+                    "spanish" => "en camino",
+                ],
+                "工事中 (こうじちゅう)" => [
+                    "english" => "under construction",
+                    "spanish" => "bajo construcción",
+                ],
+                "中 (なか)" => [
+                    "english" => "inside",
+                    "spanish" => "adentro",
+                ],
+                "中村 (なかむら)" => [
+                    "english" => "Nakamura (surname)",
+                    "spanish" => "Nakamura (apellido)",
+                ],
+                "中川 (なかがわ)" => [
+                    "english" => "Nakagawa (surname)",
+                    "spanish" => "Nakagawa (apellido)",
+                ],
+                "田中 (たなか)" => [
+                    "english" => "Tanaka (surname)",
+                    "spanish" => "Tanaka (apellido)",
+                ],
+                "*体中 (からだじゅう)" => [
+                    "english" => "throughout the body",
+                    "spanish" => "a través del cuerpo",
+                ],
+                "*今年中 に (ことしじゅうに)" => [
+                    "english" => "within this year",
+                    "spanish" => "dentro de este año",
+                ],
+            ]
         ],
         '小' =>
         [
             'english' => "small",
             'spanish' => "pequeño",
+            'examples' => [
+                "小説 (しょうせつ)" => [
+                    "english" => "a novel",
+                    "spanish" => "una novela",
+                ],
+                "小学校 (しょうがっこう)" => [
+                    "english" => "elementary school",
+                    "spanish" => "escuela primaria",
+                ],
+                "最小 (さいしょう)" => [
+                    "english" => "minimum",
+                    "spanish" => "mínimo",
+                ],
+                "大小 (だいしょう)" => [
+                    "english" => "size",
+                    "spanish" => "tamaño",
+                ],
+                "小さい (ちいさい)" => [
+                    "english" => "small",
+                    "spanish" => "pequeño",
+                ],
+                "小麦 (こむぎ)" => [
+                    "english" => "wheat",
+                    "spanish" => "trigo",
+                ],
+                "小鳥 (ことり)" => [
+                    "english" => "small bird",
+                    "spanish" => "pájaro pequeño",
+                ],
+                "小川 (おがわ)" => [
+                    "english" => "small stream, brook",
+                    "spanish" => "pequeño arroyo, arroyo",
+                ],
+            ]
         ],
         '長' =>
         [
             'english' => "long, chief",
             'spanish' => "largo, jefe",
+            'examples' => [
+                "身長 (しんちょう)" => [
+                    "english" => "height (of body)",
+                    "spanish" => "altura (del cuerpo)",
+                ],
+                "社長 (しゃちょう)" => [
+                    "english" => "company president",
+                    "spanish" => "presidente de la empresa",
+                ],
+                "市長 (しちょう)" => [
+                    "english" => "mayor",
+                    "spanish" => "alcalde",
+                ],
+                "会長 (かいちょう)" => [
+                    "english" => "president (of a society)",
+                    "spanish" => "presidente (de una sociedad)",
+                ],
+                "長期 (ちょうき)" => [
+                    "english" => "long time period",
+                    "spanish" => "largo periodo de tiempo",
+                ],
+                "長時間 (ちょうじかん)" => [
+                    "english" => "long-term, long-range",
+                    "spanish" => "largo plazo",
+                ],
+                "長男 (ちょうなん)" => [
+                    "english" => "eldest son",
+                    "spanish" => "hijo mayor",
+                ],
+                "長女 (ちょうじょ)" => [
+                    "english" => "eldest daughter",
+                    "spanish" => "hija mayor",
+                ],
+                "長所 (ちょうしょ)" => [
+                    "english" => "strong point",
+                    "spanish" => "argumento solido",
+                ],
+                "成長する (せいちょうする)" => [
+                    "english" => "grow",
+                    "spanish" => "crecer",
+                ],
+                "長い (ながい)" => [
+                    "english" => "long",
+                    "spanish" => "largo",
+                ],
+            ]
         ],
         '白' =>
         [
             'english' => "white",
             'spanish' => "blanco",
+            'examples' => [
+                "白紙 (はくし)" => [
+                    "english" => "white paper",
+                    "spanish" => "hoja en blanco",
+                ],
+                "白人 (はくじん)" => [
+                    "english" => "Caucasian",
+                    "spanish" => "Caucásico",
+                ],
+                "白鳥 (はくちょう)" => [
+                    "english" => "swan",
+                    "spanish" => "cisne",
+                ],
+                "空白 (くうはく)" => [
+                    "english" => "blank space",
+                    "spanish" => "espacio en blanco",
+                ],
+                "明白な (めいはくな)" => [
+                    "english" => "obvious",
+                    "spanish" => "obvio",
+                ],
+                "白夜（びゃくや）" => [
+                    "english" => "white (arctic) night",
+                    "spanish" => "noche blanca(ártico)",
+                ],
+                "白い (しろい)" => [
+                    "english" => "white",
+                    "spanish" => "blanco",
+                ],
+                "白髪 (しらが)" => [
+                    "english" => "white or grey hair",
+                    "spanish" => "pelo blanco o gris",
+                ],
+            ]
         ],
         '安' =>
         [
