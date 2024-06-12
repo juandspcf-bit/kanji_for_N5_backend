@@ -2933,7 +2933,7 @@ class Data
                     "english" => "obvious",
                     "spanish" => "obvio",
                 ],
-                "白夜（びゃくや）" => [
+                "白夜 (びゃくや)" => [
                     "english" => "white (arctic) night",
                     "spanish" => "noche blanca(ártico)",
                 ],
@@ -2951,21 +2951,152 @@ class Data
         [
             'english' => "peaceful, inexpensive",
             'spanish' => "pacífico, barato",
+            'examples' => [
+                "安定する (あんていする)" => [
+                    "english" => "become stable",
+                    "spanish" => "estabilizarse",
+                ],
+                "安心する (あんしんする)" => [
+                    "english" => "be relieved",
+                    "spanish" => "aliviarse",
+                ],
+                "不安な (ふあんな)" => [
+                    "english" => "anxious",
+                    "spanish" => "ansioso",
+                ],
+                "安全な (あんぜんな)" => [
+                    "english" => "safe",
+                    "spanish" => "seguro",
+                ],
+                "治安 (ちあん)" => [
+                    "english" => "public peace and order",
+                    "spanish" => "paz y orden público",
+                ],
+                "安い (やすい)" => [
+                    "english" => "cheap",
+                    "spanish" => "barato",
+                ],
+                "安らぎ (やすらぎ)" => [
+                    "english" => "peace",
+                    "spanish" => "paz",
+                ],
+                "安らか (やすらか)" => [
+                    "english" => "restful",
+                    "spanish" => "tranquilo",
+                ],
+                "安まる (やすまる)" => [
+                    "english" => "feel rested",
+                    "spanish" => "sentirse descansado",
+                ],
+            ]
         ],
         '新' =>
         [
             'english' => "new",
             'spanish' => "nuevo",
+            'examples' => [
+                "新聞 (しんぶん)" => [
+                    "english" => "newspaper",
+                    "spanish" => "periódico",
+                ],
+                "新年 (しんねん)" => [
+                    "english" => "New Year",
+                    "spanish" => "Año Nuevo",
+                ],
+                "新製品 (しんせいひん)" => [
+                    "english" => "new product",
+                    "spanish" => "producto nuevo",
+                ],
+                "新製品 (しんせいひん)" => [
+                    "english" => "Shinkansen",
+                    "spanish" => "Tren bala",
+                ],
+
+                "最新式 (さいしんしき)" => [
+                    "english" => "latest style",
+                    "spanish" => "último estilo",
+                ],
+
+                "新鮮な 'しんせんな)" => [
+                    "english" => "fresh",
+                    "spanish" => "fresco",
+                ],
+                "革新的な (かくしんてきな)" => [
+                    "english" => "liberal",
+                    "spanish" => "liberal",
+                ],
+                "更新する (こうしんする)" => [
+                    "english" => "update, renew",
+                    "spanish" => "actualizar, renovar",
+                ],
+
+                "新しい (あたらしい)" => [
+                    "english" => "new",
+                    "spanish" => "nuevo",
+                ],
+                "新たな (あらたな)" => [
+                    "english" => "new",
+                    "spanish" => "nuevo",
+                ],
+                "新妻 (にいづま)" => [
+                    "english" => "newly-wed wife",
+                    "spanish" => "esposa recién casada",
+                ],
+            ]
         ],
         '古' =>
         [
             'english' => "old",
             'spanish' => "viejo",
+            'examples' => [
+                "古典 (こてん)" => [
+                    "english" => "classics",
+                    "spanish" => "clásicos",
+                ],
+                "古代 (こだい)" => [
+                    "english" => "ancient times",
+                    "spanish" => "tiempos antiguos",
+                ],
+                "古い (ふるい)" => [
+                    "english" => "old",
+                    "spanish" => "viejo",
+                ],
+                "古新聞 (ふるしんぶん)" => [
+                    "english" => "old newspapers",
+                    "spanish" => "periódicos antiguos",
+                ]
+            ]
         ],
         '多' =>
         [
             'english' => "many",
             'spanish' => "muchos",
+            'examples' => [
+                "多分 (たぶん)" => [
+                    "english" => "perhaps",
+                    "spanish" => "quizás",
+                ],
+                "多量 (たりょう)" => [
+                    "english" => "large quantity",
+                    "spanish" => "gran cantidad",
+                ],
+                "多少 (たしょう)" => [
+                    "english" => "more or less",
+                    "spanish" => "más o menos",
+                ],
+                "多目的 (たもくてき)" => [
+                    "english" => "multipurpose",
+                    "spanish" => "multiusos",
+                ],
+                "多い (おおい)" => [
+                    "english" => "many",
+                    "spanish" => "muchos",
+                ],
+                "多めに (おおめに)" => [
+                    "english" => "generously",
+                    "spanish" => "generosamente",
+                ],
+            ]
         ],
         '少' =>
         [
