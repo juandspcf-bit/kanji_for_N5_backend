@@ -3102,11 +3102,85 @@ class Data
         [
             'english' => "little",
             'spanish' => "poco",
+            'examples' => [
+                "少々 (しょうしょう)" => [
+                    "english" => "small quantity, a little",
+                    "spanish" => "pequeña cantidad, un poco",
+                ],
+                "少数 (しょうすう)" => [
+                    "english" => "minority",
+                    "spanish" => "minoría",
+                ],
+                "少量 (しょうりょう)" => [
+                    "english" => "small quantity",
+                    "spanish" => "pequeña cantidad",
+                ],
+                "少額 (しょうがく)" => [
+                    "english" => "small sum (of money)",
+                    "spanish" => "pequeña suma (de dinero)",
+                ],
+                "多少 (たしょう)" => [
+                    "english" => "more or less",
+                    "spanish" => "más o menos",
+                ],
+                "少年 (しょうねん)" => [
+                    "english" => "boy",
+                    "spanish" => "chico",
+                ],
+                "減少する (げんしょうする)" => [
+                    "english" => "decrease [v.i.]",
+                    "spanish" => "disminuir [v.i.]",
+                ],
+                "少ない (すくない)" => [
+                    "english" => "a few, a little",
+                    "spanish" => "unos pocos, un poco",
+                ],
+                "少なくとも (すくなくとも)" => [
+                    "english" => "at least",
+                    "spanish" => "por lo menos",
+                ],
+                "少し (すこし)" => [
+                    "english" => "small quantity, a little",
+                    "spanish" => "pequeña cantidad, un poco",
+                ],
+
+
+            ]
         ],
         '早' =>
         [
             'english' => "early, quick",
             'spanish' => "temprano, rápido",
+            'examples' => [
+                "早朝 (そうちょう)" => [
+                    "english" => "early morning",
+                    "spanish" => "por la mañana temprano",
+                ],
+                "早急な (そうきゅうな)" => [
+                    "english" => "urgent",
+                    "spanish" => "urgente",
+                ],
+                "早い（はやい）" => [
+                    "english" => "early",
+                    "spanish" => "temprano",
+                ],
+                "早起きする (はやおきする)" => [
+                    "english" => "wake up early",
+                    "spanish" => "levantarse temprano",
+                ],
+                "早まる (はやまる)" => [
+                    "english" => "be rash [v.i.]",
+                    "spanish" => "precipitarse [v.i.]",
+                ],
+                "早める (はやめる)" => [
+                    "english" => "hasten [v.t.]",
+                    "spanish" => "apresurarse [v.t.]",
+                ],
+                "*早速 (さっそく)" => [
+                    "english" => "immediately",
+                    "spanish" => "inmediatamente",
+                ],
+            ]
         ],
         //8
         //
@@ -3114,6 +3188,53 @@ class Data
         [
             'english' => "say, speech",
             'spanish' => "decir, discurso",
+            'examples' => [
+                "断言する (だんげんする)" => [
+                    "english" => "assert",
+                    "spanish" => "afirmar",
+                ],
+                "証言する (しょうげんする)" => [
+                    "english" => "testify",
+                    "spanish" => "testificar",
+                ],
+                "言語学 (げんごがく)" => [
+                    "english" => "linguistics",
+                    "spanish" => "lingüística",
+                ],
+                "方言 (ほうげん)" => [
+                    "english" => "dialect",
+                    "spanish" => "dialecto",
+                ],
+                "伝言する (でんごんする)" => [
+                    "english" => "leave a message",
+                    "spanish" => "dejar un mensaje",
+                ],
+                "無言 (むごん)" => [
+                    "english" => "silence",
+                    "spanish" => "silencio",
+                ],
+                "言う (いう)" => [
+                    "english" => "say",
+                    "spanish" => "decir",
+                ],
+                "言葉 (ことば)" => [
+                    "english" => "word(s), language",
+                    "spanish" => "palabra(s), idioma",
+                ],
+                "一言 (ひとこと)" => [
+                    "english" => "single word",
+                    "spanish" => "una sola palabra",
+                ],
+                "独り言 (ひとりごと)" => [
+                    "english" => "soliloquy",
+                    "spanish" => "soliloquio",
+                ],
+                "寝言 (ねごと)" => [
+                    "english" => "talk in one's sleep",
+                    "spanish" => "hablar en sueños",
+                ],
+
+            ]
         ],
         '話' =>
         [
