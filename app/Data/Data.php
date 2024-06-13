@@ -3240,26 +3240,241 @@ class Data
         [
             'english' => "speak",
             'spanish' => "hablar",
+            'examples' => [
+                "電話 (でんわ)" => [
+                    "english" => "telephone",
+                    "spanish" => "teléfono",
+                ],
+                "会話 (かいわ)" => [
+                    "english" => "conversation",
+                    "spanish" => "conversación",
+                ],
+                "話題 (わだい)" => [
+                    "english" => "topic",
+                    "spanish" => "tópico",
+                ],
+                "童話 (どうわ)" => [
+                    "english" => "fairy tale",
+                    "spanish" => "cuento de hadas",
+                ],
+                "話す (はなす)" => [
+                    "english" => "speak",
+                    "spanish" => "hablar",
+                ],
+                "話し方 (はなしかた)" => [
+                    "english" => "way of talking",
+                    "spanish" => "manera de hablar",
+                ],
+                "話 (はなし)" => [
+                    "english" => "story, conversation",
+                    "spanish" => "historia, conversación",
+                ],
+                "話し中 (はなしちゅう)" => [
+                    "english" => "while talking, the line is busy",
+                    "spanish" => "mientras habla, la línea está ocupada",
+                ],
+                "笑い話 (わらいばなし)" => [
+                    "english" => "funny story",
+                    "spanish" => "historia divertida",
+                ],
+                "昔話 (むかしばなし)" => [
+                    "english" => "folklore",
+                    "spanish" => "folklore",
+                ],
+
+            ]
         ],
         '語' =>
         [
             'english' => "language, word, tell",
             'spanish' => "lenguaje, palabra, decir",
+            'examples' => [
+                "単語 (たんご)" => [
+                    "english" => "word",
+                    "spanish" => "palabra",
+                ],
+                "英語 (えいご)" => [
+                    "english" => "English language",
+                    "spanish" => "idioma en Inglés",
+                ],
+                "敬語 (けいご)" => [
+                    "english" => "polite speech",
+                    "spanish" => "discurso cortés",
+                ],
+                "言語学 (げんごがく)" => [
+                    "english" => "linguistics",
+                    "spanish" => "lingüística",
+                ],
+                "日本語 (にほんご)" => [
+                    "english" => "Japanese language",
+                    "spanish" => "lenguaje japones",
+                ],
+                "標準語 (ひょうじゅんご)" => [
+                    "english" => "standard Japanese",
+                    "spanish" => "japones estándar",
+                ],
+                "外国語 (がいこくご)" => [
+                    "english" => "foreign language",
+                    "spanish" => "lenguaje extranjero",
+                ],
+                "語る (かたる)" => [
+                    "english" => "talk",
+                    "spanish" => "hablar",
+                ],
+                "物語 (ものがたり)" => [
+                    "english" => "story",
+                    "spanish" => "historia",
+                ],
+            ]
         ],
         '書' =>
         [
             'english' => "write, book",
             'spanish' => "escribir, libro",
+            'examples' => [
+                "読者 (どくしゃ)" => [
+                    "english" => "reader",
+                    "spanish" => "lectora",
+                ],
+                "読書 (どくしょ)" => [
+                    "english" => "reading",
+                    "spanish" => "lectura",
+                ],
+                "読解力 (どっかいりょく)" => [
+                    "english" => "reading ability",
+                    "spanish" => "habilidad de lectura",
+                ],
+                "読本 (とくほん)" => [
+                    "english" => "a reading primer",
+                    "spanish" => "un manual de lectura",
+                ],
+                "読点 (とうてん)" => [
+                    "english" => "comma",
+                    "spanish" => "coma",
+                ],
+                "読む (よむ)" => [
+                    "english" => "read",
+                    "spanish" => "leer",
+                ],
+                "読売新聞 (よみうりしんぶん)" => [
+                    "english" => "Yomiuri (newspaper)",
+                    "spanish" => "Yomiuri (periódico)",
+                ],
+                "立ち読みする (たちよみする)" => [
+                    "english" => "browse in a bookstore",
+                    "spanish" => "hojear en una librería",
+                ],
+                "読み方 (よみかた)" => [
+                    "english" => "way of reading",
+                    "spanish" => "manera de leer",
+                ],
+                "読み直す (よみなおす)" => [
+                    "english" => "read something over again",
+                    "spanish" => "leer algo de nuevo",
+                ],
+            ]
         ],
         '見' =>
         [
             'english' => "see",
             'spanish' => "mirar",
+            'examples' => [
+                "書庫 (しょこ)" => [
+                    "english" => "archive",
+                    "spanish" => "archivo",
+                ],
+                "書斎 (しょさい)" => [
+                    "english" => "study (room)",
+                    "spanish" => "sala de estudio",
+                ],
+                "書道 (しょどう)" => [
+                    "english" => "calligraphy",
+                    "spanish" => "caligrafía",
+                ],
+                "辞書 (じしょ)" => [
+                    "english" => "dictionary",
+                    "spanish" => "diccionario",
+                ],
+                "秘書 (ひしょ)" => [
+                    "english" => "(private) secretary",
+                    "spanish" => "secretario (particular)",
+                ],
+                "図書館 (としょかん)" => [
+                    "english" => "library",
+                    "spanish" => "librería",
+                ],
+                "教科書 (きょうかしょ)" => [
+                    "english" => "text book",
+                    "spanish" => "libro de texto",
+                ],
+                "参考書 (さんこうしょ)" => [
+                    "english" => "reference book",
+                    "spanish" => "libro de referencia",
+                ],
+                "証明書 (しょうめいしょ)" => [
+                    "english" => "certificate",
+                    "spanish" => "certificado",
+                ],
+                "書く (かく)" => [
+                    "english" => "write",
+                    "spanish" => "escribir",
+                ],
+                "横書き (よこがき)" => [
+                    "english" => "writing horizontally",
+                    "spanish" => "escribir horizontalmente",
+                ],
+            ]
         ],
         '聞' =>
         [
             'english' => "hear, listen, ask",
             'spanish' => "escuchar, preguntar",
+            'examples' => [
+                "見学する (けんがくする)" => [
+                    "english" => "study, take a research trip",
+                    "spanish" => "estudiar, hacer un viaje de investigación",
+                ],
+                "発見する (はっけんする)" => [
+                    "english" => "discover",
+                    "spanish" => "descubrir",
+                ],
+                "拝見する (はいけんする)" => [
+                    "english" => "take a look at [hum.]",
+                    "spanish" => "echa un vistazo a [hum.]",
+                ],
+                "意見 (いけん)" => [
+                    "english" => "opinion",
+                    "spanish" => "opinión",
+                ],
+                "偏見 (へんけん)" => [
+                    "english" => "prejudice",
+                    "spanish" => "prejuicio",
+                ],
+                "見る (みる)" => [
+                    "english" => "see",
+                    "spanish" => "ver",
+                ],
+                "見つかる (みつかる)" => [
+                    "english" => "be found [v.i.]",
+                    "spanish" => "ser encontrado [v.i.]",
+                ],
+                "見つける (みつける)" => [
+                    "english" => "find [v.t.]",
+                    "spanish" => "encontrar [v.t.]",
+                ],
+                "見える (みえる)" => [
+                    "english" => "be seen, seem",
+                    "spanish" => "ser visto, parecer",
+                ],
+                "見せる (みせる)" => [
+                    "english" => "show",
+                    "spanish" => "mostrar",
+                ],
+                "花見 (はなみ)" => [
+                    "english" => "cherry-blossom viewing",
+                    "spanish" => "observación de flores de cerezo",
+                ],
+            ]
         ],
         '行' =>
         [
