@@ -3480,21 +3480,193 @@ class Data
         [
             'english' => "go, act, line",
             'spanish' => "ir, actuar, línea",
+            'examples' => [
+                "旅行する (りょこうする)" => [
+                    "english" => "travel",
+                    "spanish" => "viajar",
+                ],
+                "歩行する (ほこうする)" => [
+                    "english" => "walk",
+                    "spanish" => "caminar",
+                ],
+                "実行する (じっこうする)" => [
+                    "english" => "act, carry out, practice",
+                    "spanish" => "actuar, realizar, practicar",
+                ],
+                "銀行 (ぎんこう)" => [
+                    "english" => "bank",
+                    "spanish" => "banco",
+                ],
+                "行政 (ぎょうせい)" => [
+                    "english" => "administration",
+                    "spanish" => "administración",
+                ],
+                "一行目 (いちぎょうめ)" => [
+                    "english" => "first line",
+                    "spanish" => "primera linea",
+                ],
+                "行事 (ぎょうじ)" => [
+                    "english" => "event",
+                    "spanish" => "evento",
+                ],
+                "行脚する (あんぎゃする)" => [
+                    "english" => "go on pilgrimage",
+                    "spanish" => "ir en peregrinación",
+                ],
+                "行く (いく/ゆく)" => [
+                    "english" => "go",
+                    "spanish" => "ir",
+                ],
+                "行き先 (いきさき/ゆきさき)" => [
+                    "english" => "destination",
+                    "spanish" => "destino",
+                ],
+                "行う (おこなう)" => [
+                    "english" => "do",
+                    "spanish" => "hacer",
+                ],
+            ]
         ],
         '来' =>
         [
             'english' => "come",
             'spanish' => "venir",
+            'examples' => [
+                "来月 (らいげつ)" => [
+                    "english" => "next month",
+                    "spanish" => "próximo mes",
+                ],
+                "来週 (らいしゅう)" => [
+                    "english" => "next week",
+                    "spanish" => "la próxima semana",
+                ],
+                "来年 (らいねん)" => [
+                    "english" => "next year",
+                    "spanish" => "el próximo año",
+                ],
+                "未来 (みらい)" => [
+                    "english" => "future",
+                    "spanish" => "futuro",
+                ],
+                "将来 (しょうらい)" => [
+                    "english" => "future",
+                    "spanish" => "futuro",
+                ],
+                "以来 (いらい)" => [
+                    "english" => "since",
+                    "spanish" => "desde",
+                ],
+                "来日する (らいにちする)" => [
+                    "english" => "visit Japan",
+                    "spanish" => "visitar japón",
+                ],
+                "来る (くる)" => [
+                    "english" => "come",
+                    "spanish" => "venir",
+                ],
+                "来す (きたす)" => [
+                    "english" => "cause",
+                    "spanish" => "causa",
+                ],
+            ]
         ],
         '出' =>
         [
             'english' => "go out, put out",
             'spanish' => "salir, enviar",
+            'examples' => [
+                "出身 (しゅっしん)" => [
+                    "english" => "birth place, alma mater",
+                    "spanish" => "lugar de nacimiento, alma mater",
+                ],
+                "出版社 (しゅっぱんしゃ)" => [
+                    "english" => "publisher",
+                    "spanish" => "editor",
+                ],
+                "出席する (しゅっせきする)" => [
+                    "english" => "attend",
+                    "spanish" => "asistir",
+                ],
+                "出発する (しゅっぱつする)" => [
+                    "english" => "depart",
+                    "spanish" => "salir",
+                ],
+                "輸出する (ゆしゅつする)" => [
+                    "english" => "export",
+                    "spanish" => "exportar",
+                ],
+                "外出する (がいしゅつする)" => [
+                    "english" => "go out",
+                    "spanish" => "salir",
+                ],
+                "出納 (すいとう)" => [
+                    "english" => "receipts and expenditure",
+                    "spanish" => "ingresos y gastos",
+                ],
+                "出る (でる)" => [
+                    "english" => "come out [v.i.]",
+                    "spanish" => "salir [v.i.]",
+                ],
+                "出かける (でかける)" => [
+                    "english" => "go out",
+                    "spanish" => "salir",
+                ],
+                "出す (だす)" => [
+                    "english" => "put out, send [v.t.]",
+                    "spanish" => "apagar, enviar [v.t.]",
+                ],
+                "引き出し (ひきだし)" => [
+                    "english" => "drawer",
+                    "spanish" => "cajón",
+                ],
+            ]
         ],
         '入' =>
         [
             'english' => "enter, put in",
             'spanish' => "entrar, insertar",
+            'examples' => [
+                "収入 (しゅうにゅう)" => [
+                    "english" => "income",
+                    "spanish" => "ingreso",
+                ],
+                "入学する (にゅうがくする)" => [
+                    "english" => "entry school or university",
+                    "spanish" => "ingreso a la escuela o universidad",
+                ],
+                "入国する (にゅうこくする)" => [
+                    "english" => "entry a country",
+                    "spanish" => "entrar a un país",
+                ],
+                "輸入する（ゆにゅうする）" => [
+                    "english" => "import",
+                    "spanish" => "import",
+                ],
+                "気に入る (きにいる)" => [
+                    "english" => "be pleased with, come to like",
+                    "spanish" => "estar contento con, venir a gustar",
+                ],
+                "入り口 (いりぐち)" => [
+                    "english" => "entrance",
+                    "spanish" => "entrada",
+                ],
+                "仲間入り (なかまいり)" => [
+                    "english" => "join a group",
+                    "spanish" => "unirse a un grupo",
+                ],
+                "入れる (いれる)" => [
+                    "english" => "put in, let in [v.t.]",
+                    "spanish" => "meter, dejar entrar [v.t.]",
+                ],
+                "入れ物 (いれもの)" => [
+                    "english" => "container",
+                    "spanish" => "contenedor",
+                ],
+                "入る（はいる）" => [
+                    "english" => "enter, get in [v.i.]",
+                    "spanish" => "entrar, entrar [v.i.]",
+                ],
+            ]
         ],
         '食' =>
         [
