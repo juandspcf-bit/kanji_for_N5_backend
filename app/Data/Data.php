@@ -3672,21 +3672,174 @@ class Data
         [
             'english' => "eat, food",
             'spanish' => "comer, comida",
+            'examples' => [
+                "食堂 (しょくどう)" => [
+                    "english" => "dining hall",
+                    "spanish" => "comedor",
+                ],
+                "食欲 (しょくよく)" => [
+                    "english" => "appetite (for food)",
+                    "spanish" => "apetito (por la comida)",
+                ],
+                "食後 (しょくご)" => [
+                    "english" => "after a meal",
+                    "spanish" => "después de una comida",
+                ],
+                "夕食 (ゆうしょく)" => [
+                    "english" => "dinner",
+                    "spanish" => "cena",
+                ],
+                "朝食 (ちょうしょく)" => [
+                    "english" => "breakfast",
+                    "spanish" => "desayuno",
+                ],
+                "和食 (わしょく)" => [
+                    "english" => "Japanese-style meal",
+                    "spanish" => "comida al estilo japonés",
+                ],
+                "食事する (しょくじする)" => [
+                    "english" => "have a meal",
+                    "spanish" => "tener una comida",
+                ],
+                "食事する (しょくじする)" => [
+                    "english" => "fast [v.i.]",
+                    "spanish" => "rápido [v.i.]",
+                ],
+                "食い物 (くいもの)" => [
+                    "english" => "food",
+                    "spanish" => "comida",
+                ],
+                "食べる (たべる)" => [
+                    "english" => "eat",
+                    "spanish" => "comer",
+                ],
+                "食べ物 (たべもの)" => [
+                    "english" => "food",
+                    "spanish" => "comida",
+                ],
+
+            ]
         ],
         '飲' =>
         [
             'english' => "drink",
             'spanish' => "beber",
+            'examples' => [
+                "飲食店 (いんしょくてん)" => [
+                    "english" => "restaurant",
+                    "spanish" => "restaurante",
+                ],
+                "飲酒運転 (いんしゅうんてん)" => [
+                    "english" => "drunk driving",
+                    "spanish" => "conducir ebrio",
+                ],
+                "飲料水 (いんりょうすい)" => [
+                    "english" => "drinking water",
+                    "spanish" => "agua potable",
+                ],
+                "飲む (のむ)" => [
+                    "english" => "drink",
+                    "spanish" => "beber",
+                ],
+                "飲み屋 (のみや)" => [
+                    "english" => "bar",
+                    "spanish" => "bar",
+                ],
+                "飲み物 (のみもの)" => [
+                    "english" => "beverage",
+                    "spanish" => "bebida",
+                ],
+            ]
         ],
         '立' =>
         [
             'english' => "stand, establish",
             'spanish' => "pararse, establecer",
+            'examples' => [
+                "独立する (どくりつする)" => [
+                    "english" => "become independent",
+                    "spanish" => "independizarse",
+                ],
+                "自立する (じりつする)" => [
+                    "english" => "become independent",
+                    "spanish" => "independizarse",
+                ],
+                "確立する (かくりつする)" => [
+                    "english" => "establish [v.t.], be established",
+                    "spanish" => "establecer [v.t.], establecerse",
+                ],
+                "成立する (せいりつする)" => [
+                    "english" => "form, be born, be completed",
+                    "spanish" => "formarse, nacer, completarse",
+                ],
+                "対立する (たいりつする)" => [
+                    "english" => "confront",
+                    "spanish" => "confrontar",
+                ],
+                "国立 (こくりつ)" => [
+                    "english" => "national",
+                    "spanish" => "nacional",
+                ],
+                "私立 (しりつ/わたくしりつ)" => [
+                    "english" => "private (establishment)",
+                    "spanish" => "privado (establecimiento)",
+                ],
+                "立派な (りっぱな)" => [
+                    "english" => "splendid",
+                    "spanish" => "espléndido",
+                ],
+                "建立する (こんりゅうする)" => [
+                    "english" => "build (temple, monument, etc.)",
+                    "spanish" => "construir (templo, monumento, etc.)",
+                ],
+                "立つ (たつ)" => [
+                    "english" => "stand up [v.i.]",
+                    "spanish" => "levantarse [v.i.]",
+                ],
+                "立場 (たちば)" => [
+                    "english" => "standpoint",
+                    "spanish" => "punto de vista",
+                ],
+                "立てる (たてる)" => [
+                    "english" => "stand (something) up [v.t.]",
+                    "spanish" => "levantar (algo) [v.t.]",
+                ],
+            ]
         ],
         '休' =>
         [
             'english' => "rest",
             'spanish' => "descansar",
+            'examples' => [
+                "休日（きゅうじつ）" => [
+                    "english" => "holiday",
+                    "spanish" => "día festivo",
+                ],
+                "週休 (しゅうきゅう)" => [
+                    "english" => "weekly holiday",
+                    "spanish" => "vacaciones semanales",
+                ],
+                "休講 (きゅうこう)" => [
+                    "english" => "a cancelled lecture",
+                    "spanish" => "clase cancelada",
+                ],
+                "休暇 (きゅうか)" => [
+                    "english" => "vacation",
+                    "spanish" => "vacaciones",
+                ],
+                "休み (やすみ)" => [
+                    "english" => "rest, absence, break, recess",
+                    "spanish" => "descanso, ausencia, descanso, receso",
+                ],
+                "休む (やすむ)" => [
+                    "english" => "rest [v.i.]",
+                    "spanish" => "descansar [v.i.]",
+                ],
+                "休める (やすめる)" => [
+                    "english" => "put to rest [v.t.]",
+                    "spanish" => "poner a descansar [v.t.]",
+                ],
+            ]
         ],
         '買' =>
         [
