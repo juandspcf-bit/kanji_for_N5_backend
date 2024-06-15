@@ -3811,7 +3811,7 @@ class Data
             'english' => "rest",
             'spanish' => "descansar",
             'examples' => [
-                "休日（きゅうじつ）" => [
+                "休日 (きゅうじつ)" => [
                     "english" => "holiday",
                     "spanish" => "día festivo",
                 ],
@@ -3845,6 +3845,32 @@ class Data
         [
             'english' => "buy",
             'spanish' => "comprar",
+            'examples' => [
+                "買収する (ばいしゅうする)" => [
+                    "english" => "purchase, buy, bribe",
+                    "spanish" => "comprar, sobornar",
+                ],
+                "売買する (ばいばいする)" => [
+                    "english" => "trade",
+                    "spanish" => "comercio",
+                ],
+                "購買 (こうばい)" => [
+                    "english" => "purchasing",
+                    "spanish" => "adquisitivo",
+                ],
+                "買う (かう)" => [
+                    "english" => "buy",
+                    "spanish" => "comprar",
+                ],
+                "買い物 (かいもの)" => [
+                    "english" => "shopping",
+                    "spanish" => "compras",
+                ],
+                "買い手 (かいて)" => [
+                    "english" => "buyer",
+                    "spanish" => "comprador",
+                ],
+            ]
         ],
         //9
         //
@@ -3852,11 +3878,83 @@ class Data
         [
             'english' => "electricity",
             'spanish' => "electricidad",
+            'examples' => [
+                "電話する (でんわする)" => [
+                    "english" => "make a telephone call",
+                    "spanish" => "hacer una llamada telefónica",
+                ],
+                "発電する (はつでんする)" => [
+                    "english" => "generate power",
+                    "spanish" => "generar energía",
+                ],
+                "電話 (でんわ" => [
+                    "english" => "telephone",
+                    "spanish" => "teléfono",
+                ],
+                "電話番号 (でんわばんごう)" => [
+                    "english" => "phone number",
+                    "spanish" => "número telefónico",
+                ],
+                "電気 (でんき)" => [
+                    "english" => "electricity",
+                    "spanish" => "electricidad",
+                ],
+                "電気屋 (でんきや)" => [
+                    "english" => "electric appliance store",
+                    "spanish" => "tienda de electrodomésticos",
+                ],
+                "電車 (でんしゃ)" => [
+                    "english" => "train",
+                    "spanish" => "tren",
+                ],
+                "電子レンジ (でんしレンジ)" => [
+                    "english" => "microwave oven",
+                    "spanish" => "horno microondas",
+                ],
+                "終電 (しゅうでん)" => [
+                    "english" => "last train",
+                    "spanish" => "último tren",
+                ],
+                "停電 (ていでん)" => [
+                    "english" => "loss of electricity, blackout",
+                    "spanish" => "pérdida de electricidad, apagón",
+                ],
+            ]
         ],
         '車' =>
         [
             'english' => "vehicle, wheel, car",
             'spanish' => "vehículo, rueda, coche",
+            'examples' => [
+                "自転車 (じてんしゃ)" => [
+                    "english" => "bicycle",
+                    "spanish" => "bicicleta",
+                ],
+                "電車 (でんしゃ)" => [
+                    "english" => "train",
+                    "spanish" => "tren",
+                ],
+                "自動車 (じどうしゃ)" => [
+                    "english" => "automobile",
+                    "spanish" => "automóvil",
+                ],
+                "駐車する (ちゅうしゃする)" => [
+                    "english" => "park a car",
+                    "spanish" => "aparcar un coche",
+                ],
+                "停車する (ていしゃする)" => [
+                    "english" => "stop a car or train",
+                    "spanish" => "detener un coche o un tren",
+                ],
+                "車 (くるま)" => [
+                    "english" => "car",
+                    "spanish" => "carro",
+                ],
+                "車いす (くるまいす)" => [
+                    "english" => "wheel chair",
+                    "spanish" => "silla de ruedas",
+                ],
+            ]
         ],
         '門' =>
         [
