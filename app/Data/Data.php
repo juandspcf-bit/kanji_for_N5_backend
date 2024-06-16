@@ -2,6 +2,7 @@
 
 namespace App\Data;
 
+use function Ramsey\Uuid\v1;
 
 class Data
 {
@@ -3960,16 +3961,151 @@ class Data
         [
             'english' => "gate",
             'spanish' => "puerta",
+            'examples' => [
+                "門 (もん)" => [
+                    "english" => "gate",
+                    "spanish" => "entrada",
+                ],
+                "正門 (せいもん)" => [
+                    "english" => "main gate",
+                    "spanish" => "entrada principal",
+                ],
+                "校門 (こうもん)" => [
+                    "english" => "school gate",
+                    "spanish" => "entrada de la escuela",
+                ],
+                "専門 (せんもん)" => [
+                    "english" => "speciality",
+                    "spanish" => "especialidad",
+                ],
+                "部門 (ぶもん)" => [
+                    "english" => "category",
+                    "spanish" => "categoría",
+                ],
+                "名門 (めいもん)" => [
+                    "english" => "distinguished family",
+                    "spanish" => "familia distinguida",
+                ],
+                "入門する (にゅうもんする)" => [
+                    "english" => "enter an institute",
+                    "spanish" => "entrar a un instituto",
+                ],
+                "破門する (はもんする)" => [
+                    "english" => "expel",
+                    "spanish" => "expulsar",
+                ],
+                "門 (かど)" => [
+                    "english" => "gate",
+                    "spanish" => "entrada",
+                ],
+                "門出 (かどで)" => [
+                    "english" => "departure, setting out",
+                    "spanish" => "partida, estableciendo",
+                ],
+            ]
         ],
         '馬' =>
         [
             'english' => "horse",
             'spanish' => "caballo",
+            'examples' => [
+                "馬車 (ばしゃ)" => [
+                    "english" => "horse-drawn vehicle",
+                    "spanish" => "vehículo tirado por caballos",
+                ],
+                "馬力 (ばりき)" => [
+                    "english" => "horse-power, h.p.",
+                    "spanish" => "potencia en caballos, p.c.",
+                ],
+                "乗馬 (じょうば)" => [
+                    "english" => "horseback riding",
+                    "spanish" => "equitación",
+                ],
+                "競馬 (けいば)" => [
+                    "english" => "horse racing",
+                    "spanish" => "carreras de caballos",
+                ],
+                "馬鹿な (ばかな)" => [
+                    "english" => "stupid, silly",
+                    "spanish" => "estúpido, tonto",
+                ],
+                "竹馬の友 (ちくばのとも)" => [
+                    "english" => "childhood friend",
+                    "spanish" => "amigo de la infancia",
+                ],
+                "出馬する (しゅつばする)" => [
+                    "english" => "stand as a candidate",
+                    "spanish" => "presentarse como candidato",
+                ],
+                "落馬する (らくばする)" => [
+                    "english" => "fall from a horse",
+                    "spanish" => "caer de un caballo",
+                ],
+                "馬 （うま)" => [
+                    "english" => "horse",
+                    "spanish" => "caballo",
+                ],
+                "絵馬 (えま)" => [
+                    "english" => "votive picture",
+                    "spanish" => "imagen votiva",
+                ],
+            ]
         ],
         '魚' =>
         [
             'english' => "fish",
             'spanish' => "pez",
+            'examples' => [
+                "魚類 (ぎょるい)" => [
+                    "english" => "fish (as class of animal)",
+                    "spanish" => "pez (como clase de animal)",
+                ],
+                "魚介類 (ぎょかいるい)" => [
+                    "english" => "marine products, seafood",
+                    "spanish" => "productos marinos, marisco",
+                ],
+                "金魚 (きんぎょ)" => [
+                    "english" => "goldfish",
+                    "spanish" => "carpa dorada",
+                ],
+                "鮮魚 (せんぎょ)" => [
+                    "english" => "fresh fish",
+                    "spanish" => "pescado fresco",
+                ],
+                "人魚 (にんぎょ)" => [
+                    "english" => "mermaid, merman",
+                    "spanish" => "sirena, sireno",
+                ],
+                "深海魚 (しんかいぎょ)" => [
+                    "english" => "deep-sea fish",
+                    "spanish" => "peces de aguas profundas",
+                ],
+                "深海魚 (しんかいぎょ)" => [
+                    "english" => "tropical fish",
+                    "spanish" => "pez tropical",
+                ],
+
+                "魚市場 (うおいちば)" => [
+                    "english" => "fish market",
+                    "spanish" => "pescadería (mercado de pescado)",
+                ],
+                "飛び魚 (とびうお)" => [
+                    "english" => "flying fish",
+                    "spanish" => "pez volador",
+                ],
+                "魚 (さかな)" => [
+                    "english" => "fish [n.]",
+                    "spanish" => "pez [n.]",
+                ],
+                "魚屋 (さかなや)" => [
+                    "english" => "fish market, fish dealer",
+                    "spanish" => "pescadería, pescadero",
+                ],
+                "*雑魚 (ざこ)" => [
+                    "english" => "small fish, small fry",
+                    "spanish" => "peces pequeños, alevines",
+                ],
+            ]
         ],
         '道' =>
         [
