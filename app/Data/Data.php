@@ -4111,16 +4111,147 @@ class Data
         [
             'english' => "way, street, road",
             'spanish' => "camino, calle, camino",
+            'examples' => [
+                "道路 (どうろ)" => [
+                    "english" => "road",
+                    "spanish" => "carretera",
+                ],
+                "道場 (どうじょう)" => [
+                    "english" => "hall used for martial arts training",
+                    "spanish" => "sala utilizada para el entrenamiento de artes marciales.",
+                ],
+                "歩道 (ほどう)" => [
+                    "english" => "sidewalk",
+                    "spanish" => "acera",
+                ],
+                "水道 (すいどう)" => [
+                    "english" => "water supply",
+                    "spanish" => "suministro de agua",
+                ],
+                "書道 (しょどう)" => [
+                    "english" => "calligraphy",
+                    "spanish" => "caligrafía",
+                ],
+                "地下道 (ちかどう)" => [
+                    "english" => "underground tunnel",
+                    "spanish" => "túnel subterráneo",
+                ],
+                "神道 (しんとう)" => [
+                    "english" => "Shintoism",
+                    "spanish" => "sintoísmo",
+                ],
+                "報道する (ほうどうする)" => [
+                    "english" => "report",
+                    "spanish" => "informe",
+                ],
+                "道 (みち)" => [
+                    "english" => "street",
+                    "spanish" => "calle",
+                ],
+                "近道 (ちかみち)" => [
+                    "english" => "shortcut",
+                    "spanish" => "atajo",
+                ],
+            ]
         ],
         '会' =>
         [
             'english' => "meet, society",
             'spanish' => "reunirse, sociedad",
+            'examples' => [
+                "会話 (かいわ)" => [
+                    "english" => "conversation",
+                    "spanish" => "conversación",
+                ],
+                "会議 (かいぎ)" => [
+                    "english" => "conference",
+                    "spanish" => "conferencia",
+                ],
+                "会社 (かいしゃ)" => [
+                    "english" => "company",
+                    "spanish" => "compañía",
+                ],
+                "会社員 (かいしゃいん)" => [
+                    "english" => "company employee",
+                    "spanish" => "empleado de la empresa",
+                ],
+                "会計士 (かいけいし)" => [
+                    "english" => "accountant",
+                    "spanish" => "contador",
+                ],
+                "忘年会 (ぼうねんかい)" => [
+                    "english" => "year-end party",
+                    "spanish" => "fiesta de fin de año",
+                ],
+                "国会 (こっかい)" => [
+                    "english" => "parliament",
+                    "spanish" => "parlamento",
+                ],
+                "国会 (こっかい)" => [
+                    "english" => "city",
+                    "spanish" => "ciudad",
+                ],
+                "再会する (さいかいする)" => [
+                    "english" => "meet again",
+                    "spanish" => "reunirse de nuevo",
+                ],
+                "会釈する (えしゃくする)" => [
+                    "english" => "nod in greeting",
+                    "spanish" => "asentir a modo de saludo",
+                ],
+                "会う (あう)" => [
+                    "english" => "meet",
+                    "spanish" => "encontrarse",
+                ],
+
+                "" => [
+                    "english" => "",
+                    "spanish" => "",
+                ],
+            ]
         ],
         '社' =>
         [
             'english' => "company, society",
             'spanish' => "empresa, sociedad",
+            'examples' => [
+                "社会 (しゃかい)" => [
+                    "english" => "society",
+                    "spanish" => "sociedad",
+                ],
+                "社長 (しゃちょう)" => [
+                    "english" => "company president",
+                    "spanish" => "presidente de la empresa",
+                ],
+                "会社 (かいしゃ)" => [
+                    "english" => "company",
+                    "spanish" => "compañía",
+                ],
+                "本社 （ほんしゃ)" => [
+                    "english" => "headquarters",
+                    "spanish" => "sede",
+                ],
+                "支社 (ししゃ)" => [
+                    "english" => "branch office",
+                    "spanish" => "sucursal",
+                ],
+                "出版社 (しゅっぱんしゃ)" => [
+                    "english" => "publisher",
+                    "spanish" => "editor",
+                ],
+                "神社 （じんじゃ)" => [
+                    "english" => "Shinto shrine",
+                    "spanish" => "Santuario sintoísta",
+                ],
+                "入社する (にゅうしゃする)" => [
+                    "english" => "join a company",
+                    "spanish" => "unirse a una empresa",
+                ],
+                "お社（おやしろ）" => [
+                    "english" => "Shinto shrine [hon.]",
+                    "spanish" => "Santuario sintoísta [hon.]",
+                ],
+            ]
         ],
         '店' =>
         [
