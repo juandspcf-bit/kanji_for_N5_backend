@@ -4257,21 +4257,185 @@ class Data
         [
             'english' => "shop, store",
             'spanish' => "tienda",
+            'examples' => [
+                "商店 (しょうてん)" => [
+                    "english" => "shop [n.]",
+                    "spanish" => "tienda [n.]",
+                ],
+                "書店 (しょてん)" => [
+                    "english" => "bookstore",
+                    "spanish" => "librería",
+                ],
+                "売店 (ばいてん)" => [
+                    "english" => "stand [n.]",
+                    "spanish" => "quiosco [n.]",
+                ],
+                "本店 (ほんてん)" => [
+                    "english" => "head office",
+                    "spanish" => "oficina central",
+                ],
+                "支店 (してん)" => [
+                    "english" => "branch office",
+                    "spanish" => "sucursal",
+                ],
+                "喫茶店 (きっさてん)" => [
+                    "english" => "coffee shop",
+                    "spanish" => "cafetería",
+                ],
+                "店員 (てんいん)" => [
+                    "english" => "salesperson",
+                    "spanish" => "vendedor",
+                ],
+                "店頭 (てんとう)" => [
+                    "english" => "shop front",
+                    "spanish" => "mostrador",
+                ],
+                "店 (みせ)" => [
+                    "english" => "store [n.]",
+                    "spanish" => "tienda [n.]",
+                ],
+                "店先 (みせさき)" => [
+                    "english" => "store front",
+                    "spanish" => "escaparate",
+                ],
+            ]
         ],
         '駅' =>
         [
             'english' => "station",
             'spanish' => "estación",
+            'examples' => [
+                "駅 (えき)" => [
+                    "english" => "station",
+                    "spanish" => "estación",
+                ],
+                "駅前 (えきまえ)" => [
+                    "english" => "in front of the station",
+                    "spanish" => "en frente de la estación",
+                ],
+                "駅長 (えきちょう)" => [
+                    "english" => "station master",
+                    "spanish" => "estación maestra",
+                ],
+                "駅弁 (えきべん)" => [
+                    "english" => "(boxed) lunch sold in stations",
+                    "spanish" => "almuerzo (en caja) vendido en las estaciones",
+                ],
+                "東京駅 (とうきょうえき)" => [
+                    "english" => "Tokyo station",
+                    "spanish" => "estación de Tokio",
+                ],
+            ]
         ],
         '花' =>
         [
             'english' => "flower",
             'spanish' => "flor",
+            'examples' => [
+                "花壇 (かだん)" => [
+                    "english" => "flower bed",
+                    "spanish" => "cama de flores",
+                ],
+                "花瓶 (かびん)" => [
+                    "english" => "vase",
+                    "spanish" => "florero",
+                ],
+                "造花 (ぞうか)" => [
+                    "english" => "artificial flowers",
+                    "spanish" => "flores artificiales",
+                ],
+                "花粉 (かふん)" => [
+                    "english" => "pollen",
+                    "spanish" => "polen",
+                ],
+                "開花する (かいかする)" => [
+                    "english" => "bloom",
+                    "spanish" => "floración",
+                ],
+                "花 (はな)" => [
+                    "english" => "flower",
+                    "spanish" => "flor",
+                ],
+                "花屋 (はなや)" => [
+                    "english" => "florist",
+                    "spanish" => "florista",
+                ],
+                "生け花 (いけばな)" => [
+                    "english" => "flower arrangement",
+                    "spanish" => "arreglo floral",
+                ],
+                "花嫁 (はなよめ)" => [
+                    "english" => "bride",
+                    "spanish" => "novia",
+                ],
+                "花火 (はなび)" => [
+                    "english" => "fireworks",
+                    "spanish" => "fuegos artificiales",
+                ],
+                "お花見 (おはなみ)" => [
+                    "english" => "cherry-blossom viewing",
+                    "spanish" => "observación de flores de cerezo",
+                ],
+                "草花 (くさばな)" => [
+                    "english" => "plants and flowers",
+                    "spanish" => "plantas y flores",
+                ],
+            ]
         ],
         '家' =>
         [
             'english' => "house, family",
             'spanish' => "casa, familia",
+            'examples' => [
+                "家族 (かぞく)" => [
+                    "english" => "family",
+                    "spanish" => "familia",
+                ],
+                "家内 (かない)" => [
+                    "english" => "wife",
+                    "spanish" => "esposa",
+                ],
+                "家具 (かぐ)" => [
+                    "english" => "furniture",
+                    "spanish" => "muebles",
+                ],
+                "作曲家 (さっきょくか)" => [
+                    "english" => "composer",
+                    "spanish" => "compositor",
+                ],
+                "作家 (さっか)" => [
+                    "english" => "writer, artist",
+                    "spanish" => "escritor, artista",
+                ],
+                "徳川家 (とくがわけ)" => [
+                    "english" => "the House of Tokugawa",
+                    "spanish" => "la familia Tokugawa",
+                ],
+                "家 (いえ)" => [
+                    "english" => "house",
+                    "spanish" => "casa",
+                ],
+                "家出する (いえでする)" => [
+                    "english" => "run away from home",
+                    "spanish" => "huir de casa",
+                ],
+                "家賃 (やちん)" => [
+                    "english" => "rent",
+                    "spanish" => "renta",
+                ],
+                "一軒家 (いっけんや)" => [
+                    "english" => "free standing home",
+                    "spanish" => "casa independiente",
+                ],
+                "大家n(おおや)" => [
+                    "english" => "landlord",
+                    "spanish" => "propietario",
+                ],
+                "*家 (うち)" => [
+                    "english" => "house, family",
+                    "spanish" => "casa, familia",
+                ],
+            ]
         ],
         '外' =>
         [
