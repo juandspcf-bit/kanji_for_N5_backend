@@ -4441,21 +4441,187 @@ class Data
         [
             'english' => "outside",
             'spanish' => "afuera",
+            'examples' => [
+                "外国 (がいこく)" => [
+                    "english" => "foreign country",
+                    "spanish" => "país extranjero",
+                ],
+                "外部 (がいぶ)" => [
+                    "english" => "the outside",
+                    "spanish" => "el exterior",
+                ],
+                "国外 (こくがい)" => [
+                    "english" => "outside the country",
+                    "spanish" => "fuera del país",
+                ],
+                "海外旅行 (かいがいりょこう)" => [
+                    "english" => "overseas travel",
+                    "spanish" => "viajes al extranjero",
+                ],
+                "意外な (いがいな)" => [
+                    "english" => "surprising",
+                    "spanish" => "sorprendente",
+                ],
+                "外食する (がいしょくする)" => [
+                    "english" => "eat out",
+                    "spanish" => "comer fuera",
+                ],
+                "外出する (がいしゅつする)" => [
+                    "english" => "go out",
+                    "spanish" => "salir",
+                ],
+                "外科 (げか)" => [
+                    "english" => "surgical department",
+                    "spanish" => "departamento quirúrgico",
+                ],
+                "外 (そと)" => [
+                    "english" => "outside",
+                    "spanish" => "afuera",
+                ],
+                "思いの外 (おもいのほか)" => [
+                    "english" => "unexpected",
+                    "spanish" => "inesperado",
+                ],
+                "外す (はずす)" => [
+                    "english" => "remove [v.t.]",
+                    "spanish" => "eliminar [v.t.]",
+                ],
+                "外れる (はずれる)" => [
+                    "english" => "be disconnected [v.i.]",
+                    "spanish" => "estar desconectado [v.i.]",
+                ],
+            ]
         ],
         '国' =>
         [
             'english' => "country",
             'spanish' => "país",
+            'examples' => [
+                "国際 (こくさい)" => [
+                    "english" => "international",
+                    "spanish" => "internacional",
+                ],
+                "国立 (こくりつ)" => [
+                    "english" => "nationally owned (institution)",
+                    "spanish" => "propiedad nacional (institución)",
+                ],
+                "国会 (こっかい)" => [
+                    "english" => "parliament",
+                    "spanish" => "parlamento",
+                ],
+
+                "四国 (しこく)" => [
+                    "english" => "Shikoku",
+                    "spanish" => "Shikoku",
+                ],
+                "韓国 (かんこく)" => [
+                    "english" => "South Korea",
+                    "spanish" => "Korea del Sur",
+                ],
+                "中国 (ちゅうごく)" => [
+                    "english" => "China",
+                    "spanish" => "China",
+                ],
+                "帝国主義 (ていこくしゅぎ)" => [
+                    "english" => "imperialism",
+                    "spanish" => "imperialismo",
+                ],
+                "帰国する (きこくする)" => [
+                    "english" => "return to one's own country",
+                    "spanish" => "regresar al propio país",
+                ],
+                "入国する (にゅうこくする)" => [
+                    "english" => "enter a country",
+                    "spanish" => "entrar a un país",
+                ],
+                "国 (くに)" => [
+                    "english" => "country",
+                    "spanish" => "país",
+                ],
+                "国々 (くにぐに)" => [
+                    "english" => "countries",
+                    "spanish" => "países",
+                ],
+                "島国 (しまぐに)" => [
+                    "english" => "island country",
+                    "spanish" => "país insular",
+                ],
+
+            ]
         ],
         '方' =>
         [
             'english' => "direction, way, square",
             'spanish' => "dirección, camino, cuadrado",
+            'examples' => [
+                "方向 (ほうこう)" => [
+                    "english" => "direction",
+                    "spanish" => "dirección",
+                ],
+                "方言 (ほうげん)" => [
+                    "english" => "dialect",
+                    "spanish" => "dialecto",
+                ],
+                "地方 (ちほう)" => [
+                    "english" => "area",
+                    "spanish" => "lugar",
+                ],
+                "方針 (ほうしん)" => [
+                    "english" => "policy, principle",
+                    "spanish" => "política, principio",
+                ],
+                "話し方 (はなしかた)" => [
+                    "english" => "way of talking",
+                    "spanish" => "manera de hablar",
+                ],
+                "仕方 (しかた)" => [
+                    "english" => "way, method, style",
+                    "spanish" => "manera, método, estilo",
+                ],
+                "夕方 (ゆうがた)" => [
+                    "english" => "evening",
+                    "spanish" => "tarde",
+                ],
+                "父方 (ちちかた)" => [
+                    "english" => "father's side of family",
+                    "spanish" => "lado paterno de la familia",
+                ],
+                "先生方 (せんせいがた)" => [
+                    "english" => "teachers, doctors",
+                    "spanish" => "profesores, doctores",
+                ],
+            ]
         ],
         '英' =>
         [
             'english' => "distinguished, England",
             'spanish' => "distinguido, Inglaterra",
+            'examples' => [
+                "英語（えいご）" => [
+                    "english" => "English language",
+                    "spanish" => "idioma Inglés",
+                ],
+                "英国 (えいこく)" => [
+                    "english" => "England",
+                    "spanish" => "Inglaterra",
+                ],
+                "英国人 (えいこくじん)" => [
+                    "english" => "English person",
+                    "spanish" => "británico",
+                ],
+                "英会話 (えいかいわ)" => [
+                    "english" => "English conversation",
+                    "spanish" => "conversación en inglés",
+                ],
+                "英和辞典 (えいわじてん)" => [
+                    "english" => "English-Japanese dictionary",
+                    "spanish" => "Diccionario inglés-japonés",
+                ],
+                "英雄 (えいゆう)" => [
+                    "english" => "hero",
+                    "spanish" => "héroe",
+                ],
+            ]
         ],
 
     ];
