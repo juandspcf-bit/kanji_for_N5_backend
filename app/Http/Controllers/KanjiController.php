@@ -13,6 +13,7 @@ use App\Models\AudioExampleApi;
 use App\Models\MeaningExamplesApi;
 use Illuminate\Support\Facades\Http;
 use App\Http\Resources\KanjiDataResource;
+use Illuminate\Http\Client\Response;
 
 
 
@@ -40,6 +41,7 @@ class KanjiController extends Controller
     public function show(Request $request, Kanji $kanji)
 
     {
+        //http://127.0.0.1:8000/api/v1/kanjis/雨
 
         $uuid = '';
         if ($request->hasHeader('uuid')) {
@@ -75,52 +77,7 @@ class KanjiController extends Controller
                 'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
             ])->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/$kanjiCharacter");
 
-            $examplesData = $response->collect("examples");
-
-            $examples = [];
-
-            foreach ($examplesData as $exampleData) {
-                $audioExampleApi = new AudioExampleApi(
-                    $exampleData["audio"]["opus"],
-                    $exampleData["audio"]["aac"],
-                    $exampleData["audio"]["ogg"],
-                    $exampleData["audio"]["mp3"]
-                );
-
-                
-
-                $exampleApi = new ExampleApi(
-                    $exampleData["japanese"],
-                    new MeaningExamplesApi($exampleData["meaning"]["english"], "",),
-                    $audioExampleApi
-                );
-
-                $examples[] = $exampleApi;
-            }
-
-            $kanjiData = $response->collect("kanji");
-
-            $strokesData = $kanjiData["strokes"]["images"];
-
-            $strokes = [];
-            foreach ($strokesData as $stroke) {
-                $strokes[] = $stroke;
-            }
-
-            $kanjiAPI = new KanjiApi(
-                $kanjiData["character"],
-                $kanjiData["meaning"]["english"],
-                "",
-                end($strokes),
-                new OnyomiApi($kanjiData["onyomi"]["romaji"], $kanjiData["onyomi"]["katakana"]),
-                new KunyomiApi($kanjiData["kunyomi"]["romaji"], $kanjiData["kunyomi"]["hiragana"]),
-                $kanjiData["video"]["mp4"],
-                $strokes,
-                $examples,
-            );
-
-            //return $response->collect();
-            return new KanjiDataResource($kanjiAPI);;
+            return $this->create($response);
         } catch (\Throwable $th) {
 
 
@@ -142,5 +99,55 @@ class KanjiController extends Controller
     public function destroy(Kanji $kanji)
     {
         //
+    }
+
+    private function create(Response $response): KanjiDataResource
+    {
+        $examplesData = $response->collect("examples");
+
+        $examples = [];
+
+        foreach ($examplesData as $exampleData) {
+            $audioExampleApi = new AudioExampleApi(
+                $exampleData["audio"]["opus"],
+                $exampleData["audio"]["aac"],
+                $exampleData["audio"]["ogg"],
+                $exampleData["audio"]["mp3"]
+            );
+
+
+
+            $exampleApi = new ExampleApi(
+                $exampleData["japanese"],
+                new MeaningExamplesApi($exampleData["meaning"]["english"], "",),
+                $audioExampleApi
+            );
+
+            $examples[] = $exampleApi;
+        }
+
+        $kanjiData = $response->collect("kanji");
+
+        $strokesData = $kanjiData["strokes"]["images"];
+
+        $strokes = [];
+        foreach ($strokesData as $stroke) {
+            $strokes[] = $stroke;
+        }
+
+        $kanjiAPI = new KanjiApi(
+            $kanjiData["character"],
+            $kanjiData["meaning"]["english"],
+            "",
+            end($strokes),
+            new OnyomiApi($kanjiData["onyomi"]["romaji"], $kanjiData["onyomi"]["katakana"]),
+            new KunyomiApi($kanjiData["kunyomi"]["romaji"], $kanjiData["kunyomi"]["hiragana"]),
+            $kanjiData["video"]["mp4"],
+            $strokes,
+            $examples,
+        );
+
+        //return $response->collect();
+        return new KanjiDataResource($kanjiAPI);;
     }
 }
