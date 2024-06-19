@@ -43,29 +43,10 @@ class KanjiController extends Controller
     {
         //http://127.0.0.1:8000/api/v1/kanjis/雨
 
-        $uuid = '';
-        if ($request->hasHeader('uuid')) {
-            $uuid = $request->header('uuid');
-        } else {
-
-            return Messages::errorMessage('Invalids credentials', 400);
-        }
         
         if ($kanji === null) {
 
             return Messages::errorMessage('Not resource found', 400);
-        }
-
-        
-
-        $firestore = app('firebase.firestore');
-        $database = $firestore->database();
-        $snapshot = $database
-            ->collection('user_data')->document($uuid)->snapshot();
-        if (!$snapshot->exists()) {
-
-
-            return Messages::errorMessage($request, 'Invaliddd credentials', 400);
         }
 
 
