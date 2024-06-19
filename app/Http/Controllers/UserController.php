@@ -14,7 +14,7 @@ class UserController extends Controller
         try {
             $validateUser = Validator::make($request->all(), [
                 "name" => "required",
-                "email" => "required|email|unique:users,email",
+                "email" => "required|email",
                 "password" => "required",
             ]);
 
@@ -29,6 +29,8 @@ class UserController extends Controller
                 );
             }
 
+            
+
             if (!auth()->attempt([
                 'email' => $request->email,
                 'password' => $request->password,
@@ -41,8 +43,6 @@ class UserController extends Controller
                     "password" => bcrypt($request->password),
                 ]);
                 $user = User::where("id", "=", $userID)->first();
-
-                dd($user);
 
                 $user->createToken('ourapptoken')->plainTextToken;
                 //dd("created token");
@@ -59,7 +59,7 @@ class UserController extends Controller
 
             } 
 
-            $user = User::when("email", $request->email)->first();
+            $user = User::where("email", $request->email)->first();
 
             return response()->json(
                 [
