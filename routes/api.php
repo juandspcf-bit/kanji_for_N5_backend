@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::post("auth/access", [UserController::class, "createAndLogin"]);
 Route::group(["middleware"=>["auth:sanctum"]], function () {
 
-    Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'show']);
+    Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'showSingleKanji']);
     
 });
 

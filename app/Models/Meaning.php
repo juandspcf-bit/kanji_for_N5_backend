@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Meaning extends Model
 {
     use HasFactory;
@@ -13,4 +14,6 @@ class Meaning extends Model
         'spanish',
         'kanji_id'
     ];
+
+    
 }
