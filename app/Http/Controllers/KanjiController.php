@@ -48,15 +48,15 @@ class KanjiController extends Controller
             $uuid = $request->header('uuid');
         } else {
 
-            return Messages::errorMessage('Invalid credentials', 400);
+            return Messages::errorMessage('Invalids credentials', 400);
         }
-
+        
         if ($kanji === null) {
 
             return Messages::errorMessage('Not resource found', 400);
         }
 
-
+        
 
         $firestore = app('firebase.firestore');
         $database = $firestore->database();
@@ -65,7 +65,7 @@ class KanjiController extends Controller
         if (!$snapshot->exists()) {
 
 
-            return Messages::errorMessage($request, 'Invalid credentials', 400);
+            return Messages::errorMessage($request, 'Invaliddd credentials', 400);
         }
 
 
@@ -81,7 +81,7 @@ class KanjiController extends Controller
         } catch (\Throwable $th) {
 
 
-            return Messages::errorMessage('Error in the server', 500);
+            return Messages::errorMessage($th, 500);
         }
     }
 
