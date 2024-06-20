@@ -13,13 +13,14 @@ use App\Models\AudioExampleApi;
 use App\Models\MeaningExamplesApi;
 use Illuminate\Support\Facades\Http;
 use App\Http\Resources\KanjiDataResource;
+use App\Models\KanjiForN5;
 use Illuminate\Http\Client\Response;
 
 
 
 class KanjiController extends Controller
 {
-    public function showSingleKanji(Kanji $kanji)
+    public function showSingleKanji(KanjiForN5 $kanji)
 
     {
         //http://127.0.0.1:8000/api/v1/kanjis/雨

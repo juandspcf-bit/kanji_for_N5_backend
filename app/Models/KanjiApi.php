@@ -54,9 +54,11 @@ class KanjiApi
     {
         $kanjiData = $response->collect("kanji");
 
+        $kanjiDB =  Kanji::where("kanji", "=", $kanjiData["character"])->first();
+        
 
         $examplesData = $response->collect("examples");
-        $examplesDB = Kanji::where("kanji", "=", $kanjiData["character"])->first()->examples;
+        $examplesDB = $kanjiDB->examples;
         $examples = [];
 
         for ($index = 0; $index < count($examplesData); $index++) {
@@ -70,11 +72,16 @@ class KanjiApi
                 $exampleData["audio"]["mp3"]
             );
 
-
-
+            $spanishTranslation = "";
+            if (count($examplesDB)!=0) {
+                $spanishTranslation = $examplesDB[$index]->spanish;
+            }
             $exampleApi = new ExampleApi(
                 $exampleData["japanese"],
-                new MeaningExamplesApi($exampleData["meaning"]["english"], $examplesDB[$index]->spanish,),
+                new MeaningExamplesApi(
+                    $exampleData["meaning"]["english"],
+                    $spanishTranslation,
+                ),
                 $audioExampleApi
             );
 
@@ -91,7 +98,7 @@ class KanjiApi
         $kanjiAPI = new KanjiApi(
             $kanjiData["character"],
             $kanjiData["meaning"]["english"],
-            Kanji::where("kanji", "=", $kanjiData["character"])->first()->meaning->spanish,
+            isset($kanjiDB->meaning->spanish)?$kanjiDB->meaning->spanish:"",
             end($strokes),
             new OnyomiApi($kanjiData["onyomi"]["romaji"], $kanjiData["onyomi"]["katakana"]),
             new KunyomiApi($kanjiData["kunyomi"]["romaji"], $kanjiData["kunyomi"]["hiragana"]),
@@ -100,7 +107,6 @@ class KanjiApi
             $examples,
         );
 
-        //return $response->collect();
         return new KanjiDataResource($kanjiAPI);;
     }
 }
