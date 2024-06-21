@@ -10,7 +10,9 @@ use Illuminate\Support\Facades\Route;
 Route::post("auth/access", [UserController::class, "createAndLogin"]);
 Route::group(["middleware"=>["auth:sanctum"]], function () {
 
-    Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'showSingleKanji']);
+    Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'showSingleKanjiN5']);
+    Route::post('wordToSearch', [KanjiController::class, 'searchKanjiWithSpanishMeaning']);
+    
     
 });
 
