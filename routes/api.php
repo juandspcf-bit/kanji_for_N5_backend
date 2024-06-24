@@ -12,7 +12,7 @@ Route::group(["middleware"=>["auth:sanctum"]], function () {
 
     Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'showSingleKanjiN5']);
     Route::post('wordToSearch', [KanjiController::class, 'searchKanjiWithSpanishMeaning']);
-    
+    Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
     
 });
 
