@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Http;
 use App\Models\KanjiForN5;
 use Illuminate\Http\Client\Response;
 use Illuminate\Http\Client\Pool;
-
-
+use App\Http\Resources\KanjiArrayResource;
+use App\Http\Resources\KanjiDataResource;
+use GPBMetadata\Google\Firestore\Admin\V1\Index;
 
 class KanjiController extends Controller
 {
@@ -135,21 +136,43 @@ class KanjiController extends Controller
         try {
             $responses = Http::pool(fn (Pool $pool) => $this->generateRequests($pool, $kanjis));
 
-            dd($responses[0]->body());
-            
+
+            //return  KanjiApi::createKanjiResponse($responses[2]);;
+
+            $data = [];
+
+
+            for ($index=0; $index <count($responses) ; $index++) { 
+                try {
+                    $data[] = KanjiApi::createKanjiResponse($responses[$index]);
+                } catch (\Throwable $th) {
+                    dd($responses[0]->body());
+                }
+               
+            }
+
+
+            return response()->json(
+                [
+                    'meta' => [
+                        'message' => "success",
+                    ],
+                    "data" => $data
+                ],
+                200
+            );
         } catch (\Throwable $th) {
             return Messages::errorMessage($th, 500);
         }
-        
-       
     }
 
-    private function generateRequests(Pool $pool, array $kanjis):array{
+    private function generateRequests(Pool $pool, array $kanjis): array
+    {
         $headers = [
             'X-RapidAPI-Key' => env("API_KEY"),
             'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
         ];
-        $requests=[];
+        $requests = [];
         foreach ($kanjis as $kanji) {
             $requests[] = $pool->withHeaders($headers)->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/" . $kanji);
         }

@@ -90,6 +90,10 @@ class Data
                     'english' => "weather",
                     'spanish' => "clima",
                 ],
+                '天国 (てんごく)' => [
+                    'english' => "heaven",
+                    'spanish' => "cielo",
+                ],
                 '天皇 (てんのう)' => [
                     'english' => "emperor",
                     'spanish' => "emperador",

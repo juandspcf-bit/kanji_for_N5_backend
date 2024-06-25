@@ -61,6 +61,8 @@ class KanjiApi
         $examplesDB = $kanjiDB->examples;
         $examples = [];
 
+        
+
         for ($index = 0; $index < count($examplesData); $index++) {
 
             $exampleData = $examplesData[$index];
@@ -88,6 +90,8 @@ class KanjiApi
             $examples[] = $exampleApi;
         }
 
+        
+
         $strokesData = $kanjiData["strokes"]["images"];
 
         $strokes = [];
@@ -106,6 +110,8 @@ class KanjiApi
             $strokes,
             $examples,
         );
+
+        
 
         return new KanjiDataResource($kanjiAPI);;
     }
