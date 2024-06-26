@@ -1,0 +1,31 @@
+_id: req_3fc9a74e73ac423e9cc81a39d3666e64
+type: Request
+parentId: wrk_58c1a59b097c468db5e40e40e586758a
+modified: 1719382155352
+created: 1718786715404
+url: http://127.0.0.1:8000/api/v1/kanjis/力
+name: get kanji
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_e047eb646a1d463a9da2acdb6ed651e7
+  - id: pair_e16a0fe78ae748bfba9e90bf3b71ff22
+    name: Content-Type
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: 2|dw2vRHCAC9H9ZjkyFiMKT4onwY5q06pYkKX3vrKh9b533321
+  disabled: false
+metaSortKey: -1718786715404
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

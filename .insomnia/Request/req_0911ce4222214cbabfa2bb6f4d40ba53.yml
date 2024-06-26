@@ -1,0 +1,37 @@
+_id: req_0911ce4222214cbabfa2bb6f4d40ba53
+type: Request
+parentId: wrk_58c1a59b097c468db5e40e40e586758a
+modified: 1718809096642
+created: 1718726992748
+url: http://127.0.0.1:8000/api/v1/auth/access
+name: token request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"Juan Carlos",
+    	"email":"juandspcf@gmail.com",
+    	"password":"ja99270124"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ea7d430d670e431ab4c1a6fd72c807e6
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_04eb57f52110492fac07eacf9a1d5c5c
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1718726992748
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

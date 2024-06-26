@@ -1,0 +1,32 @@
+_id: req_a1d40e08cd0e43a1a9ceef3c956b780a
+type: Request
+parentId: wrk_58c1a59b097c468db5e40e40e586758a
+modified: 1719382325532
+created: 1719244247754
+url: http://127.0.0.1:8000/api/v1/searchKanjisArray
+name: get array kanjis meaning
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"kanjis":["月", "火", "水", "木", "金", "土", "日", "先", "生", "学", "校", "本", "友"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication:
+  type: bearer
+  token: 2|dw2vRHCAC9H9ZjkyFiMKT4onwY5q06pYkKX3vrKh9b533321
+metaSortKey: -1718887701228
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

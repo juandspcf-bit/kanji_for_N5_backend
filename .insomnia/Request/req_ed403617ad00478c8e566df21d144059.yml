@@ -1,0 +1,32 @@
+_id: req_ed403617ad00478c8e566df21d144059
+type: Request
+parentId: wrk_58c1a59b097c468db5e40e40e586758a
+modified: 1719242364053
+created: 1718988687052
+url: http://127.0.0.1:8000/api/v1/wordToSearch
+name: get kanji for spanish meaning
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"meaning":"calle"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication:
+  type: bearer
+  token: 3|x50HpfeYUZVCCm0hpWqylZ5n1vzklLJQ10qjTivA14e2b875
+metaSortKey: -1718988687052
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
