@@ -1266,7 +1266,7 @@ class Data
                     "english" => "physical strength",
                     "spanish" => "fuerza física",
                 ],
-                "実力 (じつりょく)" => [
+                "能力 （のうりょく）" => [
                     "english" => "ability",
                     "spanish" => "capacidad",
                 ],

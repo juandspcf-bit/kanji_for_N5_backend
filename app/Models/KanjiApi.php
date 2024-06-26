@@ -61,8 +61,8 @@ class KanjiApi
         $examplesDB = $kanjiDB->examples;
         $examples = [];
 
+        //dd($examplesDB);
         
-
         for ($index = 0; $index < count($examplesData); $index++) {
 
             $exampleData = $examplesData[$index];

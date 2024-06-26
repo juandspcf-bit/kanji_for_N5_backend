@@ -10,11 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
 use App\Models\KanjiForN5;
-use Illuminate\Http\Client\Response;
 use Illuminate\Http\Client\Pool;
-use App\Http\Resources\KanjiArrayResource;
-use App\Http\Resources\KanjiDataResource;
-use GPBMetadata\Google\Firestore\Admin\V1\Index;
+
 
 class KanjiController extends Controller
 {
@@ -136,18 +133,17 @@ class KanjiController extends Controller
         try {
             $responses = Http::pool(fn (Pool $pool) => $this->generateRequests($pool, $kanjis));
 
-
-            //return  KanjiApi::createKanjiResponse($responses[2]);;
-
             $data = [];
 
 
             for ($index=0; $index <count($responses) ; $index++) { 
+                //$data[] = KanjiApi::createKanjiResponse($responses[$index]);
                 try {
                     $data[] = KanjiApi::createKanjiResponse($responses[$index]);
                 } catch (\Throwable $th) {
-                    dd($responses[0]->body());
-                }
+                    $kanjiData = $responses[$index]->collect("kanji");
+                    dd('error in: '.$kanjiData["character"]);
+                } 
                
             }
 
