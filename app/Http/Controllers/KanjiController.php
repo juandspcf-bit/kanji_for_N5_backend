@@ -39,7 +39,7 @@ class KanjiController extends Controller
         } catch (\Throwable $th) {
 
 
-            return Messages::errorMessage($th, 500);
+            return Messages::errorMessage($th->getMessage(), 500);
         }
     }
 
@@ -61,6 +61,15 @@ class KanjiController extends Controller
                 'kem' => $englishMeaning,
             ])->get('https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/');
 
+            if ($response->failed()) {
+                return Messages::errorMessage("no corresponding kanji found for english word", 500);
+            }
+
+            if (!$response->collect()->isNotEmpty()) {
+                
+                return Messages::errorMessage("no corresponding kanji found for english word", 500);
+            }
+
             $arrayKanji = $response->collect()->first();
 
             $response = Http::withHeaders([
@@ -68,17 +77,21 @@ class KanjiController extends Controller
                 'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
             ])->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/" . $arrayKanji["kanji"]["character"]);
 
+            if ($response->failed()) {
+                return Messages::errorMessage("error in fetching kanji data", 500);
+            }
+
             return KanjiApi::createKanjiResponse($response);
         } catch (\Throwable $th) {
 
 
-            return Messages::errorMessage($th, 500);
+            return Messages::errorMessage($th->getMessage(), 500);
         }
     }
 
 
 
-    public function searchKanjiWithSpanishMeaning(Request $request)
+    public function searchKanjiAlsoWithSpanishMeaning(Request $request)
 
     {
         //http://127.0.0.1:8000/api/v1/kanjis/雨
@@ -96,8 +109,14 @@ class KanjiController extends Controller
                 "target" => 'en'
             ]);
 
+            if ($response->failed()) {
+                return Messages::errorMessage("error in translation", 500);
+            }
+
             $data = $response->collect("data");
             $textTranslated = $data["translations"]["translatedText"];
+
+           
 
 
 
@@ -108,6 +127,15 @@ class KanjiController extends Controller
                 'kem' => $textTranslated,
             ])->get('https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/');
 
+            if ($response->failed()) {
+                return Messages::errorMessage("no corresponding kanji found for english word", 500);
+            }
+
+            if (!$response->collect()->isNotEmpty()) {
+                
+                return Messages::errorMessage("no corresponding kanji found for english word", 500);
+            }
+
             $arrayKanji = $response->collect()->first();
 
             $response = Http::withHeaders([
@@ -115,11 +143,19 @@ class KanjiController extends Controller
                 'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
             ])->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/" . $arrayKanji["kanji"]["character"]);
 
+            if ($response->failed()) {
+                return Messages::errorMessage("error in fetching kanji data", 500);
+            }
+
+            $kanjiForN5 = KanjiForN5::where('kanji', $arrayKanji["kanji"]["character"])->get();;          
+            $isInKanjiForN5 = $kanjiForN5->isNotEmpty();
+            
+        
             return KanjiApi::createKanjiResponse($response);
         } catch (\Throwable $th) {
 
 
-            return Messages::errorMessage($th, 500);
+            return Messages::errorMessage($th->getMessage(), 500);
         }
     }
 
@@ -133,20 +169,16 @@ class KanjiController extends Controller
         try {
             $responses = Http::pool(fn (Pool $pool) => $this->generateRequests($pool, $kanjis));
 
-            $data = [];
-
-
-            for ($index=0; $index <count($responses) ; $index++) { 
-                //$data[] = KanjiApi::createKanjiResponse($responses[$index]);
-                try {
-                    $data[] = KanjiApi::createKanjiResponse($responses[$index]);
-                } catch (\Throwable $th) {
-                    $kanjiData = $responses[$index]->collect("kanji");
-                    dd('error in: '.$kanjiData["character"]);
-                } 
-               
+            foreach ($responses as $response) {
+                if ($response->failed()) {
+                    return Messages::errorMessage("failed one of the kanji request", 500);;
+                }
             }
 
+            $data = [];
+            foreach ($responses as $response) {
+                $data[] = KanjiApi::createKanjiResponse($response);
+            }
 
             return response()->json(
                 [
@@ -158,7 +190,7 @@ class KanjiController extends Controller
                 200
             );
         } catch (\Throwable $th) {
-            return Messages::errorMessage($th, 500);
+            return Messages::errorMessage($th->getMessage(), 500);
         }
     }
 

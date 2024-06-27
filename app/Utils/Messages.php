@@ -4,10 +4,10 @@ namespace App\Utils;
 
 class Messages{
 
-    static public function errorMessage( $th, $code){
+    static public function errorMessage( $message, $code){
         return response()->json([
             'meta' => [
-                'message' => $th->getMessage(),
+                'message' => $message,
             ],
             "data" => [],
         ], $code);

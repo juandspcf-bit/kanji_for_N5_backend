@@ -3012,7 +3012,7 @@ class Data
                     "english" => "new product",
                     "spanish" => "producto nuevo",
                 ],
-                "新製品 (しんせいひん)" => [
+                "新幹線 （しんかんせん）" => [
                     "english" => "Shinkansen",
                     "spanish" => "Tren bala",
                 ],
@@ -3332,10 +3332,10 @@ class Data
                 ],
             ]
         ],
-        '書' =>
+        '読' =>
         [
-            'english' => "write, book",
-            'spanish' => "escribir, libro",
+            'english' => "read",
+            'spanish' => "leer",
             'examples' => [
                 "読者 (どくしゃ)" => [
                     "english" => "reader",
@@ -3379,10 +3379,10 @@ class Data
                 ],
             ]
         ],
-        '見' =>
+        '書' =>
         [
-            'english' => "see",
-            'spanish' => "mirar",
+            'english' => "write, book",
+            'spanish' => "escribir, libro",
             'examples' => [
                 "書庫 (しょこ)" => [
                     "english" => "archive",
@@ -3430,10 +3430,13 @@ class Data
                 ],
             ]
         ],
-        '聞' =>
+
+
+
+        '見' =>
         [
-            'english' => "hear, listen, ask",
-            'spanish' => "escuchar, preguntar",
+            'english' => "see",
+            'spanish' => "mirar",
             'examples' => [
                 "見学する (けんがくする)" => [
                     "english" => "study, take a research trip",
@@ -3481,6 +3484,44 @@ class Data
                 ],
             ]
         ],
+
+
+
+
+
+        '聞' =>
+        [
+            'english' => "hear, listen, ask",
+            'spanish' => "escuchar, preguntar",
+            'examples' => [
+                "新聞 (しんぶん)" => [
+                    "english" => "newspaper",
+                    "spanish" => "periódico",
+                ],
+                "前代未聞 (ぜんだいみもん)" => [
+                    "english" => "unheard-of",
+                    "spanish" => "inaudito",
+                ],
+                "聞く (きく)" => [
+                    "english" => "listen, hear, ask a question [v.t.]",
+                    "spanish" => "escuchar, oír, hacer una pregunta [v.t.]",
+                ],
+                "聞こえる (きこえる)" => [
+                    "english" => "can be heard, hear [v.i.]",
+                    "spanish" => "puede ser escuchada, escuchar [v.i.]",
+                ],
+                "聞き手 (ききて)" => [
+                    "english" => "listener",
+                    "spanish" => "oyente",
+                ],
+            ]
+        ],
+
+
+
+
+
+
         '行' =>
         [
             'english' => "go, act, line",
@@ -3706,7 +3747,7 @@ class Data
                     "english" => "have a meal",
                     "spanish" => "tener una comida",
                 ],
-                "食事する (しょくじする)" => [
+                "断食する (だんじきする)" => [
                     "english" => "fast [v.i.]",
                     "spanish" => "rápido [v.i.]",
                 ],
@@ -4084,7 +4125,7 @@ class Data
                     "english" => "deep-sea fish",
                     "spanish" => "peces de aguas profundas",
                 ],
-                "深海魚 (しんかいぎょ)" => [
+                "熱帯魚 (ねったいぎょ)" => [
                     "english" => "tropical fish",
                     "spanish" => "pez tropical",
                 ],

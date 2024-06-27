@@ -11,7 +11,9 @@ Route::post("auth/access", [UserController::class, "createAndLogin"]);
 Route::group(["middleware"=>["auth:sanctum"]], function () {
 
     Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'showSingleKanjiN5']);
-    Route::post('wordToSearch', [KanjiController::class, 'searchKanjiWithSpanishMeaning']);
+    Route::post('wordToSearchInEnglish', [KanjiController::class, 'searchKanjiWithEnglishMeaning']);
+    Route::post('wordToSearch', [KanjiController::class, 'searchKanjiAlsoWithSpanishMeaning']);
+
     Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
     
 });
