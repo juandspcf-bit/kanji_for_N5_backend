@@ -1,0 +1,36 @@
+_id: req_9e132f86bc554f789427f993387f2ee6
+type: Request
+parentId: wrk_58c1a59b097c468db5e40e40e586758a
+modified: 1719240130871
+created: 1719239899433
+url: https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/
+name: get kanji for english meaning
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_178fad04715c4a44b49c25f3669c32ed
+    name: kem
+    value: car
+    description: ""
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+    id: pair_b0291442458e4b498e12f71ad102a35f
+  - id: pair_52099566bd634185bbf3085254064707
+    name: x-rapidapi-key
+    value: 3a282d7e3dmshda2ebd820a3b685p16b884jsn7e5a6b629275
+    description: ""
+  - id: pair_fd027dfe6c03463b955d567bafd1720e
+    name: x-rapidapi-host
+    value: kanjialive-api.p.rapidapi.com
+    description: ""
+authentication: {}
+metaSortKey: -1719239899433
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
