@@ -6,6 +6,10 @@ use function Ramsey\Uuid\v1;
 
 class Data
 {
+    public static $languagesCode = [
+        "es" => "spanish",
+        "en" => "english",
+    ];
 
     public static $meanings = [
         //1

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Data\Data;
 use App\Models\Kanji;
 use App\Models\Example;
-
+use App\Models\LanguageCode;
 use App\Models\Meaning;
 use Illuminate\Database\Seeder;
 
@@ -42,5 +42,18 @@ class MeaningSeeder extends Seeder
 
         Meaning::insert($recordsMeanings);
         Example::insert($recordsExamples);
+
+        $languagesCodes=[];
+
+         foreach (Data::$languagesCode as $code => $language) {
+            $languagesCodes[]=[
+                "code"=>$code,
+                "language"=>$language,
+            ];
+        } 
+
+        LanguageCode::insert($languagesCodes);
+
+
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\KanjiForN5;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -14,13 +15,12 @@ class KanjiDataResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+
+        
         return [
             'kanji' => [
                 "character" => $this->kanjiCharacter,
-                "meaning" => [
-                    'english' => $this->englishMeaning,
-                    'spanish' => $this->spanishMeaning,
-                ],
+                "meaning" => $this->meaning,
                 "strokes" => [
                     "images" => $this->strokes,
                 ],
@@ -36,9 +36,12 @@ class KanjiDataResource extends JsonResource
 
     public function with(Request $request): array
     {
+        $kanjiForN5 = KanjiForN5::where('kanji', $this->kanjiCharacter)->get();;          
+        $isInKanjiForN5 = $kanjiForN5->isNotEmpty();
         return [
             'meta' => [
                 'message' => 'success',
+                "isInKanjiForN5"=>$isInKanjiForN5,
             ],
         ];
     }

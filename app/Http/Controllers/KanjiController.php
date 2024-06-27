@@ -35,7 +35,7 @@ class KanjiController extends Controller
                 'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
             ])->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/$kanjiCharacter");
 
-            return KanjiApi::createKanjiResponse($response);
+            return KanjiApi::createKanjiResponse($response, "en");
         } catch (\Throwable $th) {
 
 
@@ -44,59 +44,16 @@ class KanjiController extends Controller
     }
 
 
-    public function searchKanjiWithEnglishMeaning(Request $request)
+    
+
+
+    public function searchKanjiByWord(Request $request)
 
     {
         //http://127.0.0.1:8000/api/v1/kanjis/雨
 
-        $englishMeaning = $request->meaning;
-
-        try {
-
-
-            $response = Http::withHeaders([
-                'X-RapidAPI-Key' => env("API_KEY"),
-                'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
-            ])->withQueryParameters([
-                'kem' => $englishMeaning,
-            ])->get('https://kanjialive-api.p.rapidapi.com/api/public/search/advanced/');
-
-            if ($response->failed()) {
-                return Messages::errorMessage("no corresponding kanji found for english word", 500);
-            }
-
-            if (!$response->collect()->isNotEmpty()) {
-                
-                return Messages::errorMessage("no corresponding kanji found for english word", 500);
-            }
-
-            $arrayKanji = $response->collect()->first();
-
-            $response = Http::withHeaders([
-                'X-RapidAPI-Key' => env("API_KEY"),
-                'X-RapidAPI-Host' => 'kanjialive-api.p.rapidapi.com'
-            ])->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/" . $arrayKanji["kanji"]["character"]);
-
-            if ($response->failed()) {
-                return Messages::errorMessage("error in fetching kanji data", 500);
-            }
-
-            return KanjiApi::createKanjiResponse($response);
-        } catch (\Throwable $th) {
-
-
-            return Messages::errorMessage($th->getMessage(), 500);
-        }
-    }
-
-
-
-    public function searchKanjiAlsoWithSpanishMeaning(Request $request)
-
-    {
-        //http://127.0.0.1:8000/api/v1/kanjis/雨
-
-        $spanishMeaning = $request->meaning;
+        $meaning = $request->meaning;
+        $languageSource = $request->language;
 
         try {
             $response = Http::withHeaders([
@@ -104,8 +61,8 @@ class KanjiController extends Controller
                 'X-RapidAPI-Host' => 'deep-translate1.p.rapidapi.com',
                 'Content-Type' => 'application/json',
             ])->post("https://deep-translate1.p.rapidapi.com/language/translate/v2", [
-                "q" => $spanishMeaning,
-                "source" => 'es',
+                "q" => $meaning,
+                "source" => $languageSource,
                 "target" => 'en'
             ]);
 
@@ -147,11 +104,10 @@ class KanjiController extends Controller
                 return Messages::errorMessage("error in fetching kanji data", 500);
             }
 
-            $kanjiForN5 = KanjiForN5::where('kanji', $arrayKanji["kanji"]["character"])->get();;          
-            $isInKanjiForN5 = $kanjiForN5->isNotEmpty();
+            
             
         
-            return KanjiApi::createKanjiResponse($response);
+            return KanjiApi::createKanjiResponse($response,$languageSource);
         } catch (\Throwable $th) {
 
 
@@ -164,6 +120,7 @@ class KanjiController extends Controller
     {
 
         $kanjis = $request->kanjis;
+        $languageSource = $request->language;
 
 
         try {
@@ -177,7 +134,7 @@ class KanjiController extends Controller
 
             $data = [];
             foreach ($responses as $response) {
-                $data[] = KanjiApi::createKanjiResponse($response);
+                $data[] = KanjiApi::createKanjiResponse($response, $languageSource);
             }
 
             return response()->json(
@@ -202,7 +159,8 @@ class KanjiController extends Controller
         ];
         $requests = [];
         foreach ($kanjis as $kanji) {
-            $requests[] = $pool->withHeaders($headers)->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/" . $kanji);
+            $request[] = $pool->withHeaders($headers)->get("https://kanjialive-api.p.rapidapi.com/api/public/kanji/" . $kanji);
+        
         }
 
         return $requests;

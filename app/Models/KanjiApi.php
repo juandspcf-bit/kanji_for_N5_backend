@@ -11,8 +11,7 @@ class KanjiApi
 {
     // Properties
     public $kanjiCharacter;
-    public $englishMeaning;
-    public $spanishMeaning;
+    public $meaning;
     public $kanjiImageLink;
     public $onyomi;
     public $kunyomi;
@@ -23,8 +22,8 @@ class KanjiApi
 
     public function __construct(
         string $kanjiCharacter,
-        string $englishMeaning,
-        string $spanishMeaning,
+        string $meaning,
+
         string $kanjiImageLink,
         OnyomiApi $onyomi,
         KunyomiApi $kunyomi,
@@ -35,8 +34,8 @@ class KanjiApi
 
     ) {
         $this->kanjiCharacter = $kanjiCharacter;
-        $this->englishMeaning = $englishMeaning;
-        $this->spanishMeaning = $spanishMeaning;
+        $this->meaning = $meaning;
+
         $this->kanjiImageLink = $kanjiImageLink;
         $this->onyomi = $onyomi;
         $this->kunyomi = $kunyomi;
@@ -50,19 +49,17 @@ class KanjiApi
      * @return \App\Http\Resources\KanjiDataResource
      */
 
-    public static function createKanjiResponse(Response $response): KanjiDataResource
+    public static function createKanjiResponse(Response $response, string $code): KanjiDataResource
     {
         $kanjiData = $response->collect("kanji");
 
         $kanjiDB =  Kanji::where("kanji", "=", $kanjiData["character"])->first();
-        
+        $languageCodeDB = LanguageCode::where("code", "=", $code)->first();
 
         $examplesData = $response->collect("examples");
-        $examplesDB = $kanjiDB->examples;
+        $examplesDB = $kanjiDB->examples->select($languageCodeDB["language"]);
         $examples = [];
 
-        //dd($examplesDB);
-        
         for ($index = 0; $index < count($examplesData); $index++) {
 
             $exampleData = $examplesData[$index];
@@ -74,23 +71,23 @@ class KanjiApi
                 $exampleData["audio"]["mp3"]
             );
 
-            $spanishTranslation = "";
-            if (count($examplesDB)!=0) {
-                $spanishTranslation = $examplesDB[$index]->spanish;
+            $meaningExample = "";
+            if (count($examplesDB) != 0) {
+                $meaningExample = $examplesDB[$index][$languageCodeDB["language"]];
+            } else {
+                $meaningExample = $exampleData["meaning"]["english"];
             }
+
             $exampleApi = new ExampleApi(
                 $exampleData["japanese"],
-                new MeaningExamplesApi(
-                    $exampleData["meaning"]["english"],
-                    $spanishTranslation,
-                ),
+                $meaningExample, //$exampleData["meaning"]["english"],
                 $audioExampleApi
             );
 
             $examples[] = $exampleApi;
         }
 
-        
+
 
         $strokesData = $kanjiData["strokes"]["images"];
 
@@ -99,10 +96,20 @@ class KanjiApi
             $strokes[] = $stroke;
         }
 
+
+
+        $kanjiMeaning = "";
+
+        if (isset($kanjiDB->meaning[$languageCodeDB["language"]])) {
+            $kanjiMeaning = $kanjiDB->meaning[$languageCodeDB["language"]];
+        } else {
+            $kanjiMeaning = $kanjiData["meaning"]["english"];
+        }
+        
+
         $kanjiAPI = new KanjiApi(
             $kanjiData["character"],
-            $kanjiData["meaning"]["english"],
-            isset($kanjiDB->meaning->spanish)?$kanjiDB->meaning->spanish:"",
+            $kanjiMeaning,
             end($strokes),
             new OnyomiApi($kanjiData["onyomi"]["romaji"], $kanjiData["onyomi"]["katakana"]),
             new KunyomiApi($kanjiData["kunyomi"]["romaji"], $kanjiData["kunyomi"]["hiragana"]),
@@ -111,8 +118,8 @@ class KanjiApi
             $examples,
         );
 
-        
 
-        return new KanjiDataResource($kanjiAPI);;
+
+        return new KanjiDataResource($kanjiAPI);
     }
 }
