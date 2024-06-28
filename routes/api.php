@@ -2,25 +2,20 @@
 
 use App\Http\Controllers\KanjiController;
 use App\Http\Controllers\UserController;
-use App\Utils\IniStorage;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
 Route::post("auth/access", [UserController::class, "createAndLogin"]);
 Route::group(["middleware"=>["auth:sanctum"]], function () {
-
-    //Route::get('kanjis/{kanji:kanji}', [KanjiController::class, 'showSingleKanjiN5']);
     Route::post('searchKanjiByWord', [KanjiController::class, 'searchKanjiByWord']);
     Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
-    
 });
 
 Route::fallback(function () {
-    return [
+    return response()->json([
         'meta' => [
-            'message' => 'no resource found',
+            'message' => "resource not found"
         ],
         "data" => [],
-    ];
+    ], 404);
 });
