@@ -9,6 +9,7 @@ Route::post("auth/access", [UserController::class, "createAndLogin"]);
 Route::group(["middleware"=>["auth:sanctum"]], function () {
     Route::post('searchKanjiByWord', [KanjiController::class, 'searchKanjiByWord']);
     Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
+    Route::post("auth/logout", [UserController::class, "destroy"]);
 });
 
 Route::fallback(function () {
