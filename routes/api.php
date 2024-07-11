@@ -9,6 +9,7 @@ Route::post("auth/access", [UserController::class, "createAndLogin"]);
 Route::group(["middleware"=>["auth:sanctum"]], function () {
     Route::post('searchKanjiByWord', [KanjiController::class, 'searchKanjiByWord']);
     Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
+    Route::get('searchKanjisByGrade/{grade}', [KanjiController::class, 'searchKanjisByGrade'])->where('id', '[1-6]+');
     Route::post("auth/logout", [UserController::class, "destroy"]);
 });
 
