@@ -24,3 +24,13 @@ Authorization: Bearer 2|GrysJPwmx0g5qK9ZqdiychxkouYfvsklkwbXXwEff6004fa8
     "kanjis": ["山", "川", "天", "気", "田", "雨"],
     "language": "es"
 }
+
+###
+
+POST  http://127.0.0.1:8000/api/v1/deleteUser HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer 2|GrysJPwmx0g5qK9ZqdiychxkouYfvsklkwbXXwEff6004fa8
+
+{
+    "uuid": ""
+}
