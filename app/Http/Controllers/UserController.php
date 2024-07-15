@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Firebase\FirebaseUtils;
+use Kreait\Laravel\Firebase\Facades\Firebase;
 
 class UserController extends Controller
 {
@@ -111,18 +112,22 @@ class UserController extends Controller
     {
         $uuid = $request->header("uuid");
 
-        try {
-            if (!FirebaseUtils::existUser($uuid)) {
-                return Messages::errorMessage("Invalid credentials", 400);
-            }
-        } catch (\Throwable $th) {
-            return Messages::errorMessage($th->getMessage(), 400);
+        if (!FirebaseUtils::existUser($uuid)) {
+            return Messages::errorMessage("Invalid credentials", 400);
         }
+
+        $isDeletedAccount = FirebaseUtils::deleteUserAccount($uuid);
+        if(!$isDeletedAccount) return Messages::errorMessage("Error deleting user", 400);
+
+        FirebaseUtils::deleteUserData($uuid);
+
+        FirebaseUtils::deleteUserImage($uuid);
+
 
         return response()->json(
             [
                 "status" => true,
-                "message" => "success",
+                "message" => "Success deleting user",
 
             ],
             200
