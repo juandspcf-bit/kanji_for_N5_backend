@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 
 use App\Utils\Messages;
 use App\Models\KanjiApi;
+use App\Models\KanjiForN5;
+
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Http;
-
-use App\Models\KanjiForN5;
+use App\Firebase\FirebaseUtils;
 use Illuminate\Http\Client\Pool;
+use Illuminate\Support\Facades\Http;
 
 
 class KanjiController extends Controller
@@ -43,8 +44,13 @@ class KanjiController extends Controller
         }
     }
 
-    public function searchKanjisByGrade(string $grade)
+    public function searchKanjisByGrade(Request $request, string $grade)
     {
+        $uuid = $request->header("uuid");
+        if (!FirebaseUtils::existUser($uuid)) {
+            return Messages::errorMessage("Invalid credentials", 400);
+        }
+        
         $grade = (int)$grade;
         if ($grade > 6 && $grade < 1) {
             return Messages::errorMessage("not valid grade", 500);

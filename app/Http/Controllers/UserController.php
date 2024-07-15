@@ -109,12 +109,11 @@ class UserController extends Controller
 
     public function deleteUser(Request $request)
     {
-        $uuid = $request->uuid;
-
+        $uuid = $request->header("uuid");
 
         try {
             if (!FirebaseUtils::existUser($uuid)) {
-                return Messages::errorMessage($request, 'Invalid credentials', 400);
+                return Messages::errorMessage("Invalid credentials", 400);
             }
         } catch (\Throwable $th) {
             return Messages::errorMessage($th->getMessage(), 400);
