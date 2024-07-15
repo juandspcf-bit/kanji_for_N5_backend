@@ -6,13 +6,13 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::post("auth/access", [UserController::class, "createAndLogin"]);
-Route::post("deleteUser",[UserController::class, "deleteUser"]);
+Route::post("deleteUser", [UserController::class, "deleteUser"]);
 Route::get('searchKanjisByGrade/{grade}', [KanjiController::class, 'searchKanjisByGrade'])->where('id', '[1-6]+');
-Route::group(["middleware"=>["auth:sanctum"]], function () {
-    Route::post('searchKanjiByWord', [KanjiController::class, 'searchKanjiByWord']);
-    Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
+Route::post('searchKanjiByWord', [KanjiController::class, 'searchKanjiByWord']);
+Route::post('searchKanjisArray', [KanjiController::class, 'searchKanjisArray']);
+Route::group(["middleware" => ["auth:sanctum"]], function () {
+
     Route::post("auth/logout", [UserController::class, "destroy"]);
-    
 });
 
 Route::fallback(function () {

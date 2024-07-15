@@ -93,7 +93,10 @@ class KanjiController extends Controller
     public function searchKanjiByWord(Request $request)
 
     {
-        //http://127.0.0.1:8000/api/v1/kanjis/雨
+        $uuid = $request->header("uuid");
+        if (!FirebaseUtils::existUser($uuid)) {
+            return Messages::errorMessage("Invalid credentials", 400);
+        }
 
         $meaning = $request->meaning;
         $languageSource = $request->language;
@@ -161,6 +164,10 @@ class KanjiController extends Controller
 
     public function searchKanjisArray(Request $request)
     {
+        $uuid = $request->header("uuid");
+        if (!FirebaseUtils::existUser($uuid)) {
+            return Messages::errorMessage("Invalid credentials", 400);
+        }
 
         $kanjis = $request->kanjis;
         $languageSource = $request->language;
