@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Utils\Messages;
+use Illuminate\Support\Collection;
 use Illuminate\Http\Client\Response;
+use Illuminate\Support\Facades\Http;
 use App\Http\Resources\KanjiDataResource;
+
 
 class KanjiApi
 {
@@ -58,35 +62,19 @@ class KanjiApi
 
         $examplesData = $response->collect("examples");
         $examplesDB = $kanjiDB->examples->select($languageCodeDB["language"]);
-        $examples = [];
 
-        for ($index = 0; $index < count($examplesData); $index++) {
 
-            $exampleData = $examplesData[$index];
-
-            $audioExampleApi = new AudioExampleApi(
-                $exampleData["audio"]["opus"],
-                $exampleData["audio"]["aac"],
-                $exampleData["audio"]["ogg"],
-                $exampleData["audio"]["mp3"]
-            );
-
-            $meaningExample = "";
-            if (count($examplesDB) != 0) {
-                $meaningExample = $examplesDB[$index][$languageCodeDB["language"]];
-            } else {
-                $meaningExample = $exampleData["meaning"]["english"];
-            }
-
-            $exampleApi = new ExampleApi(
-                $exampleData["japanese"],
-                $meaningExample, //$exampleData["meaning"]["english"],
-                $audioExampleApi
-            );
-
-            $examples[] = $exampleApi;
+        $arrayTextTranslated = [];
+        if (count($examplesDB) == 0 && $code !== "en") {
+            $arrayTextTranslated = KanjiApi::translateExamples($examplesData, $code);
         }
 
+        $kanjiMeaningTranslated = "";
+        if (!isset($kanjiDB->meaning[$languageCodeDB["language"]]) && $code !== "en") {
+            $kanjiMeaningTranslated = KanjiApi::translateMeaning($kanjiData, $code);
+        }
+
+        $examples = KanjiApi::setExamples($examplesData, $examplesDB, $arrayTextTranslated, $languageCodeDB);
 
 
         $strokesData = $kanjiData["strokes"]["images"];
@@ -102,10 +90,12 @@ class KanjiApi
 
         if (isset($kanjiDB->meaning[$languageCodeDB["language"]])) {
             $kanjiMeaning = $kanjiDB->meaning[$languageCodeDB["language"]];
+        } elseif ($kanjiMeaningTranslated !== "") {
+            $kanjiMeaning = $kanjiMeaningTranslated;
         } else {
             $kanjiMeaning = $kanjiData["meaning"]["english"];
         }
-        
+
 
         $kanjiAPI = new KanjiApi(
             $kanjiData["character"],
@@ -121,5 +111,100 @@ class KanjiApi
 
 
         return new KanjiDataResource($kanjiAPI);
+    }
+
+
+    private static function translateExamples(Collection $examplesData, string $code): array
+    {
+        $chain = "";
+
+        for ($index = 0; $index < count($examplesData); $index++) {
+            $exampleData = $examplesData[$index];
+            $data = $exampleData["meaning"]["english"];
+            if ($index < count($examplesData) - 1) {
+                $chain = $chain . $data . ";";
+            } else {
+                $chain = $chain . $data;
+            }
+        }
+
+        $response = Http::withHeaders([
+            'X-RapidAPI-Key' => env("API_KEY"),
+            'X-RapidAPI-Host' => 'deep-translate1.p.rapidapi.com',
+            'Content-Type' => 'application/json',
+        ])->post("https://deep-translate1.p.rapidapi.com/language/translate/v2", [
+            "q" => $chain,
+            "source" => "en",
+            "target" => $code
+        ]);
+
+        if ($response->failed()) {
+            return Messages::errorMessage("error in translation", 500);
+        }
+
+        $data = $response->collect("data");
+        $textTranslated = $data["translations"]["translatedText"];
+
+        $arrayTextTranslated = explode(";", $textTranslated);
+
+        return $arrayTextTranslated;
+    }
+
+    private static function translateMeaning(Collection $kanjiData, string $code): string
+    {
+        $kanjiMeaningEn = $kanjiData["meaning"]["english"];
+        $response = Http::withHeaders([
+            'X-RapidAPI-Key' => env("API_KEY"),
+            'X-RapidAPI-Host' => 'deep-translate1.p.rapidapi.com',
+            'Content-Type' => 'application/json',
+        ])->post("https://deep-translate1.p.rapidapi.com/language/translate/v2", [
+            "q" => $kanjiMeaningEn,
+            "source" => "en",
+            "target" => $code
+        ]);
+
+        if ($response->failed()) {
+            return Messages::errorMessage("error in translation", 500);
+        }
+
+        $data = $response->collect("data");
+        $kanjiMeaningTranslated = $data["translations"]["translatedText"];
+
+        return $kanjiMeaningTranslated;
+    }
+
+    private static function setExamples(Collection $examplesData, $examplesDB, array $arrayTextTranslated, $languageCodeDB): array
+    {
+
+        $examples = [];
+        for ($index = 0; $index < count($examplesData); $index++) {
+
+            $exampleData = $examplesData[$index];
+
+            $audioExampleApi = new AudioExampleApi(
+                $exampleData["audio"]["opus"],
+                $exampleData["audio"]["aac"],
+                $exampleData["audio"]["ogg"],
+                $exampleData["audio"]["mp3"]
+            );
+
+            $meaningExample = "";
+            if (count($examplesDB) != 0) {
+                $meaningExample = $examplesDB[$index][$languageCodeDB["language"]];
+            } elseif (count($arrayTextTranslated) != 0) {
+                $meaningExample = $arrayTextTranslated[$index];
+            } else {
+                $meaningExample = $exampleData["meaning"]["english"];
+            }
+
+            $exampleApi = new ExampleApi(
+                $exampleData["japanese"],
+                $meaningExample, //$exampleData["meaning"]["english"],
+                $audioExampleApi
+            );
+
+            $examples[] = $exampleApi;
+        }
+        return $examples;
     }
 }
