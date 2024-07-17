@@ -64,37 +64,9 @@ class KanjiApi
         $examplesDB = $kanjiDB->examples->select($languageCodeDB["language"]);
 
 
-        $arrayTextTranslated = [];
-        if (count($examplesDB) == 0 && $code !== "en") {
-            $arrayTextTranslated = KanjiApi::translateExamples($examplesData, $code);
-        }
-
-        $kanjiMeaningTranslated = "";
-        if (!isset($kanjiDB->meaning[$languageCodeDB["language"]]) && $code !== "en") {
-            $kanjiMeaningTranslated = KanjiApi::translateMeaning($kanjiData, $code);
-        }
-
-        $examples = KanjiApi::setExamples($examplesData, $examplesDB, $arrayTextTranslated, $languageCodeDB);
-
-
-        $strokesData = $kanjiData["strokes"]["images"];
-
-        $strokes = [];
-        foreach ($strokesData as $stroke) {
-            $strokes[] = $stroke;
-        }
-
-
-
-        $kanjiMeaning = "";
-
-        if (isset($kanjiDB->meaning[$languageCodeDB["language"]])) {
-            $kanjiMeaning = $kanjiDB->meaning[$languageCodeDB["language"]];
-        } elseif ($kanjiMeaningTranslated !== "") {
-            $kanjiMeaning = $kanjiMeaningTranslated;
-        } else {
-            $kanjiMeaning = $kanjiData["meaning"]["english"];
-        }
+        $examples = KanjiApi::getExamples($examplesData, $examplesDB, $code, $languageCodeDB);
+        $strokes = KanjiApi::getStrokes($kanjiData);
+        $kanjiMeaning = KanjiApi::getStaticMeaning($kanjiDB, $languageCodeDB, $kanjiData, $code);
 
 
         $kanjiAPI = new KanjiApi(
@@ -173,8 +145,12 @@ class KanjiApi
         return $kanjiMeaningTranslated;
     }
 
-    private static function setExamples(Collection $examplesData, $examplesDB, array $arrayTextTranslated, $languageCodeDB): array
+    private static function getExamples(Collection $examplesData, $examplesDB, string $code, $languageCodeDB): array
     {
+        $arrayTextTranslated = [];
+        if (count($examplesDB) == 0 && $code !== "en") {
+            $arrayTextTranslated = KanjiApi::translateExamples($examplesData, $code);
+        }
 
         $examples = [];
         for ($index = 0; $index < count($examplesData); $index++) {
@@ -206,5 +182,32 @@ class KanjiApi
             $examples[] = $exampleApi;
         }
         return $examples;
+    }
+
+    private static function getStaticMeaning($kanjiDB, $languageCodeDB, $kanjiData, string $code,): string
+    {
+        $kanjiMeaning = "";
+
+        if (isset($kanjiDB->meaning[$languageCodeDB["language"]])) {
+            $kanjiMeaning = $kanjiDB->meaning[$languageCodeDB["language"]];
+        } elseif (!isset($kanjiDB->meaning[$languageCodeDB["language"]]) && $code !== "en") {
+            $kanjiMeaning = KanjiApi::translateMeaning($kanjiData, $code);
+        } else {
+            $kanjiMeaning = $kanjiData["meaning"]["english"];
+        }
+
+        return $kanjiMeaning;
+    }
+
+    private static function getStrokes($kanjiData): array
+    {
+        $strokesData = $kanjiData["strokes"]["images"];
+
+        $strokes = [];
+        foreach ($strokesData as $stroke) {
+            $strokes[] = $stroke;
+        }
+
+        return $strokesData;
     }
 }
