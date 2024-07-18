@@ -66,7 +66,7 @@ class KanjiApi
 
         $examples = KanjiApi::getExamples($examplesData, $examplesDB, $code, $languageCodeDB);
         $strokes = KanjiApi::getStrokes($kanjiData);
-        $kanjiMeaning = KanjiApi::getStaticMeaning($kanjiDB, $languageCodeDB, $kanjiData, $code);
+        $kanjiMeaning = KanjiApi::getMeaning($kanjiDB, $languageCodeDB, $kanjiData, $code);
 
 
         $kanjiAPI = new KanjiApi(
@@ -184,7 +184,7 @@ class KanjiApi
         return $examples;
     }
 
-    private static function getStaticMeaning($kanjiDB, $languageCodeDB, $kanjiData, string $code,): string
+    private static function getMeaning($kanjiDB, $languageCodeDB, $kanjiData, string $code,): string
     {
         $kanjiMeaning = "";
 

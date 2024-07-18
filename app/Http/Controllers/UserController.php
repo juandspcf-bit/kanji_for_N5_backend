@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Utils\Messages;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Firebase\FirebaseUtils;
-use Kreait\Laravel\Firebase\Facades\Firebase;
 
 class UserController extends Controller
 {
@@ -32,8 +30,6 @@ class UserController extends Controller
                     401
                 );
             }
-
-
 
             if (!auth()->attempt([
                 'email' => $request->email,
@@ -117,7 +113,7 @@ class UserController extends Controller
         }
 
         $isDeletedAccount = FirebaseUtils::deleteUserAccount($uuid);
-        if(!$isDeletedAccount) return Messages::errorMessage("Error deleting user", 400);
+        if (!$isDeletedAccount) return Messages::errorMessage("Error deleting user", 400);
 
         FirebaseUtils::deleteUserData($uuid);
 

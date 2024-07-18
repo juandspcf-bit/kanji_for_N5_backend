@@ -3,6 +3,7 @@
 namespace App\Firebase;
 
 use App\Utils\Messages;
+use Kreait\Laravel\Firebase\Facades\Firebase;
 
 class FirebaseUtils
 {
@@ -17,7 +18,7 @@ class FirebaseUtils
     }
 
 
-    public static function deleteUserAccount($uuid):bool
+    public static function deleteUserAccount($uuid): bool
     {
         $auth = app('firebase.auth');
 
@@ -37,6 +38,28 @@ class FirebaseUtils
         $firestore = app('firebase.firestore');
         $database = $firestore->database();
 
+        FirebaseUtils::deleteFavorites($database, $uuid);
+        FirebaseUtils::deleteUserEntry($database, $uuid);
+        FirebaseUtils::deleteQuizScore($database, $uuid);
+    }
+
+    public static function deleteUserImage(string $uuid)
+    {
+
+        try {
+            $storage = app('firebase.storage');
+            $defaultBucket = $storage->getBucket();
+
+            $object = $defaultBucket->object("userImages/{$uuid}.jpg");
+            $object->delete();
+        } catch (\Throwable $th) {
+            print_r($th->getMessage());
+            printf("error deleting user image");
+        }
+    }
+
+    public static function deleteFavorites($database, string $uuid)
+    {
         try {
 
             $favoritesRef = $database
@@ -58,7 +81,10 @@ class FirebaseUtils
             printf("erro deleting favorites");
             print_r($th->getMessage());
         }
+    }
 
+    public static function deleteUserEntry($database, string $uuid)
+    {
         try {
             $userDataRef = $database
                 ->collection("user_data");
@@ -71,6 +97,10 @@ class FirebaseUtils
             print_r($th->getMessage());
             printf("erro deleting user_data");
         }
+    }
+
+    public static function deleteQuizScore($database, string $uuid)
+    {
 
         try {
             $userDataRef = $database
@@ -83,21 +113,6 @@ class FirebaseUtils
         } catch (\Throwable $th) {
             print_r($th->getMessage());
             printf("error deleting quiz score");
-        }
-    }
-
-    public static function deleteUserImage(string $uuid)
-    {
-
-        try {
-            $storage = app('firebase.storage');
-            $defaultBucket = $storage->getBucket();
-
-            $object = $defaultBucket->object("userImages/{$uuid}.jpg");
-            $object->delete();
-        } catch (\Throwable $th) {
-            print_r($th->getMessage());
-            printf("error deleting user image");
         }
     }
 }
