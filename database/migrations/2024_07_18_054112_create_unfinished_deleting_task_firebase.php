@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("uuid");
             $table->enum('unfinished_task', ['user_data', 'favorites', 'quiz_score', 'avatar']);
+            $table->string("error_message");
             $table->timestamps();
         });
     }

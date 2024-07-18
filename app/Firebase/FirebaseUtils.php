@@ -4,6 +4,7 @@ namespace App\Firebase;
 
 use App\Utils\Messages;
 use Kreait\Laravel\Firebase\Facades\Firebase;
+use Illuminate\Support\Facades\DB;
 
 class FirebaseUtils
 {
@@ -53,8 +54,11 @@ class FirebaseUtils
             $object = $defaultBucket->object("userImages/{$uuid}.jpg");
             $object->delete();
         } catch (\Throwable $th) {
-            print_r($th->getMessage());
-            printf("error deleting user image");
+            DB::table("unfinished_deleting_task_firebase")->insert([
+                "uuid"=>$uuid,
+                "unfinished_task"=>"avatar",
+                "error_message"=>$th->getMessage()
+            ]);
         }
     }
 
@@ -73,13 +77,14 @@ class FirebaseUtils
                 if ($document->exists()) {
                     $database
                         ->collection("favorites")->document($document->id())->delete();
-                } else {
-                    printf('Document %s does not exist!' . PHP_EOL, $document->id());
-                }
+                } 
             }
         } catch (\Throwable $th) {
-            printf("erro deleting favorites");
-            print_r($th->getMessage());
+            DB::table("unfinished_deleting_task_firebase")->insert([
+                "uuid"=>$uuid,
+                "unfinished_task"=>"favorites",
+                "error_message"=>$th->getMessage()
+            ]);
         }
     }
 
@@ -94,8 +99,12 @@ class FirebaseUtils
                 $document->delete();
             }
         } catch (\Throwable $th) {
-            print_r($th->getMessage());
-            printf("erro deleting user_data");
+            DB::table("unfinished_deleting_task_firebase")->insert([
+                "uuid"=>$uuid,
+                "unfinished_task"=>"user_data",
+                "error_message"=>$th->getMessage()
+            ]);
+            
         }
     }
 
@@ -111,8 +120,12 @@ class FirebaseUtils
                 $document->delete();
             }
         } catch (\Throwable $th) {
-            print_r($th->getMessage());
-            printf("error deleting quiz score");
+            DB::table("unfinished_deleting_task_firebase")->insert([
+                "uuid"=>$uuid,
+                "unfinished_task"=>"quiz_score",
+                "error_message"=>$th->getMessage()
+            ]);
+            
         }
     }
 }
